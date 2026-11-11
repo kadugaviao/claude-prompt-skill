@@ -1,0 +1,658 @@
+{
+ "v1-01": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": null,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files | head -100 && cat README* 2>/dev/null | head -50\", \"description | Bash {\"command\": \"grep -A2 -E \\\"spring-boot-starter-parent|<java.version>\\\" pom.xml; cat src/ma",
+   "C3": [],
+   "C6": "35 linhas com texto, teto 45",
+   "C7": "'Implementar'",
+   "tipo": "'Implementar', esperado ['Implementar código']"
+  },
+  "linhas": 35,
+  "custo": 0.1543
+ },
+ "v1-02": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": null,
+   "C6": null,
+   "C7": null,
+   "tipo": null
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "leu",
+   "C2": "1 leituras: Bash {\"command\": \"ls -la && cat CLAUDE.md README* 2>/dev/null | head -80\", \"description\": \"List",
+   "C3": "sem prompt",
+   "C6": "sem prompt",
+   "C7": "sem prompt",
+   "tipo": "sem prompt",
+   "pergunta": "não gerou prompt (perguntou)"
+  },
+  "linhas": 0,
+  "custo": 0.0827
+ },
+ "v1-03": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": null,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "leu",
+   "C2": "2 leituras: Bash {\"command\": \"find . -path ./.git -prune -o -type f -print | grep -v target | head -60; cat | Bash {\"command\": \"cd spring/src && grep -nE \\\"@(GetMapping|Transactional|OneToMany|ManyToOne|Ma",
+   "C3": [],
+   "C6": "34 linhas com texto, teto 35",
+   "C7": "'Corrigir bug'",
+   "tipo": "'Corrigir bug', esperado ['Corrigir bug']"
+  },
+  "linhas": 34,
+  "custo": 0.1474
+ },
+ "v1-04": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": null,
+   "C6": null,
+   "C7": null,
+   "tipo": null
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "leu",
+   "C2": "1 leituras: Bash {\"command\": \"ls -la && cat CLAUDE.md README* 2>/dev/null | head -80; grep -ril ponytail . ",
+   "C3": "sem prompt",
+   "C6": "sem prompt",
+   "C7": "sem prompt",
+   "tipo": "sem prompt",
+   "pergunta": "não gerou prompt (perguntou)"
+  },
+  "linhas": 0,
+  "custo": 0.0839
+ },
+ "v1-05": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": false,
+   "C6": true,
+   "C7": null,
+   "tipo": true,
+   "esforco": false
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files | head -100 && echo \\\"---\\\" && cat CLAUDE.md README* 2>/dev/null | Bash {\"command\": \"cat pyproject.toml && echo \\\"---\\\" && wc -l src/fretes/*.py tests/*.py logs/a",
+   "C3": [
+    "caixa alta: CRÍTICO"
+   ],
+   "C6": "29 linhas com texto, teto 45",
+   "C7": "'Revisar ou auditar'",
+   "tipo": "'Revisar ou auditar', esperado ['Revisar ou auditar']",
+   "esforco": "1ª linha='ultrathink', '/effort xhigh' na entrega=False"
+  },
+  "linhas": 29,
+  "custo": 0.1205
+ },
+ "v1-06": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": null,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "leu",
+   "C2": "1 leituras: Bash {\"command\": \"git ls-files && ls README* 2>/dev/null; grep -n -E \\\"<(artifactId|version|jav",
+   "C3": [],
+   "C6": "23 linhas com texto, teto 45",
+   "C7": "'Revisar ou auditar (segurança)'",
+   "tipo": "'Revisar ou auditar (segurança)', esperado ['Revisar ou auditar']"
+  },
+  "linhas": 23,
+  "custo": 0.0768
+ },
+ "v1-07": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": null,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "leu",
+   "C2": "2 leituras: Bash {\"command\": \"ls -la && cat README* CLAUDE.md 2>/dev/null | head -80\", \"description\": \"List | Bash {\"command\": \"find . -path ./.git -prune -o -type f -print | head -50 && cat package.json p",
+   "C3": [],
+   "C6": "24 linhas com texto, teto 35",
+   "C7": "'Planejar ou decidir'",
+   "tipo": "'Planejar ou decidir', esperado ['Pesquisar ou comparar', 'Planejar ou decidir']"
+  },
+  "linhas": 24,
+  "custo": 0.1154
+ },
+ "v1-08": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": null,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files | head -50 && grep -rn \\\"Transactional\\\\|<version>\\\\|spring-boot | Bash {\"command\": \"grep -rn \\\"Transactional\\\\|<version>\\\\|<java.version>\\\\|public .*(\\\" pom.xml ",
+   "C3": [],
+   "C6": "23 linhas com texto, teto 25",
+   "C7": "'Explicar ou ensinar'",
+   "tipo": "'Explicar ou ensinar', esperado ['Explicar ou ensinar']"
+  },
+  "linhas": 23,
+  "custo": 0.1089
+ },
+ "v1-09": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": null,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "leu",
+   "C2": "0 leituras: ",
+   "C3": [],
+   "C6": "20 linhas com texto, teto 25",
+   "C7": "'Escrever texto'",
+   "tipo": "'Escrever texto', esperado ['Escrever texto']"
+  },
+  "linhas": 20,
+  "custo": 0.0895
+ },
+ "v1-10": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": null,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "leu",
+   "C2": "2 leituras: Bash {\"command\": \"ls -la && find . -path ./.git -prune -o -type f -print | head -50 && cat CLAU | Bash {\"command\": \"cat pyproject.toml && wc -l logs/app.log && head -8 logs/app.log && tail -3 l",
+   "C3": [],
+   "C6": "25 linhas com texto, teto 35",
+   "C7": "'Analisar dados (logs), com investigação de causa'",
+   "tipo": "'Analisar dados (logs), com investigação de causa', esperado ['Analisar dados']"
+  },
+  "linhas": 25,
+  "custo": 0.1168
+ },
+ "v1-11": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": null,
+   "tipo": true,
+   "plan": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "leu",
+   "C2": "2 leituras: Bash {\"command\": \"find . -path ./.git -prune -o -type f -print | head -60 && echo ---- && cat p | Bash {\"command\": \"cat src/main/resources/application.properties && echo ---- && grep -rnE \\\"^im",
+   "C3": [],
+   "C6": "29 linhas com texto, teto 35",
+   "C7": "'Planejar ou decidir + Implementar'",
+   "tipo": "'Planejar ou decidir + Implementar', esperado ['Planejar ou decidir']",
+   "plan": "Modo sugerido:** plan mode "
+  },
+  "linhas": 29,
+  "custo": 0.1421
+ },
+ "v1-12": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": null,
+   "tipo": false,
+   "esforco": false
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files | head -100 && echo \\\"--- junit refs ---\\\" && grep -rlE \\\"org\\\\. | Bash {\"command\": \"cat pom.xml && echo \\\"--- TEST ---\\\" && cat src/test/java/com/exemplo/loja/se",
+   "C3": [],
+   "C6": "48 linhas com texto, teto 80",
+   "C7": "'Implementar (refatoração)'",
+   "tipo": "'Implementar (refatoração)', esperado ['Agêntica longa']",
+   "esforco": "1ª linha='Objetivo:', '/effort xhigh' na entrega=False"
+  },
+  "linhas": 48,
+  "custo": 0.1321
+ },
+ "v1-13": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": null,
+   "C6": null,
+   "C7": null,
+   "tipo": null,
+   "vazio": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "0 leituras: ",
+   "C3": "sem prompt",
+   "C6": "sem prompt",
+   "C7": "sem prompt",
+   "tipo": "sem prompt",
+   "vazio": "O que você quer pedir? Descreva a tarefa e eu a reescrevo como um prompt otimizado."
+  },
+  "linhas": 0,
+  "custo": 0.0395
+ },
+ "v1-14": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": false,
+   "C6": true,
+   "C7": null,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "leu",
+   "C2": "1 leituras: Bash {\"command\": \"cat src/main/java/com/exemplo/loja/model/Cliente.java src/main/java/com/exemp",
+   "C3": [
+    "caixa alta: NÃO"
+   ],
+   "C6": "25 linhas com texto, teto 45",
+   "C7": "'Implementar (script de limpeza de dados) + Analisar dados'",
+   "tipo": "'Implementar (script de limpeza de dados) + Analisar dados', esperado ['Implementar código']",
+   "pergunta": "gerou prompt"
+  },
+  "linhas": 25,
+  "custo": 0.139
+ },
+ "v1-15": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": null,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "leu",
+   "C2": "2 leituras: Bash {\"command\": \"ls -la && find . -path ./.git -prune -o -type f -print | head -50 && git log  | Read {\"file_path\": \"skillproj/README.md\"}",
+   "C3": [],
+   "C6": "23 linhas com texto, teto 45",
+   "C7": "'Revisar ou auditar'",
+   "tipo": "'Revisar ou auditar', esperado ['Revisar ou auditar']"
+  },
+  "linhas": 23,
+  "custo": 0.1184
+ },
+ "v2-01": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "3 leituras: Bash {\"command\": \"find . -path ./.git -prune -o -type f -print | grep -v target/ | sort\", \"desc | Read {\"file_path\": \"spring/pom.xml\"} | Bash {\"command\": \"cd spring/src && head -n 200 main/java/com/exemplo/loja/controller/PedidoCont",
+   "C3": [],
+   "C6": "27 linhas com texto, teto 45",
+   "C7": "'Implementar código'",
+   "tipo": "'Implementar código', esperado ['Implementar código']"
+  },
+  "linhas": 27,
+  "custo": 0.1758
+ },
+ "v2-02": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": null,
+   "C6": null,
+   "C7": null,
+   "tipo": null
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files | head -50 && git log --oneline -3\", \"description\": \"List tracke | Read {\"file_path\": \"skillproj/README.md\"}",
+   "C3": "sem prompt",
+   "C6": "sem prompt",
+   "C7": "sem prompt",
+   "tipo": "sem prompt",
+   "pergunta": "não gerou prompt (perguntou)"
+  },
+  "linhas": 0,
+  "custo": 0.1196
+ },
+ "v2-03": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "3 leituras: Bash {\"command\": \"git ls-files && grep -rn \\\"pedidos\\\" src --include=*.java | head -20\", \"descr | Read {\"file_path\": \"spring/pom.xml\"} | Read {\"file_path\": \"spring/src/main/java/com/exemplo/loja/controller/PedidoController.java\"}",
+   "C3": [],
+   "C6": "19 linhas com texto, teto 35",
+   "C7": "'Corrigir bug'",
+   "tipo": "'Corrigir bug', esperado ['Corrigir bug']"
+  },
+  "linhas": 19,
+  "custo": 0.0705
+ },
+ "v2-04": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": null,
+   "C6": null,
+   "C7": null,
+   "tipo": null
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files | head -100 && echo --- && grep -rni \\\"ponytail\\\" . --exclude-di | Read {\"file_path\": \"skillproj/README.md\"}",
+   "C3": "sem prompt",
+   "C6": "sem prompt",
+   "C7": "sem prompt",
+   "tipo": "sem prompt",
+   "pergunta": "não gerou prompt (perguntou)"
+  },
+  "linhas": 0,
+  "custo": 0.1166
+ },
+ "v2-05": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true,
+   "esforco": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "1 leituras: Read {\"file_path\": \"python/pyproject.toml\"}",
+   "C3": [],
+   "C6": "21 linhas com texto, teto 45",
+   "C7": "'Revisar ou auditar'",
+   "tipo": "'Revisar ou auditar', esperado ['Revisar ou auditar']",
+   "esforco": "1ª linha='ultrathink', '/effort xhigh' na entrega=True"
+  },
+  "linhas": 21,
+  "custo": 0.1195
+ },
+ "v2-06": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files && grep -E \\\"<(artifactId|version|java.version)>\\\" pom.xml | hea | Read {\"file_path\": \"spring/src/main/java/com/exemplo/loja/controller/AuthController.java\"}",
+   "C3": [],
+   "C6": "22 linhas com texto, teto 45",
+   "C7": "'Revisar ou auditar'",
+   "tipo": "'Revisar ou auditar', esperado ['Revisar ou auditar']"
+  },
+  "linhas": 22,
+  "custo": 0.0634
+ },
+ "v2-07": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "3 leituras: Bash {\"command\": \"git ls-files | head -50 && ls -a\", \"description\": \"List project files\"} | Read {\"file_path\": \"skillproj/README.md\"} | Bash {\"command\": \"head -20 prompt/SKILL.md && wc -l prompt/*.md\", \"description\": \"Show skill he",
+   "C3": [],
+   "C6": "18 linhas com texto, teto 35",
+   "C7": "'Pesquisar ou comparar'",
+   "tipo": "'Pesquisar ou comparar', esperado ['Pesquisar ou comparar', 'Planejar ou decidir']"
+  },
+  "linhas": 18,
+  "custo": 0.1386
+ },
+ "v2-08": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "3 leituras: Bash {\"command\": \"git ls-files | head -50 && grep -rn \\\"@Transactional\\\" src | head -20\", \"desc | Read {\"file_path\": \"spring/pom.xml\"} | Read {\"file_path\": \"spring/src/main/java/com/exemplo/loja/service/PedidoService.java\"}",
+   "C3": [],
+   "C6": "9 linhas com texto, teto 25",
+   "C7": "'Explicar ou ensinar'",
+   "tipo": "'Explicar ou ensinar', esperado ['Explicar ou ensinar']"
+  },
+  "linhas": 9,
+  "custo": 0.1266
+ },
+ "v2-09": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "0 leituras: ",
+   "C3": [],
+   "C6": "12 linhas com texto, teto 25",
+   "C7": "'Escrever texto'",
+   "tipo": "'Escrever texto', esperado ['Escrever texto']"
+  },
+  "linhas": 12,
+  "custo": 0.1001
+ },
+ "v2-10": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files | head -50 && ls -la logs 2>/dev/null; cat pyproject.toml requir | Bash {\"command\": \"wc -l logs/app.log && head -15 logs/app.log && echo ... && tail -5 logs/app.l",
+   "C3": [],
+   "C6": "20 linhas com texto, teto 35",
+   "C7": "'Analisar dados'",
+   "tipo": "'Analisar dados', esperado ['Analisar dados']"
+  },
+  "linhas": 20,
+  "custo": 0.1393
+ },
+ "v2-11": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true,
+   "plan": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "3 leituras: Bash {\"command\": \"find . -path ./.git -prune -o -type f -print | head -60\", \"description\": \"Lis | Read {\"file_path\": \"spring/pom.xml\"} | Read {\"file_path\": \"spring/src/main/resources/application.properties\"}",
+   "C3": [],
+   "C6": "19 linhas com texto, teto 35",
+   "C7": "'Planejar ou decidir'",
+   "tipo": "'Planejar ou decidir', esperado ['Planejar ou decidir']",
+   "plan": "Modo:** plan mode "
+  },
+  "linhas": 19,
+  "custo": 0.1396
+ },
+ "v2-12": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true,
+   "esforco": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "3 leituras: Bash {\"command\": \"git ls-files && echo ---- && grep -rlE \\\"org\\\\.junit\\\\.(Test|Before|After|run | Read {\"file_path\": \"spring/pom.xml\"} | Read {\"file_path\": \"spring/src/test/java/com/exemplo/loja/service/PedidoServiceTest.java\"}",
+   "C3": [],
+   "C6": "31 linhas com texto, teto 80",
+   "C7": "'Agêntica longa'",
+   "tipo": "'Agêntica longa', esperado ['Agêntica longa']",
+   "esforco": "1ª linha='ultrathink', '/effort xhigh' na entrega=True"
+  },
+  "linhas": 31,
+  "custo": 0.0869
+ },
+ "v2-13": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": null,
+   "C6": null,
+   "C7": null,
+   "tipo": null,
+   "vazio": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "0 leituras: ",
+   "C3": "sem prompt",
+   "C6": "sem prompt",
+   "C7": "sem prompt",
+   "tipo": "sem prompt",
+   "vazio": "O que você quer pedir ao Claude Code? Descreva a tarefa e eu a reescrevo como prompt."
+  },
+  "linhas": 0,
+  "custo": 0.0807
+ },
+ "v2-14": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": null,
+   "C6": null,
+   "C7": null,
+   "tipo": null
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files | head -100 && grep -nE \\\"artifactId|<version>|java.version\\\" po | Bash {\"command\": \"cat src/main/java/com/exemplo/loja/model/Cliente.java src/main/java/com/exemp",
+   "C3": "sem prompt",
+   "C6": "sem prompt",
+   "C7": "sem prompt",
+   "tipo": "sem prompt",
+   "pergunta": "não gerou prompt (perguntou)"
+  },
+  "linhas": 0,
+  "custo": 0.1239
+ },
+ "v2-15": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"ls -la && git diff --stat HEAD && git log --oneline -3 && find . -maxdepth 3  | Read {\"file_path\": \"skillproj/README.md\"}",
+   "C3": [],
+   "C6": "24 linhas com texto, teto 45",
+   "C7": "'Revisar ou auditar'",
+   "tipo": "'Revisar ou auditar', esperado ['Revisar ou auditar']"
+  },
+  "linhas": 24,
+  "custo": 0.1556
+ }
+}

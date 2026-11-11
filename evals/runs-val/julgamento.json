@@ -1,0 +1,130 @@
+{
+ "v2-16": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Adicione um parâmetro de desconto percentual à função calcula_frete em src/fretes/frete.py, para que quem chama possa aplicar um desconto em % sobre o frete sem depender de cupom no banco."
+  },
+  "enchimento": {
+   "marca": "falha",
+   "trecho": "Chamadas que já existem precisam continuar com o mesmo resultado. | Antes de assumir algo fora desta lista, investigue no código."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Adicione um parâmetro de desconto percentual à função calcula_frete em src/fretes/frete.py"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Rejeite valores fora de 0–100 com ValueError e uma mensagem clara."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "`pytest` passa, com test_sp e os testes novos verdes."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Não adicione abstrações, opções ou configurabilidade que não foram pedidas (classe de desconto, enum, novo arquivo)"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Aplique o percentual conforme as suposições abaixo e mantenha o `round(total, 2)` no final."
+  }
+ },
+ "v2-17": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Escreva um e-mail para um cliente avisando que a entrega atrasou 3 dias."
+  },
+  "enchimento": {
+   "marca": "falha",
+   "trecho": "O cliente esperava a entrega na data combinada, e ela vai sair 3 dias depois. O risco é o e-mail parecer desculpa esfarrapada."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Suposições: o e-mail vai para um cliente externo, com tom formal e cordial"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Use marcadores entre colchetes para os dados desconhecidos (por exemplo, [nome do cliente], [motivo do atraso], [nova data], [ação corretiva])"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "Assunto e corpo do e-mail, prontos para colar, com até 180 palavras e sem meta-comentário."
+  }
+ },
+ "v2-18": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Calcule, para cada hora, o percentual de requisições em logs/app.log que passam de 1 segundo, para eu ver em que horários a latência piora."
+  },
+  "enchimento": {
+   "marca": "falha",
+   "trecho": "Projeto Python `fretes` 0.3.0 (requires-python >=3.12, pyproject.toml). | Antes de assumir algo fora desta lista, investigue no arquivo."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Arquivos a ler: logs/app.log"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Suposições: \"passa de 1 segundo\" significa dur_ms > 1000 (estritamente maior)"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "2. Tabela: data | hora | total | > 1 s | %."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Faça os cálculos com código executado (Python da stdlib ou awk), não de cabeça"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "4. Limitações dos dados (até 3), incluindo as linhas descartadas."
+  }
+ },
+ "v2-19": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Explique o que é o problema N+1 no JPA/Hibernate usando as entidades e o código do meu projeto"
+  },
+  "enchimento": {
+   "marca": "falha",
+   "trecho": "Fora do escopo: corrigir ou refatorar o projeto, porque o objetivo é aprender. | - Não altere arquivos do projeto, porque o pedido é só de explicação."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Já usei JPA, mas nunca entendi direito o N+1."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Use `Pedido`, `ItemPedido` e `Cliente` como exemplo."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "4. Armadilhas comuns (3–5), incluindo `LazyInitializationException` com `open-in-view=false`."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "4. Armadilhas comuns (3–5)"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Não altere arquivos do projeto, porque o pedido é só de explicação."
+  }
+ }
+}

@@ -1,0 +1,4 @@
+16	python	bota um parametro de desconto percentual no calcula_frete sem quebrar os testes
+17	vazio	faz um email pro cliente explicando q a entrega atrasou 3 dias, sem parecer desculpa esfarrapada
+18	python	quantos % das requisicoes do app.log passam de 1 segundo? quero por hora
+19	spring	explica o que é N+1 no JPA usando meu projeto, nunca entendi direito

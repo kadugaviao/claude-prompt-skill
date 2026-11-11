@@ -1,0 +1,15 @@
+01	spring	cria endpoint pra listar pedidos por cliente com paginacao
+02	skillproj	ta, me da o prompt pra arrumar esses problemas
+03	spring	ta dando LazyInitializationException qdo chamo /pedidos/{id}, arruma ai
+04	skillproj	porque ele da problema com o ponytail?
+05	python	faz um prompt pra analisar se há erros no projeto de forma profunda ou se posso deixar assim
+06	spring	URGENTE revisa a seguranca do AuthController, so os bugs graves, pensa passo a passo
+07	skillproj	me diz um nome bom pro projeto no github e qual licença usar
+08	spring	me explica @Transactional propagation q nao entendo nada
+09	vazio	escreve msg pro time no slack avisando q o deploy de sexta foi adiado
+10	python	analisa o logs/app.log e ve pq ta lento de tarde
+11	spring	quero migrar pro spring boot 4, como faço sem quebrar tudo
+12	spring	migra todos os testes de junit4 pra junit5 no projeto inteiro
+13	vazio	
+14	spring	apaga os clientes duplicados do banco
+15	skillproj	tem mais algo a resolver ou posso instalar

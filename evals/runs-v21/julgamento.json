@@ -1,0 +1,160 @@
+{
+ "v21-12": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "**Tipo:** Agêntica longa · **Modo:** plan mode · **Esforço:** alto. Para executar aqui, rode `/effort xhigh` antes de responder sim."
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Migre todos os testes do projeto `loja` de JUnit 4 para JUnit 5 (Jupiter) e deixe o build sem dependência de JUnit 4"
+  },
+  "enchimento": {
+   "marca": "falha",
+   "trecho": "Remover `junit:junit` e `junit-vintage-engine` faz parte da migração. (repete o item 4 de Tarefa: \"Remova do `pom.xml` as dependências `junit:junit` e `junit-vintage-engine`.\")"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "`./mvnw test` termina com BUILD SUCCESS, com o mesmo número de testes executados do baseline"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Pergunte antes de: adicionar qualquer dependência, alterar arquivos em `src/main`, fazer commit ou push, apagar arquivos de teste."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "a cada etapa concluída, atualize `progress.md` (o que foi feito, o próximo passo e as pendências)"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "4. Pendências e decisões que precisam do usuário."
+  }
+ },
+ "v21-16": {
+  "C4": {
+   "marca": "falha",
+   "trecho": "ausente: Antes de escrever o prompt, preciso de duas definições de negócio."
+  },
+  "C5": {
+   "marca": "falha",
+   "trecho": "ausente: nenhum prompt gerado. Mais próximo: Antes de escrever o prompt, preciso de duas definições de negócio."
+  },
+  "enchimento": {
+   "marca": "n/a",
+   "trecho": "ausente: nenhum prompt gerado. Mais próximo: Antes de escrever o prompt, preciso de duas definições de negócio."
+  },
+  "b": {
+   "marca": "falha",
+   "trecho": "ausente: nenhum prompt gerado. Mais próximo: Hoje `calcula_frete(uf, peso_kg, cupom=None)` em `src/fretes/frete.py` já subtrai um desconto fixo vindo do cupom"
+  },
+  "c": {
+   "marca": "falha",
+   "trecho": "ausente: nenhum prompt gerado. Mais próximo: Em que formato o percentual chega, e o que fazer com valores fora da faixa?"
+  },
+  "d": {
+   "marca": "falha",
+   "trecho": "ausente: nenhum prompt gerado. Mais próximo: Antes de escrever o prompt, preciso de duas definições de negócio."
+  },
+  "e": {
+   "marca": "falha",
+   "trecho": "ausente: nenhum prompt gerado. Mais próximo: Antes de escrever o prompt, preciso de duas definições de negócio."
+  },
+  "f": {
+   "marca": "falha",
+   "trecho": "ausente: nenhum prompt gerado. Mais próximo: Antes de escrever o prompt, preciso de duas definições de negócio."
+  }
+ },
+ "v21-17": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "**Tipo:** Escrever texto · **Modo:** normal · **Esforço:** padrão"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Escreva um e-mail para um cliente comunicando que a entrega atrasou 3 dias"
+  },
+  "enchimento": {
+   "marca": "falha",
+   "trecho": "O cliente esperava a entrega na data combinada e vai receber 3 dias depois."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Tom profissional e direto, cordial sem ser servil, porque o canal é e-mail para cliente."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "ficam como [motivo], [nova data], [nome do cliente] e [entrega]"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "Assunto e corpo do e-mail, prontos para colar, com até 180 palavras, sem meta-comentário. Variantes só se pedidas."
+  }
+ },
+ "v21-18": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "**Tipo:** Analisar dados · **Modo:** normal · **Esforço:** padrão"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Calcule, para cada hora, a porcentagem das requisições em `logs/app.log` que passam de 1 segundo."
+  },
+  "enchimento": {
+   "marca": "falha",
+   "trecho": "O objetivo é ver em quais horários a latência piora."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Arquivo a ler: `logs/app.log`"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "\"Passar de 1 segundo\" significa `dur_ms > 1000`, com limite estrito."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "Tabela por hora: hora | total | > 1 s | % > 1 s."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Faça os cálculos com código executado (Python da stdlib ou awk), não de cabeça"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Limitações dos dados (até 3), incluindo as linhas excluídas e o motivo."
+  }
+ },
+ "v21-19": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "**Tipo:** Explicar ou ensinar · **Modo:** normal · **Esforço:** padrão"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Explique o que é o problema N+1 no JPA/Hibernate usando as entidades do meu projeto `loja`"
+  },
+  "enchimento": {
+   "marca": "falha",
+   "trecho": "Uso JPA no dia a dia, mas nunca entendi direito o N+1."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "o nível é de quem já escreve entidades e repositórios JPA, mas não domina lazy/eager loading"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Exemplo mínimo executável com as entidades do projeto: o método no repository/service que causa o N+1"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "Armadilhas comuns (3–5)."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "então não há exercício"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Mostre o código na resposta, sem alterar arquivos."
+  }
+ }
+}
