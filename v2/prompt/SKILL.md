@@ -28,9 +28,9 @@ Dentro de um projeto, leia: a estrutura de pastas; o arquivo de build (`pom.xml`
 
 ## 3. Pergunte ou assuma
 
-Pergunte só se a resposta mudar materialmente o resultado **e** as leituras não resolverem. Exemplos: dois comportamentos de negócio plausíveis, uma ação destrutiva sem autorização clara, um alvo ou sintoma desconhecido. Versão, estrutura, comandos e preferências com default razoável viram suposição.
+Se existe um padrão razoável, inclusive em regra de negócio, assuma-o, gere o prompt e destaque a dúvida em Suposições começando com "confirme:". O usuário revisa o prompt antes de executar, então uma suposição errada custa só uma edição. Pare para perguntar só quando não há padrão razoável e as leituras não resolvem, por exemplo: um alvo ou sintoma desconhecido, ou uma ação destrutiva sem autorização clara.
 
-Para perguntar: de 1 a 3 perguntas, de uma vez, cada uma com 2 a 4 opções. Use AskUserQuestion se existir; senão, escreva as perguntas e pare. Se não perguntar, assuma o default mais provável e registre-o em Autonomia.
+Para perguntar: de 1 a 3 perguntas, de uma vez, cada uma com 2 a 4 opções. Use AskUserQuestion se existir; senão, escreva as perguntas e pare.
 
 ## 4. Escreva o prompt
 
@@ -40,7 +40,7 @@ Use as seções nesta ordem e omita as vazias (nunca escreva "N/A"):
 <Objetivo no imperativo, 1–2 frases, com o "para quê">
 
 ## Contexto
-Por que importa, onde se encaixa, stack e versões reais.
+Só fatos que o pedido não diz (projeto, versões, o que existe hoje). Não repita o pedido nem invente objetivo.
 
 ## Insumos
 Arquivos a ler: caminhos (sem colar o conteúdo).
@@ -57,7 +57,8 @@ O que fazer (passos numerados só se a ordem importar). Fora do escopo: X, porqu
 
 ## Autonomia
 Pode fazer sem perguntar: … · Pergunte antes de: <ações nomeadas>.
-Suposições: … (diga se alguma estiver errada). Antes de assumir algo fora desta lista, investigue no código.
+Suposições: … (diga se alguma estiver errada).
+[Só em Implementar, Corrigir bug, Revisar, Agêntica longa e Analisar dados com arquivos:] Antes de assumir algo fora desta lista, investigue no código.
 
 ## Formato da resposta
 <template do tipo, em "Tipos de tarefa">
@@ -189,9 +190,9 @@ Deve conter: objetivo, horizonte e prazo; restrições e recursos; alternativas 
 ```
 
 ### 9. Agêntica longa (30–80 linhas)
-Deve conter: o objetivo e um critério de pronto verificável de ponta a ponta; o estado do trabalho (git, `progress.md` ou lista de testes); permissões (o que pode fazer sem perguntar e o que exige confirmação: push, migração, deleção, nova dependência); atualizações curtas de progresso.
+Deve conter: o objetivo e um critério de pronto verificável de ponta a ponta; o registro de progresso em `progress.md`, atualizado a cada etapa concluída para a tarefa poder ser retomada se for interrompida (criar e atualizar esse arquivo fica em "Pode fazer sem perguntar"); permissões (o que pode fazer sem perguntar e o que exige confirmação: push, migração, deleção, nova dependência).
 ```
-Durante o trabalho: 1–2 linhas a cada etapa concluída.
+Durante o trabalho: a cada etapa concluída, atualize `progress.md` (feito, próximo passo, pendências) e escreva 1–2 linhas no chat.
 No final (autocontido, para quem não acompanhou):
 1. Resultado em 1 frase.
 2. O que foi feito, por etapa.
