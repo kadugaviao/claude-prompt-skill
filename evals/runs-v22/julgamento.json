@@ -1,0 +1,536 @@
+{
+ "12-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "**Tipo:** Implementar código · **Modo:** normal · **Esforço:** padrão ... Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Migre os testes de JUnit 4 para JUnit 5 (Jupiter) no projeto inteiro e remova a dependência do JUnit 4"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Nenhuma seção protocolar; no máximo uma frase removível: \"Antes de assumir algo fora desta lista, investigue no código.\""
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Tudo vem do pedido ou do pom.xml/teste lidos (junit:junit 4.13.2, vintage-engine, PedidoServiceTest.java); remoção do JUnit 4 está em Suposições com \"confirme:\""
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "`./mvnw test` passa e executa o mesmo número de testes da referência ... `grep -rnE \"import (static )?org\\.junit\\.[A-Z]|org\\.junit\\.(runner|rules|Assert)\" src/test` não retorna nada."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Pergunte antes de: adicionar qualquer dependência, alterar código em `src/main` ou mudar a versão do Spring Boot."
+  },
+  "d": {
+   "marca": "falha",
+   "trecho": "Não há progress.md, git nem lista de testes; só \"anote quantos testes rodam e quantos passam\" (baseline). O \"O que mudou\" diz: \"Por isso não incluí o `progress.md`.\""
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Formato: \"Resumo em até 3 frases. ... Verificação ... Riscos e pendências (até 5; omita se não houver).\""
+  }
+ },
+ "12-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "**Tipo:** Agêntica longa · **Modo:** plan mode · **Esforço:** alto ... Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "ultrathink / Migre todos os testes do projeto `loja` de JUnit 4 para JUnit 5 (Jupiter) e remova o JUnit 4 do build."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem seção protocolar; só \"Antes de assumir algo fora desta lista, investigue no código.\" é removível"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Conteúdo vem do pedido e do projeto lido (pom.xml, PedidoServiceTest com `@Test(expected = java.util.NoSuchElementException.class)`, mocks Mockito); suposições estão em Suposições"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "`./mvnw test` passa e roda o mesmo número de testes do baseline. / `grep -rnE \"import (static )?org\\.junit\\.[^j]|junit\\.framework\" src/test` não retorna nada."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Pergunte antes de: adicionar dependência ou plugin, alterar algo em `src/main`, fazer commit ou push."
+  },
+  "d": {
+   "marca": "falha",
+   "trecho": "Só pede \"Durante o trabalho: 1–2 linhas a cada etapa concluída\" e baseline de testes; não registra estado em git, progress.md nem lista de testes."
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "No final: \"Resultado em 1 frase. ... Verificação ... Pendências e decisões que precisam do usuário.\""
+  }
+ },
+ "12-C": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "**Tipo:** Agêntica longa · **Modo:** plan mode · **Esforço:** alto ... Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "ultrathink / Migre todos os testes do projeto `loja` de JUnit 4 para JUnit 5 (Jupiter) e deixe o build sem dependência de JUnit 4"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem seção protocolar; no máximo \"Antes de assumir algo fora desta lista, investigue no código.\" removível"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Tudo rastreável ao pedido/projeto (pom.xml, PedidoServiceTest, PedidoService.java); \"Nenhum outro módulo ou repositório depende de JUnit 4\" está em Suposições"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "`./mvnw test` termina com BUILD SUCCESS, com o mesmo número de testes ... `grep -rnE \"import (static )?org\\.junit\\.(Test|Before|...)\" src/test` não retorna nada."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Pergunte antes de: adicionar qualquer dependência, alterar arquivos em `src/main`, fazer commit ou push, apagar arquivos de teste."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "criar e atualizar `progress.md` ... \"a cada etapa concluída, atualize `progress.md` (o que foi feito, o próximo passo e as pendências)\""
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "No final, um resumo autocontido ... \"Resultado em 1 frase. ... Pendências e decisões que precisam do usuário.\""
+  }
+ },
+ "16-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "**Tipo:** Implementar código ... bloco text ... Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Adicione um parâmetro de desconto percentual à função `calcula_frete`, para que quem chama possa aplicar um desconto em %"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "No máximo uma removível: \"Siga o estilo atual do arquivo (funções simples, sem dependência nova), para a mudança ser fácil de revisar.\""
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Assinatura, TABELA, cupom/SQLite e test_sp vêm de frete.py/test_frete.py lidos; nome, faixa 0-100 e ordem estão em Suposições (\"diga se alguma estiver errada\")"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Arquivos a ler: `src/fretes/frete.py`, `tests/test_frete.py` ... função `calcula_frete`"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Lance `ValueError` se `desconto_pct` for menor que 0 ou maior que 100."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "`pytest` passa, com `test_sp` e os testes novos. / Não altere nem remova `test_sp`"
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Não adicione abstrações, opções ou configurabilidade não pedidas (por exemplo, classe de desconto ou desconto por UF)"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Sem código da solução; só diz \"Aplique o percentual sobre o total já calculado (depois do cupom) e arredonde no `round(total, 2)` que já existe.\" (descrição, não fórmula/código imposto como resposta)"
+  }
+ },
+ "16-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "**Tipo:** Implementar código ... bloco text ... Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Adicione um parâmetro de desconto percentual à função calcula_frete em src/fretes/frete.py"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Nenhuma seção protocolar; no máximo uma frase removível"
+  },
+  "inventado": {
+   "marca": "falha",
+   "trecho": "\"Use type hints só na assinatura que você tocar, sem reescrever o resto do módulo.\" -- exigência de type hints que não está no pedido e o frete.py lido não usa type hints. (Caso duvidoso: o resto está em Suposições.)"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Adicione um parâmetro de desconto percentual à função calcula_frete em src/fretes/frete.py"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Rejeite valores fora de 0–100 com ValueError e uma mensagem clara."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "`pytest` passa, com test_sp e os testes novos verdes. / Não altere test_sp"
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Não adicione abstrações, opções ou configurabilidade que não foram pedidas (classe de desconto, enum, novo arquivo)"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Sem código; \"Aplique o percentual conforme as suposições abaixo e mantenha o `round(total, 2)` no final.\""
+  }
+ },
+ "16-C": {
+  "C4": {
+   "marca": "falha",
+   "trecho": "Resposta é só uma pergunta: \"Antes de escrever o prompt, preciso de duas definições de negócio.\" -- sem Tipo, sem bloco de prompt, sem oferta de executar; o caso não era de perguntar."
+  },
+  "C5": {
+   "marca": "falha",
+   "trecho": "Nenhum prompt gerado, então não há 1ª linha com objetivo (caso não é de perguntar)."
+  },
+  "enchimento": {
+   "marca": "n/a",
+   "trecho": "Não há prompt."
+  },
+  "inventado": {
+   "marca": "n/a",
+   "trecho": "Não há prompt; só opções de pergunta."
+  },
+  "b": {
+   "marca": "falha",
+   "trecho": "Nenhum prompt; `calcula_frete` aparece só na pergunta, e `src/fretes/frete.py` aparece só como contexto da pergunta, não num prompt."
+  },
+  "c": {
+   "marca": "falha",
+   "trecho": "Só oferece opções: \"(a) `desconto_pct=10` para 10%, com `ValueError` fora de 0–100\"; nada definido num prompt."
+  },
+  "d": {
+   "marca": "falha",
+   "trecho": "Sem prompt, sem \"Pronto quando\" com pytest."
+  },
+  "e": {
+   "marca": "falha",
+   "trecho": "Sem prompt, sem linha contra overengineering."
+  },
+  "f": {
+   "marca": "n/a",
+   "trecho": "Não há prompt; as fórmulas aparecem apenas como opções de pergunta."
+  }
+ },
+ "17-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "**Tipo:** Escrever texto ... bloco text ... Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Escreva um e-mail para um cliente avisando que a entrega atrasou 3 dias."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem seção protocolar; frases removíveis no máximo 1"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Dados faltantes viram colchetes; \"não há compensação a oferecer\" e \"cliente externo\" estão em Suposições. \"nada disso foi combinado\" é leve, mas não cria requisito."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "\"tom profissional e cordial\" ... \"o texto precisa assumir a responsabilidade e se apoiar em fatos concretos\" ... Suposições: \"o e-mail vai para um cliente externo\""
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Comunique o atraso de 3 dias logo no primeiro parágrafo ... [nome do cliente], [motivo do atraso], [nova data], [ação corretiva]"
+  },
+  "d": {
+   "marca": "falha",
+   "trecho": "\"prontos para colar, com até 180 palavras e sem meta-comentário. Depois, uma lista curta dos marcadores [entre colchetes] que faltam preencher.\" -- não diz uma versão só e acrescenta lista extra fora do e-mail (caso duvidoso)."
+  }
+ },
+ "17-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "**Tipo:** Escrever texto ... bloco text ... Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Escreva um e-mail para um cliente comunicando que a entrega atrasou 3 dias"
+  },
+  "enchimento": {
+   "marca": "falha",
+   "trecho": "\"Os 5 pontos obrigatórios aparecem no texto.\" e \"O motivo e a nova data aparecem como placeholders entre colchetes, prontos para preencher.\" -- ambas repetem Tarefa e Suposições (caso duvidoso)."
+  },
+  "inventado": {
+   "marca": "falha",
+   "trecho": "\"A relação continua, então o e-mail precisa manter a credibilidade de quem envia.\" -- a continuidade da relação não está no pedido nem no projeto (vazio) e não vem como suposição."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "\"Tom profissional e direto, cordial sem ser servil, porque o canal é e-mail para cliente.\""
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "o atraso de 3 dias, dito logo no início ... ficam como [motivo], [nova data], [nome do cliente] e [entrega]"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "\"Assunto e corpo do e-mail, prontos para colar, com até 180 palavras, sem meta-comentário. Variantes só se pedidas.\""
+  }
+ },
+ "17-C": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "**Tipo:** Escrever texto ... bloco text ... Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Escreva um email para um cliente avisando que a entrega atrasou 3 dias."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem seção protocolar; no máximo uma frase removível"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Placeholders para dados faltantes; \"o cliente é uma empresa\" e tom formal estão em Suposições com \"confirme:\""
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "\"Tom profissional e direto, em português do Brasil, porque é um email para um cliente.\" + \"desculpa genérica soa como pretexto\""
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "O atraso de 3 dias e a nova data ... Use colchetes onde faltar dado: [nome do cliente], [projeto/entrega], [data original], [nova data], [motivo]"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "\"o email final, pronto para colar ... e sem comentário seu. Variantes só se eu pedir.\""
+  }
+ },
+ "18-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "**Tipo:** Analisar dados ... bloco text ... Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Calcule, para cada hora, a porcentagem das requisições em `logs/app.log` que passam de 1 segundo."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem seção protocolar; no máximo uma removível"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Contexto (480 linhas, formato da linha, fretes 0.3.0) vem das leituras; as definições estão em Suposições"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Arquivo a ler: `logs/app.log` (sem conteúdo colado além de 1 linha de exemplo do formato)"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "\"Passar de 1 segundo\" significa `dur_ms > 1000`, com limite estrito."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "Tabela por hora: hora | total | > 1 s | % > 1 s."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Faça os cálculos com código executado (Python da stdlib ou awk), não de cabeça"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Limitações dos dados (até 3), incluindo as linhas excluídas e o motivo. / Conte e reporte à parte as linhas sem `dur_ms`"
+  }
+ },
+ "18-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "**Tipo:** Analisar dados ... bloco text ... Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Calcule, para cada hora, o percentual de requisições em logs/app.log que passam de 1 segundo"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem seção protocolar; no máximo uma removível"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Contexto vem das leituras do log e pyproject; suposições declaradas"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Arquivos a ler: logs/app.log"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "\"passa de 1 segundo\" significa dur_ms > 1000 (estritamente maior)"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "Tabela: data | hora | total | > 1 s | %."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Faça os cálculos com código executado (Python da stdlib ou awk), não de cabeça"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Limitações dos dados (até 3), incluindo as linhas descartadas. / Conte-as e informe quantas são"
+  }
+ },
+ "18-C": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "**Tipo:** Analisar dados ... bloco text ... Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Calcule, para cada hora, o percentual de requisições em logs/app.log que passam de 1 segundo"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem seção protocolar; no máximo uma removível"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Contexto vem das leituras; \"com 1 casa decimal\" é formato, não objetivo/fato; suposições com \"confirme:\""
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Arquivo a ler: logs/app.log"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "confirme: \"passa de 1 segundo\" significa `dur_ms` > 1000 (estritamente maior); 1000 ms exatos não contam."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "Tabela por hora, em ordem cronológica: hora | total | > 1 s | % > 1 s."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Faça todos os cálculos com código executado (Python ou awk), não de cabeça"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Limitações dos dados (até 3), incluindo as linhas descartadas e o motivo. / linhas que fogem do formato"
+  }
+ },
+ "19-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "**Tipo:** Explicar ou ensinar ... bloco text ... Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Explique o que é o problema N+1 no JPA/Hibernate usando as entidades do meu projeto `loja`"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem seção protocolar; no máximo uma removível"
+  },
+  "inventado": {
+   "marca": "falha",
+   "trecho": "\"Uso JPA no dia a dia, mas nunca entendi direito o N+1.\" -- \"no dia a dia\" não está no pedido (só \"nunca entendi direito\") e é dado como fato, fora de Suposições (caso duvidoso)."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "\"nunca entendi direito o N+1\" + Suposições: \"o nível é de quem já escreve entidades e repositórios JPA, mas não domina lazy/eager loading\""
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Use um cenário concreto com `Pedido`, `Cliente` e `ItemPedido` ... `Pedido` com `@OneToMany(mappedBy = \"pedido\") List<ItemPedido> itens`"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "Armadilhas comuns (3–5). / as formas de evitar o problema (JOIN FETCH, @EntityGraph, batch size)"
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "\"o objetivo é aprendizado, não preparo para prova ou entrevista, então não há exercício\""
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Fora do escopo: corrigir ou refatorar o projeto ... Mostre o código na resposta, sem alterar arquivos."
+  }
+ },
+ "19-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "**Tipo:** Explicar ou ensinar ... bloco text ... Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Explique o que é o problema N+1 no JPA/Hibernate usando as entidades e o código do meu projeto"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem seção protocolar; no máximo uma removível"
+  },
+  "inventado": {
+   "marca": "falha",
+   "trecho": "\"Já usei JPA, mas nunca entendi direito o N+1. Quero entender o mecanismo, não só decorar a correção.\" -- experiência prévia e a meta \"não só decorar\" não estão no pedido e vão como fato (caso duvidoso)."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "\"nunca entendi direito o N+1\" + Suposições: \"o nível é de quem já escreve entidades e repositórios JPA, mas não conhece fetch lazy/eager a fundo\""
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Use `Pedido`, `ItemPedido` e `Cliente` como exemplo. / PedidoRepository.java, PedidoService.java"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "Armadilhas comuns (3–5), incluindo `LazyInitializationException` com `open-in-view=false`."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Nenhum exercício pedido; tarefa e formato só têm explicação, exemplo e armadilhas"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "\"Não altere arquivos do projeto, porque o pedido é só de explicação.\""
+  }
+ },
+ "19-C": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "**Tipo:** Explicar ou ensinar ... bloco text ... Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Explique o que é o problema N+1 no JPA usando as entidades e o código do meu projeto `loja`."
+  },
+  "enchimento": {
+   "marca": "falha",
+   "trecho": "Contexto traz frases sem relação com N+1: \"Não há H2 nem outro banco em memória no `pom.xml`.\" e \"Os testes usam JUnit 4 pelo `junit-vintage-engine` (...PedidoServiceTest.java).\" (caso duvidoso)"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Mapeamentos, ausência de @Query e de H2, JUnit 4 vintage: tudo existe no projeto; nível está em Suposições com \"confirme:\""
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Suposições: \"quem lê já usa entidades e repositories do Spring Data, mas não sabe como o Hibernate transforma isso em SQL (confirme: o nível está certo?)\""
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "`Pedido` tem `@ManyToOne Cliente cliente` e `@OneToMany(mappedBy = \"pedido\") List<ItemPedido> itens` ... usando `Pedido`, `ItemPedido` e `Cliente`"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "Armadilhas comuns (3–5), por exemplo: `JOIN FETCH` com paginação, `MultipleBagFetchException` e `LazyInitializationException`."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "\"não para preparar prova ou entrevista\"; nenhum exercício no prompt"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "\"Não altere nenhum arquivo, porque esta é uma tarefa de estudo.\""
+  }
+ }
+}
