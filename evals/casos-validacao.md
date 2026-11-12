@@ -51,3 +51,18 @@ São os mesmos de `casos.md`: C1–C7, com C5 e C6 na redação da rodada 3. A e
 - d. Pede armadilhas comuns, ou como detectar ou evitar o problema.
 - e. Não inclui exercício.
 - f. Não altera arquivos: a explicação é só de leitura (restrição ou fora do escopo).
+
+## Validação da v2.2 (regra definida antes de rodar)
+
+**Casos:** os 4 desta página (#16 a #19) e o #12 de `casos.md`. As saídas ficam em `runs-v22/`.
+
+**Régua:** a de `casos.md`, com os critérios **enchimento** e **inventado** da v2.2. O mesmo corretor avalia de novo, com essa régua e sem rodar nada, as saídas já salvas da v2.0 (`runs-val/` para #16–#19 e `runs-3/` para #12) e da v2.1 (`runs-v21/`). As 15 saídas são anonimizadas e embaralhadas por caso, para o corretor não saber a versão.
+
+**Um caso passa** quando nenhum critério aplicável falha. C6 em aviso (até +20%) só falha se o enchimento falhar.
+
+**A v2.2 é aprovada se, e só se:**
+1. passa em pelo menos 4 dos 5 casos;
+2. não tem nenhum caso com "inventado" em falha;
+3. não fica pior que a v2.0 em nenhum caso, ou seja, em nenhum caso a v2.0 passa e a v2.2 falha.
+
+Observação: a saída da v2.0 no #12 é da rodada 3. Ela é anterior à edição dos tetos no título dos tipos (D20); o resto do arquivo é igual.

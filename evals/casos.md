@@ -20,12 +20,16 @@ Cada caso roda numa sessão nova com `claude -p "/prompt <pedido>"`, dentro da f
 | C6 | Linhas com texto do prompt (sem cabeçalhos `#` e sem linhas em branco) até o teto da faixa do tipo. Até +20% é **aviso** e passa, salvo se o corretor apontar enchimento (critério "enchimento"); acima de +20% é falha. Tetos e regra calibrados na rodada 3 (D20) | RNF-04 |
 
 | C7 | A linha "Tipo:" usa um dos 9 nomes literais de `tipos.md` (a partir da v2; na v1 fica n/a) | RF-03 |
+| enchimento | **Régua da v2.2 em diante.** Falha com 2 ou mais frases removíveis sem perda, ou com uma seção inteira que só cumpre protocolo. Uma frase removível sozinha não reprova. Corrigido pelo corretor | RNF-04 |
+| inventado | **Régua da v2.2 em diante.** Falha sempre, em qualquer quantidade, se houver conteúdo inventado: objetivo, fato ou requisito que não está no pedido nem no projeto. Suposições declaradas como tal (em Suposições, com "confirme:" quando forem dúvida) não contam como inventado. Corrigido pelo corretor | RF-07, D19 |
 
 Nos casos em que a skill deve perguntar (#2, #4, #13, #14), C3–C7 ficam n/a se nenhum prompt foi gerado.
 
 **Mudanças de critério na rodada 3 (só estas duas):**
 - **C5:** a 1ª linha precisa dizer o objetivo; o imperativo virou preferência. Motivo: na rodada 2, "Objetivo: corrigir…" falhava só pela forma verbal, com o objetivo claro, e isso mudava várias marcas sem mudar a utilidade do prompt.
 - **#7a:** o rótulo do tipo não é avaliado. Motivo: "me diz um nome bom e qual licença usar" serve tanto para Pesquisar quanto para Planejar. O que importa é o conteúdo exigido (fontes com data, confiança, recomendação), já coberto por b–e.
+
+**Mudança da régua de enchimento (v2.2):** a régua anterior ("qualquer frase removível = falha") reprovou 8 de 8 prompts nas validações da v2.0 e da v2.1. Com um julgamento subjetivo de uma única frase decidindo a aprovação, ela não distinguia prompts bons de ruins. A nova régua tolera uma frase removível, reprova o enchimento real (2+ frases ou seção protocolar) e separa o defeito grave, o conteúdo inventado, que reprova sempre.
 
 **Divisão da correção:**
 - **Mecânicos:** C1, C2, C3, C6, C7, o critério "Tipo …" de cada caso (radical do nome; vale para v1 e v2), Esforço (#5b, #12e), Modo (#11e) e #13 (a, b, c). São corrigidos por `evals/checar.py`.

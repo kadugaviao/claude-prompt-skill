@@ -28,9 +28,9 @@ Dentro de um projeto, leia: a estrutura de pastas; o arquivo de build (`pom.xml`
 
 ## 3. Pergunte ou assuma
 
-Pergunte só se a resposta mudar materialmente o resultado **e** as leituras não resolverem. Exemplos: dois comportamentos de negócio plausíveis, uma ação destrutiva sem autorização clara, um alvo ou sintoma desconhecido. Versão, estrutura, comandos e preferências com default razoável viram suposição.
+Se existe um padrão razoável, inclusive em regra de negócio, assuma-o, gere o prompt e destaque a dúvida em Suposições começando com "confirme:". O usuário revisa o prompt antes de executar, então uma suposição errada custa só uma edição. Pare para perguntar só quando não há padrão razoável e as leituras não resolvem, por exemplo: um alvo ou sintoma desconhecido, ou uma ação destrutiva sem autorização clara.
 
-Para perguntar: de 1 a 3 perguntas, de uma vez, cada uma com 2 a 4 opções. Use AskUserQuestion se existir; senão, escreva as perguntas e pare. Se não perguntar, assuma o default mais provável e registre-o em Autonomia.
+Para perguntar: de 1 a 3 perguntas, de uma vez, cada uma com 2 a 4 opções. Use AskUserQuestion se existir; senão, escreva as perguntas e pare.
 
 ## 4. Escreva o prompt
 
@@ -40,7 +40,7 @@ Use as seções nesta ordem e omita as vazias (nunca escreva "N/A"):
 <Objetivo no imperativo, 1–2 frases, com o "para quê">
 
 ## Contexto
-Por que importa, onde se encaixa, stack e versões reais.
+Só fatos que o pedido não diz (projeto, versões, o que existe hoje). Não repita o pedido nem invente objetivo.
 
 ## Insumos
 Arquivos a ler: caminhos (sem colar o conteúdo).
