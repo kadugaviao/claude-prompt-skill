@@ -1,0 +1,86 @@
+{
+ "v22-16": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files && cat pyproject.toml requirements.txt 2>/dev/null; grep -rn \\\"c | Bash {\"command\": \"cat src/fretes/frete.py && echo ---- && cat tests/test_frete.py && echo ---- ",
+   "C3": [],
+   "C6": "25 linhas com texto, teto 45",
+   "C7": "'Implementar código'",
+   "tipo": "'Implementar código', esperado ['Implementar código']"
+  },
+  "linhas": 25,
+  "custo": 0.0659
+ },
+ "v22-17": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "0 leituras: ",
+   "C3": [],
+   "C6": "14 linhas com texto, teto 25",
+   "C7": "'Escrever texto'",
+   "tipo": "'Escrever texto', esperado ['Escrever texto']"
+  },
+  "linhas": 14,
+  "custo": 0.0321
+ },
+ "v22-18": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files | head -50 && find . -name \\\"app.log*\\\" -not -path \\\"./.git/*\\\"\" | Bash {\"command\": \"wc -l logs/app.log && head -15 logs/app.log && cat pyproject.toml\", \"descript",
+   "C3": [],
+   "C6": "20 linhas com texto, teto 35",
+   "C7": "'Analisar dados'",
+   "tipo": "'Analisar dados', esperado ['Analisar dados']"
+  },
+  "linhas": 20,
+  "custo": 0.0713
+ },
+ "v22-19": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "3 leituras: Bash {\"command\": \"find . -path ./.git -prune -o -type f -print | grep -v target/ | head -50\", \" | Read {\"file_path\": \"spring/pom.xml\"} | Read {\"file_path\": \"spring/src/main/java/com/exemplo/loja/model/Pedido.java\"}",
+   "C3": [],
+   "C6": "12 linhas com texto, teto 25",
+   "C7": "'Explicar ou ensinar'",
+   "tipo": "'Explicar ou ensinar', esperado ['Explicar ou ensinar']"
+  },
+  "linhas": 12,
+  "custo": 0.0608
+ }
+}

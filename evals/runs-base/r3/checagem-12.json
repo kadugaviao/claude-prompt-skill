@@ -1,0 +1,25 @@
+{
+ "v22-12": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": false,
+   "esforco": false
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "3 leituras: Bash {\"command\": \"git ls-files && echo ---- && cat pom.xml\", \"description\": \"List tracked files | Bash {\"command\": \"grep -rnE \\\"org\\\\.junit|@RunWith|@Rule|@Before|@After|@Test|Assert\\\\.|expecte | Read {\"file_path\": \"spring/src/test/java/com/exemplo/loja/service/PedidoServiceTest.java\"}",
+   "C3": [],
+   "C6": "22 linhas com texto, teto 80",
+   "C7": "'Implementar código'",
+   "tipo": "'Implementar código', esperado ['Agêntica longa']",
+   "esforco": "1ª linha='Migre os testes do projeto `lo', '/effort xhigh' na entrega=False"
+  },
+  "linhas": 22,
+  "custo": 0.079
+ }
+}

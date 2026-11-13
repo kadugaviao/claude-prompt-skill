@@ -1,0 +1,86 @@
+{
+ "v22-16": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files && cat pyproject.toml requirements.txt 2>/dev/null; grep -rn \\\"c | Bash {\"command\": \"cat src/fretes/frete.py tests/test_frete.py && grep -n \\\"calcula_frete\\\" src/",
+   "C3": [],
+   "C6": "21 linhas com texto, teto 45",
+   "C7": "'Implementar código'",
+   "tipo": "'Implementar código', esperado ['Implementar código']"
+  },
+  "linhas": 21,
+  "custo": 0.0635
+ },
+ "v22-17": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "0 leituras: ",
+   "C3": [],
+   "C6": "12 linhas com texto, teto 25",
+   "C7": "'Escrever texto'",
+   "tipo": "'Escrever texto', esperado ['Escrever texto']"
+  },
+  "linhas": 12,
+  "custo": 0.034
+ },
+ "v22-18": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files | head -50 && find . -name \\\"app.log*\\\" -not -path \\\"./.git/*\\\"  | Bash {\"command\": \"wc -l logs/app.log && head -15 logs/app.log && tail -5 logs/app.log\", \"descri",
+   "C3": [],
+   "C6": "23 linhas com texto, teto 35",
+   "C7": "'Analisar dados'",
+   "tipo": "'Analisar dados', esperado ['Analisar dados']"
+  },
+  "linhas": 23,
+  "custo": 0.0736
+ },
+ "v22-19": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "3 leituras: Bash {\"command\": \"find . -path ./.git -prune -o -type f -print | grep -v target | head -50\", \"d | Bash {\"command\": \"cat pom.xml\", \"description\": \"Show Maven build file\"} | Bash {\"command\": \"cd spring/src/main/java/com/exemplo/loja && cat model/Pedido.java model/ItemP",
+   "C3": [],
+   "C6": "13 linhas com texto, teto 25",
+   "C7": "'Explicar ou ensinar'",
+   "tipo": "'Explicar ou ensinar', esperado ['Explicar ou ensinar']"
+  },
+  "linhas": 13,
+  "custo": 0.0695
+ }
+}

@@ -39,6 +39,22 @@ def cegar():
     print(len(mapa), 'arquivos cegos')
 
 
+def falhas(mec, jul_caso):
+    """Critérios em falha de um caso: mecânicos (checar.py) + julgamento, na régua da v2.2."""
+    f = [k for k, val in mec['resultado'].items() if val is False]
+    aviso = 'AVISO' in str(mec['nota'].get('C6', ''))
+    for k, d in jul_caso.items():
+        if d['marca'] != 'falha':
+            continue
+        if k == 'enchimento' and not aviso:
+            f.append('enchimento')  # régua v2.2: enchimento real reprova sempre
+        elif k == 'enchimento':
+            f.append('C6+enchimento')
+        else:
+            f.append(k)
+    return f
+
+
 def consolidar():
     mapa = json.load(open(os.path.join(OUT, 'raw', 'mapa-cego.json')))
     jul = json.load(open(os.path.join(OUT, 'julgamento.json'), encoding='utf-8'))
@@ -47,18 +63,7 @@ def consolidar():
         n = letra[:2]
         arq, chave = FONTES[v][1](n)
         mec = json.load(open(os.path.join(E, arq), encoding='utf-8'))[chave]
-        falhas = [k for k, val in mec['resultado'].items() if val is False]
-        aviso = 'AVISO' in str(mec['nota'].get('C6', ''))
-        for k, d in jul[letra].items():
-            if d['marca'] != 'falha':
-                continue
-            if k == 'enchimento' and not aviso:
-                falhas.append('enchimento')  # régua v2.2: enchimento real reprova sempre
-            elif k == 'enchimento':
-                falhas.append('C6+enchimento')
-            else:
-                falhas.append(k)
-        res[(v, n)] = falhas
+        res[(v, n)] = falhas(mec, jul[letra])
     linhas = ['| Caso | v2.0 | v2.1 | v2.2 |', '|---|---|---|---|']
     for n in CASOS:
         cel = [('passa' if not res[(v, n)] else 'falha: ' + ', '.join(res[(v, n)])) for v in FONTES]
@@ -76,4 +81,5 @@ def consolidar():
     print('\n'.join(linhas))
 
 
-{'cegar': cegar, 'consolidar': consolidar}[sys.argv[1]]()
+if __name__ == '__main__':
+    {'cegar': cegar, 'consolidar': consolidar}[sys.argv[1]]()

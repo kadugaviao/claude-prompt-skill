@@ -1,0 +1,86 @@
+{
+ "v22s-16": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files | head -50 && cat pyproject.toml requirements.txt 2>/dev/null |  | Bash {\"command\": \"cat src/fretes/frete.py && grep -n \\\"calcula_frete\\\" -r src tests\"}",
+   "C3": [],
+   "C6": "27 linhas com texto, teto 45",
+   "C7": "'Implementar código'",
+   "tipo": "'Implementar código', esperado ['Implementar código']"
+  },
+  "linhas": 27,
+  "custo": 0.0287
+ },
+ "v22s-17": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "0 leituras: ",
+   "C3": [],
+   "C6": "22 linhas com texto, teto 25",
+   "C7": "'Escrever texto'",
+   "tipo": "'Escrever texto', esperado ['Escrever texto']"
+  },
+  "linhas": 22,
+  "custo": 0.0158
+ },
+ "v22s-18": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"ls -la && find . -name \\\"app.log*\\\" -not -path \\\"./.git/*\\\" | head && cat pyp | Bash {\"command\": \"cd python/logs && wc -l app.log && head -5 app.log && tail -2 app.log\"}",
+   "C3": [],
+   "C6": "21 linhas com texto, teto 35",
+   "C7": "'Analisar dados'",
+   "tipo": "'Analisar dados', esperado ['Analisar dados']"
+  },
+  "linhas": 21,
+  "custo": 0.027
+ },
+ "v22s-19": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "3 leituras: Bash {\"command\": \"find . -path ./.git -prune -o -type f -not -path './target/*' -print | head - | Bash {\"command\": \"grep -rnE \\\"@(OneToMany|ManyToOne|ManyToMany|OneToOne|EntityGraph)|FetchType\\ | Bash {\"command\": \"grep -nE \\\"<(artifactId|version)>\\\" pom.xml | head -20\"}",
+   "C3": [],
+   "C6": "16 linhas com texto, teto 25",
+   "C7": "'Explicar ou ensinar'",
+   "tipo": "'Explicar ou ensinar', esperado ['Explicar ou ensinar']"
+  },
+  "linhas": 16,
+  "custo": 0.0276
+ }
+}

@@ -1,0 +1,212 @@
+{
+ "r1-12": {
+  "blocos": {
+   "ferramentas": 14384,
+   "sistema": 2552,
+   "skill": 5009,
+   "resto_1a": 674
+  },
+  "gravacao": {
+   "ferramentas": 0,
+   "sistema": 0,
+   "skill": 2,
+   "resto": 1665
+  }
+ },
+ "r1-16": {
+  "blocos": {
+   "ferramentas": 14384,
+   "sistema": 2550,
+   "skill": 5015,
+   "resto_1a": 519
+  },
+  "gravacao": {
+   "ferramentas": 0,
+   "sistema": 0,
+   "skill": 2,
+   "resto": 841
+  }
+ },
+ "r1-17": {
+  "blocos": {
+   "ferramentas": 14384,
+   "sistema": 2773,
+   "skill": 5028,
+   "resto_1a": 521
+  },
+  "gravacao": {
+   "ferramentas": 3014,
+   "sistema": 2773,
+   "skill": 5026,
+   "resto": 521
+  }
+ },
+ "r1-18": {
+  "blocos": {
+   "ferramentas": 14384,
+   "sistema": 2550,
+   "skill": 5015,
+   "resto_1a": 519
+  },
+  "gravacao": {
+   "ferramentas": 0,
+   "sistema": 0,
+   "skill": 2,
+   "resto": 1403
+  }
+ },
+ "r1-19": {
+  "blocos": {
+   "ferramentas": 14384,
+   "sistema": 2552,
+   "skill": 5015,
+   "resto_1a": 674
+  },
+  "gravacao": {
+   "ferramentas": 0,
+   "sistema": 0,
+   "skill": 2,
+   "resto": 1893
+  }
+ },
+ "r2-12": {
+  "blocos": {
+   "ferramentas": 14384,
+   "sistema": 2552,
+   "skill": 5009,
+   "resto_1a": 674
+  },
+  "gravacao": {
+   "ferramentas": 0,
+   "sistema": 0,
+   "skill": 2,
+   "resto": 1386
+  }
+ },
+ "r2-16": {
+  "blocos": {
+   "ferramentas": 14384,
+   "sistema": 2550,
+   "skill": 5015,
+   "resto_1a": 519
+  },
+  "gravacao": {
+   "ferramentas": 0,
+   "sistema": 0,
+   "skill": 2,
+   "resto": 780
+  }
+ },
+ "r2-17": {
+  "blocos": {
+   "ferramentas": 14384,
+   "sistema": 2773,
+   "skill": 5028,
+   "resto_1a": 521
+  },
+  "gravacao": {
+   "ferramentas": 0,
+   "sistema": 0,
+   "skill": 0,
+   "resto": 0
+  }
+ },
+ "r2-18": {
+  "blocos": {
+   "ferramentas": 14384,
+   "sistema": 2550,
+   "skill": 5015,
+   "resto_1a": 519
+  },
+  "gravacao": {
+   "ferramentas": 0,
+   "sistema": 0,
+   "skill": 2,
+   "resto": 1520
+  }
+ },
+ "r2-19": {
+  "blocos": {
+   "ferramentas": 14384,
+   "sistema": 2552,
+   "skill": 5015,
+   "resto_1a": 674
+  },
+  "gravacao": {
+   "ferramentas": 0,
+   "sistema": 0,
+   "skill": 2,
+   "resto": 1571
+  }
+ },
+ "r3-12": {
+  "blocos": {
+   "ferramentas": 14384,
+   "sistema": 2552,
+   "skill": 5009,
+   "resto_1a": 674
+  },
+  "gravacao": {
+   "ferramentas": 0,
+   "sistema": 0,
+   "skill": 2,
+   "resto": 1698
+  }
+ },
+ "r3-16": {
+  "blocos": {
+   "ferramentas": 14384,
+   "sistema": 2550,
+   "skill": 5015,
+   "resto_1a": 519
+  },
+  "gravacao": {
+   "ferramentas": 0,
+   "sistema": 0,
+   "skill": 2,
+   "resto": 751
+  }
+ },
+ "r3-17": {
+  "blocos": {
+   "ferramentas": 14384,
+   "sistema": 2773,
+   "skill": 5028,
+   "resto_1a": 521
+  },
+  "gravacao": {
+   "ferramentas": 0,
+   "sistema": 0,
+   "skill": 0,
+   "resto": 0
+  }
+ },
+ "r3-18": {
+  "blocos": {
+   "ferramentas": 14384,
+   "sistema": 2550,
+   "skill": 5015,
+   "resto_1a": 519
+  },
+  "gravacao": {
+   "ferramentas": 0,
+   "sistema": 0,
+   "skill": 2,
+   "resto": 1783
+  }
+ },
+ "r3-19": {
+  "blocos": {
+   "ferramentas": 14384,
+   "sistema": 2552,
+   "skill": 5015,
+   "resto_1a": 674
+  },
+  "gravacao": {
+   "ferramentas": 0,
+   "sistema": 0,
+   "skill": 2,
+   "resto": 2146
+  }
+ }
+}

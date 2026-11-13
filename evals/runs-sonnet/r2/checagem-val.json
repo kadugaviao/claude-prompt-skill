@@ -1,0 +1,86 @@
+{
+ "v22s-16": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "3 leituras: Bash {\"command\": \"git ls-files | head -50; grep -rn \\\"calcula_frete\\\" . --include=*.py | head - | Bash {\"command\": \"cat pyproject.toml requirements.txt 2>/dev/null | head -40\", \"description\": \" | Bash {\"command\": \"cat src/fretes/frete.py; echo ----; grep -n \\\"calcula_frete\\\" -r src tests\", ",
+   "C3": [],
+   "C6": "28 linhas com texto, teto 45",
+   "C7": "'Implementar código'",
+   "tipo": "'Implementar código', esperado ['Implementar código']"
+  },
+  "linhas": 28,
+  "custo": 0.0315
+ },
+ "v22s-17": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "0 leituras: ",
+   "C3": [],
+   "C6": "20 linhas com texto, teto 25",
+   "C7": "'Escrever texto'",
+   "tipo": "'Escrever texto', esperado ['Escrever texto']"
+  },
+  "linhas": 20,
+  "custo": 0.0604
+ },
+ "v22s-18": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "1 leituras: Bash {\"command\": \"head -8 logs/app.log; wc -l logs/app.log; cat pyproject.toml; ls logs src tes",
+   "C3": [],
+   "C6": "24 linhas com texto, teto 35",
+   "C7": "'Analisar dados'",
+   "tipo": "'Analisar dados', esperado ['Analisar dados']"
+  },
+  "linhas": 24,
+  "custo": 0.0259
+ },
+ "v22s-19": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "3 leituras: Bash {\"command\": \"find . -path ./.git -prune -o -path ./target -prune -o -type f -print | head  | Bash {\"command\": \"grep -n -A3 -E \\\"<parent>|<java.version>|spring-boot-starter\\\" pom.xml | head | Bash {\"command\": \"grep -rn -E \\\"@(OneToMany|ManyToOne|OneToOne|ManyToMany|EntityGraph|Query)|Fe",
+   "C3": [],
+   "C6": "20 linhas com texto, teto 25",
+   "C7": "'Explicar ou ensinar'",
+   "tipo": "'Explicar ou ensinar', esperado ['Explicar ou ensinar']"
+  },
+  "linhas": 20,
+  "custo": 0.032
+ }
+}

@@ -1,0 +1,28 @@
+v22s-12 exit=0 $0.079
+FIM
+v22s-16 exit=1 $0.048 ESFORÇO ERRADO: ['None', 'medium'], esperado medium
+v22s-17 exit=0 $0.060
+v22s-18 exit=1 $0.049 ESFORÇO ERRADO: ['None', 'medium'], esperado medium
+v22s-19 exit=1 $0.042 ESFORÇO ERRADO: ['None', 'medium'], esperado medium
+FIM
+3 execução(ões) com esforço diferente de medium
+(r1 16,18,19: limite de uso; refeitos)
+v22s-16 exit=0 $0.074
+FIM
+v22s-18 exit=0 $0.064
+v22s-19 exit=0 $0.085
+FIM
+v22s-12 exit=0 $0.074
+FIM
+v22s-16 exit=0 $0.032
+v22s-17 exit=0 $0.060
+v22s-18 exit=0 $0.026
+v22s-19 exit=0 $0.032
+FIM
+v22s-12 exit=0 $0.034
+FIM
+v22s-16 exit=0 $0.029
+v22s-17 exit=0 $0.016
+v22s-18 exit=0 $0.027
+v22s-19 exit=0 $0.028
+FIM

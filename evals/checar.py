@@ -133,7 +133,7 @@ def main():
     casos = [l.split('\t')[0] for l in open(os.path.join(E, tsv), encoding='utf-8')]
     out, total = {}, 0.0
     for f in sorted(os.listdir(pasta)):
-        m = re.match(r'(v\d+)-(\d\d)\.md$', f)
+        m = re.match(r'(v\d+[a-z]*)-(\d\d)\.md$', f)  # sufixo = variante (ex.: v22s, Sonnet)
         if not m or m.group(2) not in casos:
             continue
         ped, ferr, res, prompt, custo = ler(os.path.join(pasta, f))
