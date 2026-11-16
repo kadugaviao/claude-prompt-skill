@@ -75,9 +75,16 @@ São os mesmos de `casos.md`: C1–C7, com C5 e C6 na redação da rodada 3. A e
 ### #23 · Agêntica longa · python (escrito em 16/11/2026, substitui o #21 na validação da v2.4; D24)
 `renomeia a função calcula_frete pra calcular_frete no projeto todo`
 - a. Gera o prompt sem perguntar: renomear código versionado no git, sem efeito em dados, não é ação destrutiva (mecânico).
-- b. Tipo Agêntica longa (mecânico).
+- b. Tipo Agêntica longa (mecânico; régua da v2.4). **A partir da v2.5:** Tipo Implementar código, Modo normal e sem `ultrathink`, porque é uma troca mecânica (mecânico).
 - c. `calcula_frete`, `calcular_frete` e `src/fretes/frete.py` aparecem literalmente, e o prompt cobre os usos fora da definição (o teste em `tests/test_frete.py`).
 - d. "Pronto quando" usa `pytest`.
+
+### #24 · Implementar código · spring (escrito em 16/11/2026, antes da v2.5 rodar)
+`renomeia a classe PedidoService pra ServicoDePedido no projeto todo`
+- a. Gera o prompt sem perguntar (mecânico).
+- b. Tipo Implementar código, Modo normal e sem `ultrathink`: é uma troca mecânica, mesmo no projeto todo (mecânico).
+- c. `PedidoService` e `ServicoDePedido` aparecem literalmente, e o prompt cobre os usos fora da classe (`PedidoController` e `PedidoServiceTest`).
+- d. "Pronto quando" usa `./mvnw test` ou o build do projeto.
 
 ## Validação da v2.2 (regra definida antes de rodar)
 
@@ -139,3 +146,20 @@ Se não for aceita, a M1b é desfeita e a rodada B parte da versão da rodada A.
 2. Os 15 casos de `casos.md` (1 execução cada), com as saídas salvas da v2.0 (`runs-3/`) na mesma correção cega dupla: o placar da v2.4 é maior ou igual ao da v2.0, sem regressão no #14 nem em critério mecânico (caso em que a v2.0 passa e a v2.4 falha). Motivo da troca do mínimo absoluto (13/15) pela comparação: na última correção, a própria v2.0, que é a versão aprovada, fez 12/15.
 
 **Troca do #21 pelo #23 (16/11/2026, depois de rodar a validação; D24 no SPEC.md).** O #21 era ambíguo: na fixture `spring`, `ddl-auto=update` e `Cliente.email` sem `@Column` fazem a renomeação criar uma coluna vazia e quebrar o login, então perguntar também é uma resposta defensável (`runs-v24/decisao.md`). O #23 testa o mesmo comportamento (não perguntar ao renomear código no git) sem efeito em dados. A skill não muda, então os outros 7 casos continuam valendo; só o #23 roda, 3 repetições, com correção dupla. Regra do #23: igual à do #21 (gera o prompt sem perguntar em pelo menos 2 de 3 e passa nos demais critérios em pelo menos 2 de 3).
+
+
+## Validação da v2.5 (regras definidas antes de rodar, em 16/11/2026)
+
+**Motivo:** na medição de uso real (`runs-sessao/resumo.md`), o renome de uma função (8 linhas em 2 arquivos) saiu como Agêntica longa, com plan mode, esforço alto, `ultrathink` e `progress.md`, e o `progress.md` ficou no projeto. A v2.5 (`v2/prompt/`) separa troca mecânica (Implementar código, modo normal) de tarefa agêntica (várias etapas com decisões) e manda apagar o `progress.md` no fim.
+
+**Mudança de régua (decisão do usuário, antes de rodar):** o #23 passa a esperar Implementar código, Modo normal e sem `ultrathink`. O #24 é novo, com a mesma expectativa, em Java. O #12 (migrar testes) continua Agêntica longa.
+
+**Correção dupla**, como na v2.4. **A v2.5 é aprovada se, e só se:**
+1. Validação, 9 casos (#12, #16–#20, #22–#24) × 3 repetições:
+   - #12, #16–#19: passa em pelo menos 4 de 5 em pelo menos 2 das 3 repetições; o #12 continua Agêntica longa nas 3 e pede para apagar o `progress.md` no fim em pelo menos 2 de 3 (conferido por busca no prompt);
+   - #20: pergunta nas 3 repetições;
+   - #22: plan mode e demais critérios em pelo menos 2 de 3;
+   - #23 e #24: Implementar código, Modo normal, sem `ultrathink` e gera o prompt em pelo menos 2 de 3, e passam nos demais critérios em pelo menos 2 de 3;
+   - nenhum caso com "inventado" em 2 ou mais repetições.
+2. Os 15 casos de `casos.md` (1 execução cada), com a v2.0 (`runs-3/`) na mesma correção dupla: placar maior ou igual ao da v2.0, sem regressão no #14 nem em critério mecânico.
+3. Sessão longa (`sessao.py`, 1 sessão): as duas tarefas feitas, `pytest` verde, o `/prompt` do renome sem Agêntica longa, plan mode nem `ultrathink`, e nenhum `progress.md` no fim.

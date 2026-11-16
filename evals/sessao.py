@@ -84,11 +84,13 @@ for i, msg in enumerate(TURNOS, 1):
                    'versao': sorted({str(x.get('version')) for x in novos}),
                    'ferramentas': len(ferr), 'negadas': negadas,
                    'edicoes': sum(1 for n in ferr if n in ('Edit', 'Write', 'MultiEdit')),
-                   'erro': res.get('is_error', True), 'resposta': (res.get('result') or '')[:300]})
+                   'erro': res.get('is_error', True), 'resposta': (res.get('result') or '')[:300],
+                   'cabecalho': (res.get('result') or '').split('\n')[0][:160],
+                   'ultrathink': 'ultrathink' in (res.get('result') or '')})
     print(json.dumps({k: v for k, v in turnos[-1].items() if k != 'resposta'}, ensure_ascii=False), flush=True)
 
 teste = subprocess.run([os.path.join(venv, 'pytest'), '-q', '-p', 'no:cacheprovider'], cwd=trab, capture_output=True, text=True, env=env)
-fim = {'pytest_rc': teste.returncode, 'pytest': teste.stdout.strip().splitlines()[-1:] or [teste.stderr[-200:]],
+fim = {'progress_md': os.path.exists(os.path.join(trab, 'progress.md')), 'pytest_rc': teste.returncode, 'pytest': teste.stdout.strip().splitlines()[-1:] or [teste.stderr[-200:]],
        'diff': subprocess.run(['git', 'diff', '--stat'], cwd=trab, capture_output=True, text=True).stdout.strip(),
        'restos_calcula_frete': subprocess.run(['git', 'grep', '-n', r'calcula_frete\b'], cwd=trab,
                                               capture_output=True, text=True).stdout.strip(),

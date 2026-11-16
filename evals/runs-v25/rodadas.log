@@ -1,0 +1,13 @@
+v25-24 exit=0 $0.157
+FIM
+v25-12 exit=0 $0.150
+FIM
+v25-16 exit=1 $0.098 ERRO: esforço ['None', 'medium'] (esperado medium), versão ['2.1.323'] (esperada 2.1.323)
+v25-17 exit=0 $0.121
+v25-18 exit=1 $0.098 ERRO: esforço ['None', 'medium'] (esperado medium), versão ['2.1.323'] (esperada 2.1.323)
+v25-19 exit=1 $0.086 ERRO: esforço ['None', 'medium'] (esperado medium), versão ['2.1.323'] (esperada 2.1.323)
+v25-20 exit=1 $0.086 ERRO: esforço ['None', 'medium'] (esperado medium), versão ['2.1.323'] (esperada 2.1.323)
+v25-22 exit=1 $0.000 ERRO: esforço ['None'] (esperado medium), versão ['2.1.323'] (esperada 2.1.323)
+v25-23 exit=1 $0.000 ERRO: esforço ['None'] (esperado medium), versão ['2.1.323'] (esperada 2.1.323)
+FIM
+6 execução(ões) com esforço diferente de medium ou versão diferente de 2.1.323

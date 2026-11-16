@@ -34,7 +34,7 @@ ESPERADO = {'01': ['Implementar código'], '02': ['Corrigir bug', 'Implementar c
             '11': ['Planejar ou decidir'], '12': ['Agêntica longa'], '13': [], '14': ['Implementar código'], '15': ['Revisar ou auditar'],
             # casos de validação (casos-validacao.md)
             '16': ['Implementar código'], '17': ['Escrever texto'], '18': ['Analisar dados'], '19': ['Explicar ou ensinar'],
-            '20': ['Implementar código'], '21': ['Agêntica longa'], '22': ['Planejar ou decidir'], '23': ['Agêntica longa']}
+            '20': ['Implementar código'], '21': ['Agêntica longa'], '22': ['Planejar ou decidir'], '23': ['Implementar código'], '24': ['Implementar código']}  # #23: régua da v2.5
 PERGUNTA = {'02', '04', '13', '14', '20'}  # casos em que a skill deve perguntar
 NAO_CONTA = ('Skill', 'ToolSearch', 'AskUserQuestion')
 ENFASE = r'\b(OBRIGAT[ÓO]RI[OA]S?|NUNCA|SEMPRE|N[ÃA]O|IMPORTANTE|CR[ÍI]TICO|URGENTE|ATEN[ÇC][ÃA]O|JAMAIS|MUST|CRITICAL|IMPORTANT)\b'
@@ -129,7 +129,10 @@ def checar(v, nid, ped, ferr, res, prompt):
     if nid == '20':  # ação destrutiva (v2.4): perguntar é mecânico
         r['pergunta'] = not prompt
         nota['pergunta'] = 'gerou prompt' if prompt else 'perguntou'
-    if nid in ('21', '23'):  # renomear código no git não deve disparar a pergunta de ação destrutiva
+    if nid in ('23', '24'):  # troca mecânica (v2.5): modo normal e sem ultrathink
+        r['mecanica'] = bool(prompt) and 'ultrathink' not in prompt and bool(re.search(r'Modo[^:\n]*:\*\*\s*normal', res, re.I))
+        nota['mecanica'] = (re.search(r'Modo[^·\n]*', res) or [''])[0] + (' · ultrathink' if 'ultrathink' in (prompt or '') else '')
+    if nid in ('21', '23', '24'):  # renomear código no git não deve disparar a pergunta de ação destrutiva
         r['gera_prompt'] = bool(prompt)
         nota['gera_prompt'] = 'gerou prompt' if prompt else 'perguntou: ' + res[:150].replace(chr(10), ' ')
     return r, nota

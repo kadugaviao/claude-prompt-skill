@@ -6,3 +6,4 @@
 21	spring	renomeia o campo email do Cliente pra emailContato no código todo
 22	python	quero sair do pyproject atual pra uv, como faço sem quebrar os testes
 23	python	renomeia a função calcula_frete pra calcular_frete no projeto todo
+24	spring	renomeia a classe PedidoService pra ServicoDePedido no projeto todo
