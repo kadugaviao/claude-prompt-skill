@@ -11,7 +11,8 @@ Critérios (ver casos.md):
   C7  linha "Tipo:" com um dos 9 nomes literais (só v2 em diante; v1 = n/a)
   tipo  o tipo informado corresponde ao esperado (por radical; vale para todas as versões)
   esforco  (#5, #12) 1ª linha `ultrathink` e `/effort xhigh` na entrega
-  plan  (#11) Modo: plan mode
+  plan  (#11, #22) Modo: plan mode
+  pergunta (#20) não gera prompt; gera_prompt (#21) gera prompt
   vazio (#13) nenhuma ferramenta, nenhum prompt, uma pergunta
 """
 import json, os, re, sys
@@ -32,8 +33,9 @@ ESPERADO = {'01': ['Implementar código'], '02': ['Corrigir bug', 'Implementar c
             '07': ['Pesquisar ou comparar', 'Planejar ou decidir'], '08': ['Explicar ou ensinar'], '09': ['Escrever texto'], '10': ['Analisar dados'],
             '11': ['Planejar ou decidir'], '12': ['Agêntica longa'], '13': [], '14': ['Implementar código'], '15': ['Revisar ou auditar'],
             # casos de validação (casos-validacao.md)
-            '16': ['Implementar código'], '17': ['Escrever texto'], '18': ['Analisar dados'], '19': ['Explicar ou ensinar']}
-PERGUNTA = {'02', '04', '13', '14'}  # casos em que a skill deve perguntar
+            '16': ['Implementar código'], '17': ['Escrever texto'], '18': ['Analisar dados'], '19': ['Explicar ou ensinar'],
+            '20': ['Implementar código'], '21': ['Agêntica longa'], '22': ['Planejar ou decidir'], '23': ['Agêntica longa']}
+PERGUNTA = {'02', '04', '13', '14', '20'}  # casos em que a skill deve perguntar
 NAO_CONTA = ('Skill', 'ToolSearch', 'AskUserQuestion')
 ENFASE = r'\b(OBRIGAT[ÓO]RI[OA]S?|NUNCA|SEMPRE|N[ÃA]O|IMPORTANTE|CR[ÍI]TICO|URGENTE|ATEN[ÇC][ÃA]O|JAMAIS|MUST|CRITICAL|IMPORTANT)\b'
 ANTI = [(r'<thinking>', 'tag <thinking>'), (r'explique (o |seu )?racioc[íi]nio|mostre (o |seu )?racioc[íi]nio|raciocine', 'pede raciocínio'),
@@ -116,7 +118,7 @@ def checar(v, nid, ped, ferr, res, prompt):
     if nid in ('05', '12'):
         ok = bool(prompt) and prompt.split('\n')[0].strip().strip('`').lower() == 'ultrathink' and '/effort xhigh' in res
         r['esforco'], nota['esforco'] = ok, f"1ª linha={prompt.split(chr(10))[0][:30]!r}, '/effort xhigh' na entrega={'/effort xhigh' in res}"
-    if nid == '11':
+    if nid in ('11', '22'):
         r['plan'] = bool(re.search(r'Modo[^:\n]*:\*\*\s*plan mode', res, re.I))
         nota['plan'] = (re.search(r'Modo[^·\n]*', res) or [''])[0]
     if nid == '13':
@@ -124,6 +126,12 @@ def checar(v, nid, ped, ferr, res, prompt):
         nota['vazio'] = res[:120]
     if nid in PERGUNTA and nid != '13':
         nota['pergunta'] = 'gerou prompt' if prompt else 'não gerou prompt (perguntou)'
+    if nid == '20':  # ação destrutiva (v2.4): perguntar é mecânico
+        r['pergunta'] = not prompt
+        nota['pergunta'] = 'gerou prompt' if prompt else 'perguntou'
+    if nid in ('21', '23'):  # renomear código no git não deve disparar a pergunta de ação destrutiva
+        r['gera_prompt'] = bool(prompt)
+        nota['gera_prompt'] = 'gerou prompt' if prompt else 'perguntou: ' + res[:150].replace(chr(10), ' ')
     return r, nota
 
 

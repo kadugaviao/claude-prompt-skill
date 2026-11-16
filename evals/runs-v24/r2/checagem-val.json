@@ -1,0 +1,178 @@
+{
+ "v24-16": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files && cat pyproject.toml requirements.txt 2>/dev/null; grep -rn \\\"c | Bash {\"command\": \"cat src/fretes/frete.py; echo ----; grep -rn \\\"calcula_frete\\\" src tests\", \"d",
+   "C3": [],
+   "C6": "25 linhas com texto, teto 45",
+   "C7": "'Implementar código'",
+   "tipo": "'Implementar código', esperado ['Implementar código']"
+  },
+  "linhas": 25,
+  "custo": 0.0645
+ },
+ "v24-17": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "0 leituras: ",
+   "C3": [],
+   "C6": "16 linhas com texto, teto 25",
+   "C7": "'Escrever texto'",
+   "tipo": "'Escrever texto', esperado ['Escrever texto']"
+  },
+  "linhas": 16,
+  "custo": 0.0336
+ },
+ "v24-18": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files | head -50 && find . -name \\\"app.log*\\\" -not -path \\\"./.git/*\\\"\" | Bash {\"command\": \"wc -l logs/app.log && head -15 logs/app.log && echo ---- && tail -5 logs/app.",
+   "C3": [],
+   "C6": "23 linhas com texto, teto 35",
+   "C7": "'Analisar dados'",
+   "tipo": "'Analisar dados', esperado ['Analisar dados']"
+  },
+  "linhas": 23,
+  "custo": 0.0756
+ },
+ "v24-19": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "3 leituras: Bash {\"command\": \"git ls-files\", \"description\": \"List tracked project files\"} | Bash {\"command\": \"grep -nE \\\"<(artifactId|version|java.version)>\\\" pom.xml | head -20; echo --- | Bash {\"command\": \"cat src/main/java/com/exemplo/loja/service/PedidoService.java src/main/java/c",
+   "C3": [],
+   "C6": "11 linhas com texto, teto 25",
+   "C7": "'Explicar ou ensinar'",
+   "tipo": "'Explicar ou ensinar', esperado ['Explicar ou ensinar']"
+  },
+  "linhas": 11,
+  "custo": 0.0754
+ },
+ "v24-20": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": null,
+   "C6": null,
+   "C7": null,
+   "tipo": null,
+   "pergunta": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "1 leituras: Bash {\"command\": \"cat src/main/java/com/exemplo/loja/model/Pedido.java src/main/java/com/exempl",
+   "C3": "sem prompt",
+   "C6": "sem prompt",
+   "C7": "sem prompt",
+   "tipo": "sem prompt",
+   "pergunta": "perguntou"
+  },
+  "linhas": 0,
+  "custo": 0.0459
+ },
+ "v24-21": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": null,
+   "C6": null,
+   "C7": null,
+   "tipo": null,
+   "gera_prompt": false
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "3 leituras: Bash {\"command\": \"git ls-files && echo ---- && grep -rn \\\"email\\\" --include=*.java --include=*. | Read {\"file_path\": \"spring/pom.xml\"} | Bash {\"command\": \"cat src/main/java/com/exemplo/loja/model/Cliente.java && echo ---- && grep -r",
+   "C3": "sem prompt",
+   "C6": "sem prompt",
+   "C7": "sem prompt",
+   "tipo": "sem prompt",
+   "gera_prompt": "perguntou: Antes de escrever o prompt, preciso de uma resposta sua. As leituras mostraram um risco no banco:  - `Cliente.email` não tem `@Column`, e o `applicati"
+  },
+  "linhas": 0,
+  "custo": 0.0607
+ },
+ "v24-22": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true,
+   "plan": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files | head -50 && ls -a\", \"description\": \"List tracked files and dir | Read {\"file_path\": \"python/pyproject.toml\"}",
+   "C3": [],
+   "C6": "19 linhas com texto, teto 35",
+   "C7": "'Planejar ou decidir'",
+   "tipo": "'Planejar ou decidir', esperado ['Planejar ou decidir']",
+   "plan": "Modo:** plan mode "
+  },
+  "linhas": 19,
+  "custo": 0.053
+ },
+ "v24-23": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true,
+   "gera_prompt": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "1 leituras: Bash {\"command\": \"git ls-files && echo --- && cat pyproject.toml requirements.txt 2>/dev/null |",
+   "C3": [],
+   "C6": "31 linhas com texto, teto 80",
+   "C7": "'Agêntica longa'",
+   "tipo": "'Agêntica longa', esperado ['Agêntica longa']",
+   "gera_prompt": "gerou prompt"
+  },
+  "linhas": 31,
+  "custo": 0.0555
+ }
+}

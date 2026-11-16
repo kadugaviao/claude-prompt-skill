@@ -1,0 +1,80 @@
+{
+ "23-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "**Tipo:** Agêntica longa ... ```text ... Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Renomeie a função `calcula_frete` para `calcular_frete` no projeto todo, para que todas as referências usem o novo nome e os testes continuem passando."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Nenhuma seção só protocolar; no máximo uma frase removível, sem repetições relevantes."
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Fatos e arquivos conferem com a fixture python (frete.py:5, test_frete.py:1 e 4, logs/app.log sem a função); suposições vêm como 'confirme:'."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "`tests/test_frete.py:1` — `from fretes.frete import calcula_frete` ... `src/fretes/frete.py:5`"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "`pytest` passa sem falhas."
+  }
+ },
+ "23-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "**Tipo:** Agêntica longa ... ```text ... Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Renomeie a função `calcula_frete` para `calcular_frete` em todo o projeto. No fim, o nome antigo não deve aparecer em mais nenhum lugar e os testes devem continuar passando."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Nenhuma seção só protocolar; no máximo uma frase removível, sem repetições relevantes."
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Fatos e arquivos conferem com a fixture python (frete.py:5, test_frete.py:1 e 4, logs/app.log sem a função); suposições vêm como 'confirme:'."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "`tests/test_frete.py:1`, o import, e `tests/test_frete.py:4`, a chamada."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "`pytest` passa, com o mesmo número de testes de antes da mudança."
+  }
+ },
+ "23-C": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "**Tipo:** Agêntica longa ... ```text ... Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Renomeie a função `calcula_frete` para `calcular_frete` em todo o projeto, para que o nome siga a forma verbal no infinitivo e todas as referências continuem funcionando."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Nenhuma seção só protocolar; no máximo uma frase removível, sem repetições relevantes."
+  },
+  "inventado": {
+   "marca": "falha",
+   "trecho": "para que o nome siga a forma verbal no infinitivo: o pedido só manda renomear; esse motivo/objetivo não está no pedido nem no projeto."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "usada em `tests/test_frete.py` (import na linha 1, chamada na linha 4)"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "`pytest` passa (se o pacote `fretes` não for importável no ambiente, rode `PYTHONPATH=src pytest` ...)"
+  }
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "23-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "**Tipo:** Agêntica longa · **Modo:** normal · **Esforço:** alto ... ```text ... Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Renomeie a função `calcula_frete` para `calcular_frete` no projeto todo, para que todas as referências usem o novo nome e os testes continuem passando."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Nenhuma seção protocolar e no máximo uma frase removível (\"Antes de assumir algo fora desta lista, investigue no código.\")."
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Fatos conferem com a fixture (pyproject, frete.py:5, test_frete.py:1 e 4); alias e docstrings aparecem como \"confirme:\"."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "`src/fretes/frete.py:5` — definição ... `tests/test_frete.py:1` — `from fretes.frete import calcula_frete` ... `tests/test_frete.py:4`"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "`pytest` passa sem falhas."
+  }
+ },
+ "23-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "**Tipo:** Agêntica longa · **Modo:** normal · **Esforço:** alto ... ```text ... Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Renomeie a função `calcula_frete` para `calcular_frete` em todo o projeto. No fim, o nome antigo não deve aparecer em mais nenhum lugar e os testes devem continuar passando."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem seção protocolar; no máximo \"Altere só o identificador. Assim o diff fica fácil de revisar.\" é removível."
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Fatos conferem com a fixture (\"pytest >=8 como dependência de dev\" está em pyproject); alias com aviso de depreciação está dentro de um \"confirme:\"."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "`src/fretes/frete.py:5`, a definição `def calcula_frete(uf, peso_kg, cupom=None):` ... `tests/test_frete.py:1`, o import, e `tests/test_frete.py:4`, a chamada."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "`pytest` passa, com o mesmo número de testes de antes da mudança."
+  }
+ },
+ "23-C": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "**Tipo:** Agêntica longa · **Modo:** normal · **Esforço:** alto ... ```text ... Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Renomeie a função `calcula_frete` para `calcular_frete` em todo o projeto, para que o nome siga a forma verbal no infinitivo e todas as referências continuem funcionando."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem seção protocolar; no máximo uma frase removível (\"Antes de assumir algo fora desta lista, investigue no código.\")."
+  },
+  "inventado": {
+   "marca": "falha",
+   "trecho": "\"para que o nome siga a forma verbal no infinitivo\": objetivo/motivação que não está no pedido (só pede o renome) nem no projeto, e não vem declarado como suposição."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "`src/fretes/frete.py:5` (`def calcula_frete(uf, peso_kg, cupom=None):`) e usada em `tests/test_frete.py` (import na linha 1, chamada na linha 4)"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "`pytest` passa (se o pacote `fretes` não for importável no ambiente, rode `PYTHONPATH=src pytest` ...)"
+  }
+ }
+}

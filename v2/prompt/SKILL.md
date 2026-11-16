@@ -20,7 +20,7 @@ Escolha o tipo principal entre os 9 da seção "Tipos de tarefa", no fim deste a
 - **Pesquisar ou comparar:** comparar opções conhecidas (bibliotecas, licenças, nomes).
 - **Planejar ou decidir:** "como faço X" sem pedido de execução; etapas, arquitetura, migração.
 - **Revisar ou auditar:** julgar algo que já existe ("tá bom?", "posso instalar?").
-- **Agêntica longa:** mudança no projeto inteiro ou em muitos arquivos.
+- **Agêntica longa:** o pedido abrange o projeto inteiro ou muitos arquivos ("todos", "projeto inteiro"), mesmo que as leituras mostrem poucos arquivos hoje.
 - **Empate:** se dois tipos servem, escolha o que tem o formato de saída mais útil e cite o outro em Suposições. Acrescente os itens dele que se aplicarem.
 
 ## 2. Colete contexto (no máximo 3 leituras)
@@ -29,9 +29,11 @@ Dentro de um projeto, leia: a estrutura de pastas; o arquivo de build (`pom.xml`
 
 ## 3. Pergunte ou assuma
 
-Pergunte só se a resposta mudar materialmente o resultado **e** as leituras não resolverem. Exemplos: dois comportamentos de negócio plausíveis, uma ação destrutiva sem autorização clara, um alvo ou sintoma desconhecido. Versão, estrutura, comandos e preferências com default razoável viram suposição.
+Se existe um padrão razoável, inclusive em regra de negócio, assuma-o, gere o prompt e destaque a dúvida em Suposições começando com "confirme:". O usuário revisa o prompt antes de executar, então uma suposição errada custa só uma edição. Pare para perguntar só quando não há padrão razoável e as leituras não resolvem, por exemplo: um alvo ou sintoma desconhecido.
 
-Para perguntar: de 1 a 3 perguntas, de uma vez, cada uma com 2 a 4 opções. Use AskUserQuestion se existir; senão, escreva as perguntas e pare. Se não perguntar, assuma o default mais provável e registre-o em Autonomia.
+Exceção: se a tarefa apaga ou sobrescreve dados (registros no banco, arquivos fora do git) ou roda uma migração de banco, pergunte o que exatamente será afetado (critério, ambiente, autorização), mesmo que exista um padrão razoável. Um "confirme:" não basta, porque um erro aí não se desfaz com uma edição do prompt.
+
+Para perguntar: de 1 a 3 perguntas, de uma vez, cada uma com 2 a 4 opções. Use AskUserQuestion se existir; senão, escreva as perguntas e pare.
 
 ## 4. Escreva o prompt
 
@@ -41,7 +43,7 @@ Use as seções nesta ordem e omita as vazias (nunca escreva "N/A"):
 <Objetivo no imperativo, 1–2 frases, com o "para quê">
 
 ## Contexto
-Por que importa, onde se encaixa, stack e versões reais.
+Só fatos que o pedido não diz (projeto, versões, o que existe hoje). Não repita o pedido nem invente objetivo.
 
 ## Insumos
 Arquivos a ler: caminhos (sem colar o conteúdo).
@@ -58,7 +60,8 @@ O que fazer (passos numerados só se a ordem importar). Fora do escopo: X, porqu
 
 ## Autonomia
 Pode fazer sem perguntar: … · Pergunte antes de: <ações nomeadas>.
-Suposições: … (diga se alguma estiver errada). Antes de assumir algo fora desta lista, investigue no código.
+Suposições: … (diga se alguma estiver errada).
+[Só em Implementar, Corrigir bug, Revisar, Agêntica longa e Analisar dados com arquivos:] Antes de assumir algo fora desta lista, investigue no código.
 
 ## Formato da resposta
 <template do tipo, em "Tipos de tarefa">
@@ -67,8 +70,9 @@ Suposições: … (diga se alguma estiver errada). Antes de assumir algo fora de
 Regras:
 - Não resolva a tarefa no prompt: não antecipe diagnóstico, causa, conclusão nem solução. Descreva o sintoma e o objetivo; o que as leituras mostraram entra como fato (arquivos, versões, o que existe hoje), não como resposta.
 - Preserve literalmente identificadores, caminhos, mensagens de erro e números do pedido.
+- Requisito, ponto obrigatório ou fato que não está no pedido nem nas leituras vai em Suposições com "confirme:", não em Tarefa, Contexto ou Pronto quando.
 - Use verbos de ação ("Implemente", "Liste"). Com "você pode sugerir", o modelo só sugere.
-- Dê o motivo de cada restrição e diga o que fazer, não só o que evitar.
+- Dê o motivo de cada restrição quando ele vier do pedido, das leituras ou da própria tarefa (ex.: "porque a tarefa é só de leitura"). Não invente motivo nem atribua intenção ao usuário: sem motivo conhecido, escreva a restrição sem motivo. Diga o que fazer, não só o que evitar.
 - Em tarefa só de leitura, Autonomia fica só com as suposições.
 - Exemplo de saída (`<example>`) só se o formato não for óbvio ou se o usuário der um (use o dele).
 - Se a saída for para código ou ferramenta, peça JSON ou CSV com os campos nomeados.
@@ -94,7 +98,7 @@ Instruções operacionais explícitas do usuário (por exemplo, "usa subagentes"
 
 ## 5. Confira e entregue
 
-Confira: um colega sem contexto executaria? Cada restrição tem motivo? O pronto é verificável? A Autonomia nomeia ações? Há seção vazia ou item proibido? Depois, entregue neste formato:
+Confira: um colega sem contexto executaria? Cada motivo vem do pedido, das leituras ou da tarefa? O pronto é verificável? A Autonomia nomeia ações? Há seção vazia ou item proibido? Depois, entregue neste formato:
 
 **Tipo:** <um dos 9 nomes, literal> · **Modo:** <normal | plan mode> · **Esforço:** <padrão | alto>
 
@@ -106,7 +110,7 @@ Confira: um colega sem contexto executaria? Cada restrição tem motivo? O pront
 
 Quer que eu execute este prompt agora?
 
-- **Modo:** plan mode se a tarefa altera arquivos em 3 ou mais passos ou decide arquitetura; normal nos outros casos.
+- **Modo:** plan mode se a tarefa altera arquivos em 3 ou mais passos, decide arquitetura ou planeja uma migração (de versão, framework ou banco), mesmo que o prompt só peça o plano; normal nos outros casos.
 - **Esforço alto:** depuração difícil, arquitetura, auditoria profunda ou tarefa agêntica longa. Nesse caso, a primeira linha do prompt é `ultrathink` (vale quando o usuário cola o prompt, porque só funciona digitado), e depois de "alto" escreva: "para executar aqui, rode `/effort xhigh` antes de responder sim".
 
 ## 6. Aprovação
@@ -165,7 +169,7 @@ Deve conter: o nível de quem lê e o que já sabe (descreva a audiência, não 
 Exercício só se o pedido falar em estudo, prova ou entrevista.
 
 ### 6. Escrever texto (6–25 linhas)
-Deve conter: audiência e o que ela deve fazer depois de ler; tom e canal; comprimento-alvo; pontos obrigatórios; exemplo de estilo, se o usuário der; palavras a evitar, se o usuário citar.
+Deve conter: audiência; tom e canal; comprimento-alvo; os pontos e a ação do leitor que o pedido traz; exemplo de estilo, se o usuário der; palavras a evitar, se o usuário citar.
 ```
 O texto final, pronto para colar, com até <N> palavras, sem meta-comentário. Variantes só se pedidas.
 ```
@@ -190,9 +194,9 @@ Deve conter: objetivo, horizonte e prazo; restrições e recursos; alternativas 
 ```
 
 ### 9. Agêntica longa (30–80 linhas)
-Deve conter: o objetivo e um critério de pronto verificável de ponta a ponta; o estado do trabalho (git, `progress.md` ou lista de testes); permissões (o que pode fazer sem perguntar e o que exige confirmação: push, migração, deleção, nova dependência); atualizações curtas de progresso.
+Deve conter: o objetivo e um critério de pronto verificável de ponta a ponta; o registro de progresso em `progress.md`, atualizado a cada etapa concluída para a tarefa poder ser retomada se for interrompida (criar e atualizar esse arquivo fica em "Pode fazer sem perguntar"); permissões (o que pode fazer sem perguntar e o que exige confirmação: push, migração, deleção, nova dependência).
 ```
-Durante o trabalho: 1–2 linhas a cada etapa concluída.
+Durante o trabalho: a cada etapa concluída, atualize `progress.md` (feito, próximo passo, pendências) e escreva 1–2 linhas no chat.
 No final (autocontido, para quem não acompanhou):
 1. Resultado em 1 frase.
 2. O que foi feito, por etapa.

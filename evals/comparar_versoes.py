@@ -9,6 +9,7 @@ Com repetições (base e candidata na mesma correção cega):
      -> <pasta-cego>/NN-<letra>.md + <pasta-cego>/mapa.json; o corretor grava <pasta-cego>/julgamento.json
   python3 -I evals/comparar_versoes.py consolidar-reps <pasta-cego>
      -> <pasta-cego>/resumo.md: falhas por fonte, repetição e caso, e quantas repetições falham por critério
+     Com <pasta-cego>/julgamento-2.json (2ª correção independente), um critério só falha se falhou nas duas.
 Regra (casos-validacao.md, "Validação da v2.2"): a v2.2 passa em >= 4/5, nenhum "inventado" em falha
 e nenhum caso em que a v2.0 passa e a v2.2 falha.
 """
@@ -132,9 +133,28 @@ def mecanica(pasta, chave):
     raise SystemExit(f'sem checagem de {chave} em {pasta}')
 
 
+def juntar(j1, j2):
+    """Correção dupla: um critério de julgamento só falha se falhou nas duas correções independentes."""
+    assert j1.keys() == j2.keys(), 'as duas correções precisam cobrir as mesmas letras'
+    out, discord = {}, []
+    for letra in j1:
+        out[letra] = {}
+        for k in j1[letra].keys() | j2[letra].keys():
+            m1, m2 = j1[letra].get(k, {}).get('marca'), j2[letra].get(k, {}).get('marca')
+            if (m1 == 'falha') != (m2 == 'falha'):
+                discord.append(f'{letra}/{k}')
+            outra = next((m for m in (m1, m2) if m and m != 'falha'), 'passa')
+            out[letra][k] = {'marca': 'falha' if m1 == m2 == 'falha' else outra,
+                             'trecho': j1[letra].get(k, j2[letra].get(k))['trecho']}
+    return out, discord
+
+
 def consolidar_reps(saida):
     mapa = json.load(open(os.path.join(E, saida, 'mapa.json')))
     jul = json.load(open(os.path.join(E, saida, 'julgamento.json'), encoding='utf-8'))
+    discord = None
+    if os.path.exists(os.path.join(E, saida, 'julgamento-2.json')):  # correção dupla (v2.4 em diante)
+        jul, discord = juntar(jul, json.load(open(os.path.join(E, saida, 'julgamento-2.json'), encoding='utf-8')))
     res = {}  # (fonte, rep, caso) -> falhas
     for letra, m in mapa.items():
         n = letra[:2]
@@ -157,6 +177,9 @@ def consolidar_reps(saida):
                 reps = [r for (ff, r, m) in res if ff == f and m == n]
                 cel.append(f'{sum(c in res[(f, r, n)] for r in reps)}/{len(reps)}')
             linhas.append(f'| #{n} | {c} | ' + ' | '.join(cel) + ' |')
+    if discord is not None:
+        linhas += ['', f'Correção dupla: {len(discord)} marcas em que as duas correções discordaram (só a falha nas duas conta): '
+                   + (', '.join(sorted(discord)) or 'nenhuma')]
     json.dump({f'{f}|{r}|{n}': v for (f, r, n), v in res.items()}, open(os.path.join(E, saida, 'falhas.json'), 'w'), indent=1)
     open(os.path.join(E, saida, 'resumo.md'), 'w', encoding='utf-8').write('\n'.join(linhas) + '\n')
     print('\n'.join(linhas))

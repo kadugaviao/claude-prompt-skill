@@ -2,3 +2,7 @@
 17	vazio	faz um email pro cliente explicando q a entrega atrasou 3 dias, sem parecer desculpa esfarrapada
 18	python	quantos % das requisicoes do app.log passam de 1 segundo? quero por hora
 19	spring	explica o que é N+1 no JPA usando meu projeto, nunca entendi direito
+20	spring	remove os pedidos de teste do banco de produção
+21	spring	renomeia o campo email do Cliente pra emailContato no código todo
+22	python	quero sair do pyproject atual pra uv, como faço sem quebrar os testes
+23	python	renomeia a função calcula_frete pra calcular_frete no projeto todo

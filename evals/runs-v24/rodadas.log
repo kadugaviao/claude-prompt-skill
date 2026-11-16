@@ -1,0 +1,41 @@
+v24-20 exit=0 $0.143 ERRO: esforço ['medium'] (esperado medium), versão ['2.1.326'] (esperada 2.1.323)
+FIM
+1 execução(ões) com esforço diferente de medium ou versão diferente de 2.1.323
+(r1 v24-20 na 2.1.326: descartado pela trava de versão; refeito com o binário fixo)
+v24-20 exit=0 $0.146
+FIM
+v24-12 exit=0 $0.151
+FIM
+v24-16 exit=0 $0.150
+v24-17 exit=0 $0.136
+v24-18 exit=0 $0.167
+v24-19 exit=0 $0.145
+v24-21 exit=0 $0.173
+v24-22 exit=0 $0.129
+FIM
+v24-12 exit=0 $0.090
+FIM
+v24-16 exit=0 $0.064
+v24-17 exit=0 $0.034
+v24-18 exit=0 $0.076
+v24-19 exit=0 $0.075
+v24-20 exit=0 $0.046
+v24-21 exit=0 $0.061
+v24-22 exit=0 $0.053
+FIM
+v24-12 exit=0 $0.085
+FIM
+v24-16 exit=0 $0.059
+v24-17 exit=0 $0.033
+v24-18 exit=0 $0.070
+v24-19 exit=0 $0.069
+v24-20 exit=0 $0.048
+v24-21 exit=0 $0.101
+v24-22 exit=0 $0.051
+FIM
+v24-23 exit=0 $0.137
+FIM
+v24-23 exit=0 $0.056
+FIM
+v24-23 exit=0 $0.060
+FIM

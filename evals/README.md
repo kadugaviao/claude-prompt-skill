@@ -19,8 +19,8 @@ for r in r1 r2 r3; do
   python3 -I checar.py runs-x/$r --tsv casos-validacao.tsv --json runs-x/$r/checagem-val.json
 done
 python3 -I comparar_versoes.py cegar-reps runs-x/cego base=runs-base:v22 nova=runs-x:v24
-# corretor: um subagente Sonnet que não viu a skill ser escrita corrige runs-x/cego/*.md com a régua
-# de casos.md e grava runs-x/cego/julgamento.json ({"12-A": {"C4": {"marca", "trecho"}, ...}, ...})
+# corretor: dois subagentes Sonnet independentes, com o texto de corretor.md, gravam
+# runs-x/cego/julgamento.json e runs-x/cego/julgamento-2.json; um critério só falha se falhou nos dois
 python3 -I comparar_versoes.py consolidar-reps runs-x/cego    # -> runs-x/cego/resumo.md e falhas.json
 python3 -I linha_base.py runs-x v24                           # custo e tokens (pede runs-x/julgamento.json com chaves rN-NN)
 ```
@@ -33,5 +33,5 @@ Rode primeiro um caso só: se a resposta for a mensagem de limite de uso, pare e
 
 ## Cuidados
 - O corretor varia: a mesma saída pode passar numa passada e falhar na outra. Compare sempre a versão nova e a base **na mesma correção cega** e confie só em diferenças que aparecem em 2 de 3 repetições ou que um script confere (tipo, esforço, modo).
-- A partir da v2.4, corrija cada lote duas vezes e conte só a falha marcada nas duas (decisão de 13/11/2026).
+- A partir da v2.4, corrija cada lote duas vezes e conte só a falha marcada nas duas (decisão de 13/11/2026). O `consolidar-reps` faz isso sozinho quando existe `julgamento-2.json` e lista as marcas em que as correções discordaram.
 - `tmp-home/` guarda o HOME temporário de cada versão e as transcrições; fica fora do git.

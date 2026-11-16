@@ -18,6 +18,11 @@ ESFORCO = 'medium'
 # Versão da linha de base: outra versão muda o prompt de sistema e o custo. O binário é compartilhado
 # com as sessões do usuário, então DISABLE_AUTOUPDATER só protege estas execuções; a checagem é a trava.
 VERSAO = '2.1.323'
+# Chama o binário da versão fixada, não o `claude` do PATH (que se atualiza com as sessões do usuário).
+# shortcut: o atualizador apaga versões antigas com o tempo; se sumir, mude VERSAO e rode a linha de base de novo.
+CLAUDE = os.path.expanduser(f'~/.local/share/claude/versions/{VERSAO}')
+if not os.path.exists(CLAUDE):
+    sys.exit(f'binário {CLAUDE} não existe: mude VERSAO e rode a linha de base de novo (README)')
 opts = {a: args[i + 1] for i, a in enumerate(args) if a in COM_VALOR}
 pos = [a for i, a in enumerate(args) if not a.startswith('--') and (i == 0 or args[i - 1] not in COM_VALOR)]
 saida = os.path.join(E, pos[0])
@@ -56,7 +61,7 @@ def roda(job):
     raw = os.path.join(saida, 'raw', f'{v}-{nid}.jsonl')
     with open(raw, 'w') as out, open(raw + '.err', 'w') as err:
         skill_dir = os.path.join(E, 'tmp-home', v, '.claude', 'skills', 'prompt')
-        r = subprocess.run(['claude', '-p', f'/prompt {ped}'.rstrip(), '--output-format', 'stream-json', '--verbose',
+        r = subprocess.run([CLAUDE, '-p', f'/prompt {ped}'.rstrip(), '--output-format', 'stream-json', '--verbose',
                             '--add-dir', skill_dir, '--effort', ESFORCO],
                            cwd=os.path.join(E, 'fixtures', fx), env=env, stdout=out, stderr=err,
                            stdin=subprocess.DEVNULL, timeout=900)
