@@ -1,0 +1,25 @@
+{
+ "v23a-12": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true,
+   "esforco": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "1 leituras: Bash {\"command\": \"git ls-files && echo ---- && cat pom.xml && echo ---- && grep -rlE \\\"org.juni",
+   "C3": [],
+   "C6": "32 linhas com texto, teto 80",
+   "C7": "'Agêntica longa'",
+   "tipo": "'Agêntica longa', esperado ['Agêntica longa']",
+   "esforco": "1ª linha='ultrathink', '/effort xhigh' na entrega=True"
+  },
+  "linhas": 32,
+  "custo": 0.1769
+ }
+}

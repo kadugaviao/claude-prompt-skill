@@ -1,0 +1,86 @@
+{
+ "v23b-16": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files && grep -rn \\\"calcula_frete\\\" --include=*.py . | head -30\", \"des | Bash {\"command\": \"cat pyproject.toml src/fretes/frete.py tests/test_frete.py; grep -rn \\\"calcul",
+   "C3": [],
+   "C6": "23 linhas com texto, teto 45",
+   "C7": "'Implementar código'",
+   "tipo": "'Implementar código', esperado ['Implementar código']"
+  },
+  "linhas": 23,
+  "custo": 0.1539
+ },
+ "v23b-17": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "0 leituras: ",
+   "C3": [],
+   "C6": "12 linhas com texto, teto 25",
+   "C7": "'Escrever texto'",
+   "tipo": "'Escrever texto', esperado ['Escrever texto']"
+  },
+  "linhas": 12,
+  "custo": 0.1312
+ },
+ "v23b-18": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files | head -50; ls -la; find . -name \\\"app.log*\\\" -not -path \\\"./.gi | Bash {\"command\": \"cat pyproject.toml; echo ---; wc -l logs/app.log; head -15 logs/app.log; echo",
+   "C3": [],
+   "C6": "20 linhas com texto, teto 35",
+   "C7": "'Analisar dados'",
+   "tipo": "'Analisar dados', esperado ['Analisar dados']"
+  },
+  "linhas": 20,
+  "custo": 0.162
+ },
+ "v23b-19": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"find . -path ./.git -prune -o -type f -print | grep -v -E '/target/|\\\\.mvn/'  | Bash {\"command\": \"cd spring/src/main && cat java/com/exemplo/loja/model/*.java java/com/exemplo",
+   "C3": [],
+   "C6": "12 linhas com texto, teto 25",
+   "C7": "'Explicar ou ensinar'",
+   "tipo": "'Explicar ou ensinar', esperado ['Explicar ou ensinar']"
+  },
+  "linhas": 12,
+  "custo": 0.1444
+ }
+}

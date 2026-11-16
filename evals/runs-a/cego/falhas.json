@@ -1,0 +1,51 @@
+{
+ "a|r3|12": [
+  "inventado"
+ ],
+ "base|r1|12": [],
+ "a|r1|12": [],
+ "base|r2|12": [],
+ "a|r2|12": [
+  "C2"
+ ],
+ "base|r3|12": [
+  "tipo",
+  "esforco",
+  "d"
+ ],
+ "base|r1|16": [
+  "enchimento"
+ ],
+ "base|r3|16": [],
+ "base|r2|16": [],
+ "a|r3|16": [],
+ "a|r1|16": [],
+ "a|r2|16": [],
+ "base|r1|17": [],
+ "base|r2|17": [
+  "inventado"
+ ],
+ "a|r1|17": [],
+ "a|r2|17": [],
+ "a|r3|17": [
+  "inventado"
+ ],
+ "base|r3|17": [],
+ "base|r2|18": [],
+ "base|r1|18": [],
+ "a|r3|18": [],
+ "a|r2|18": [],
+ "a|r1|18": [],
+ "base|r3|18": [],
+ "a|r2|19": [
+  "enchimento"
+ ],
+ "base|r2|19": [],
+ "base|r3|19": [],
+ "a|r3|19": [
+  "enchimento",
+  "inventado"
+ ],
+ "base|r1|19": [],
+ "a|r1|19": []
+}

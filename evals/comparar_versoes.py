@@ -3,6 +3,12 @@
 Uso:
   python3 -I evals/comparar_versoes.py cegar      -> runs-v22/cego/NN-{A,B,C}.md + runs-v22/raw/mapa-cego.json
   python3 -I evals/comparar_versoes.py consolidar -> imprime a tabela e grava runs-v22/resumo.md
+Com repetições (base e candidata na mesma correção cega):
+  python3 -I evals/comparar_versoes.py cegar-reps <pasta-cego> <rotulo>=<pasta>:<versao> [...] [--casos 12,16]
+     <pasta> com subpastas rN/ (uma por repetição) ou plana (1 execução); arquivos <versao>-NN.md
+     -> <pasta-cego>/NN-<letra>.md + <pasta-cego>/mapa.json; o corretor grava <pasta-cego>/julgamento.json
+  python3 -I evals/comparar_versoes.py consolidar-reps <pasta-cego>
+     -> <pasta-cego>/resumo.md: falhas por fonte, repetição e caso, e quantas repetições falham por critério
 Regra (casos-validacao.md, "Validação da v2.2"): a v2.2 passa em >= 4/5, nenhum "inventado" em falha
 e nenhum caso em que a v2.0 passa e a v2.2 falha.
 """
@@ -81,5 +87,85 @@ def consolidar():
     print('\n'.join(linhas))
 
 
+def anonimiza(t, rotulo):
+    t = re.sub(r'^# v[\w.]+-\d\d', f'# caso {rotulo}', t, flags=re.M)
+    t = re.sub(r'tmp-home/v[\w.]+', 'tmp-home/X', t)
+    return re.sub(r'^- (exit|skill_carregada):.*\n', '', t, flags=re.M)
+
+
+def execucoes(spec):
+    """'rotulo=pasta:versao' -> (rotulo, [(rep, caminho da pasta da repetição)], versao)."""
+    rot, resto = spec.split('=', 1)
+    pasta, v = resto.rsplit(':', 1)
+    reps = sorted(d for d in os.listdir(os.path.join(E, pasta)) if re.fullmatch(r'r\d+', d))
+    return rot, [(r, os.path.join(pasta, r)) for r in reps] or [('r1', pasta)], v
+
+
+def cegar_reps(saida, specs, casos):
+    fontes = [execucoes(sp) for sp in specs]
+    if not casos:
+        rot, reps, v = fontes[0]
+        casos = sorted(f[-5:-3] for f in os.listdir(os.path.join(E, reps[0][1])) if re.fullmatch(rf'{v}-\d\d\.md', f))
+    random.seed(saida)
+    os.makedirs(os.path.join(E, saida), exist_ok=True)
+    mapa = {}
+    for n in casos:
+        itens = [(rot, r, d, v) for rot, reps, v in fontes for r, d in reps]
+        random.shuffle(itens)
+        assert len(itens) <= 26
+        for letra, (rot, r, d, v) in zip('ABCDEFGHIJKLMNOPQRSTUVWXYZ', itens):
+            t = open(os.path.join(E, d, f'{v}-{n}.md'), encoding='utf-8').read()
+            open(os.path.join(E, saida, f'{n}-{letra}.md'), 'w', encoding='utf-8').write(anonimiza(t, f'{n}-{letra}'))
+            mapa[f'{n}-{letra}'] = {'fonte': rot, 'rep': r, 'pasta': d, 'versao': v}
+    json.dump(mapa, open(os.path.join(E, saida, 'mapa.json'), 'w'), indent=1)
+    print(len(mapa), 'arquivos cegos em', saida)
+
+
+def mecanica(pasta, chave):
+    """Checagem do checar.py, procurando nos nomes usados até aqui (checagem.json, -12, -val)."""
+    for nome in ('checagem.json', 'checagem-12.json', 'checagem-val.json'):
+        arq = os.path.join(E, pasta, nome)
+        if os.path.exists(arq):
+            d = json.load(open(arq, encoding='utf-8'))
+            if chave in d:
+                return d[chave]
+    raise SystemExit(f'sem checagem de {chave} em {pasta}')
+
+
+def consolidar_reps(saida):
+    mapa = json.load(open(os.path.join(E, saida, 'mapa.json')))
+    jul = json.load(open(os.path.join(E, saida, 'julgamento.json'), encoding='utf-8'))
+    res = {}  # (fonte, rep, caso) -> falhas
+    for letra, m in mapa.items():
+        n = letra[:2]
+        res[(m['fonte'], m['rep'], n)] = falhas(mecanica(m['pasta'], f"{m['versao']}-{n}"), jul[letra])
+    fontes = sorted({k[0] for k in res}, key=lambda f: list(dict.fromkeys(m['fonte'] for m in mapa.values())).index(f))
+    casos = sorted({k[2] for k in res})
+    linhas = []
+    for f in fontes:
+        reps = sorted({k[1] for k in res if k[0] == f})
+        linhas += [f'## {f}', '', '| caso | ' + ' | '.join(reps) + ' |', '|---' * (len(reps) + 1) + '|']
+        for n in casos:
+            linhas.append(f'| #{n} | ' + ' | '.join('passa' if not res[(f, r, n)] else ', '.join(res[(f, r, n)]) for r in reps) + ' |')
+        linhas += ['', 'Placar por repetição: ' + ' · '.join(f'{r} {sum(not res[(f, r, n)] for n in casos)}/{len(casos)}' for r in reps), '']
+    linhas += ['## Repetições em falha por caso e critério', '', '| caso | critério | ' + ' | '.join(fontes) + ' |', '|---|---|' + '---|' * len(fontes)]
+    for n in casos:
+        crits = sorted({c for (f, r, m), fl in res.items() if m == n for c in fl})
+        for c in crits:
+            cel = []
+            for f in fontes:
+                reps = [r for (ff, r, m) in res if ff == f and m == n]
+                cel.append(f'{sum(c in res[(f, r, n)] for r in reps)}/{len(reps)}')
+            linhas.append(f'| #{n} | {c} | ' + ' | '.join(cel) + ' |')
+    json.dump({f'{f}|{r}|{n}': v for (f, r, n), v in res.items()}, open(os.path.join(E, saida, 'falhas.json'), 'w'), indent=1)
+    open(os.path.join(E, saida, 'resumo.md'), 'w', encoding='utf-8').write('\n'.join(linhas) + '\n')
+    print('\n'.join(linhas))
+
+
 if __name__ == '__main__':
-    {'cegar': cegar, 'consolidar': consolidar}[sys.argv[1]]()
+    a = sys.argv[2:]
+    cs = a[a.index('--casos') + 1].split(',') if '--casos' in a else None
+    a = [x for i, x in enumerate(a) if x != '--casos' and (i == 0 or a[i - 1] != '--casos')]
+    {'cegar': cegar, 'consolidar': consolidar,
+     'cegar-reps': lambda: cegar_reps(a[0], a[1:], cs),
+     'consolidar-reps': lambda: consolidar_reps(a[0])}[sys.argv[1]]()

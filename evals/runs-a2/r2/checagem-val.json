@@ -1,0 +1,86 @@
+{
+ "v23b-16": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files && cat pyproject.toml requirements.txt 2>/dev/null; grep -rn \\\"c | Bash {\"command\": \"cat src/fretes/frete.py; echo ---; grep -rn \\\"calcula_frete\\\" src tests\", \"de",
+   "C3": [],
+   "C6": "24 linhas com texto, teto 45",
+   "C7": "'Implementar código'",
+   "tipo": "'Implementar código', esperado ['Implementar código']"
+  },
+  "linhas": 24,
+  "custo": 0.0601
+ },
+ "v23b-17": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "0 leituras: ",
+   "C3": [],
+   "C6": "10 linhas com texto, teto 25",
+   "C7": "'Escrever texto'",
+   "tipo": "'Escrever texto', esperado ['Escrever texto']"
+  },
+  "linhas": 10,
+  "custo": 0.0277
+ },
+ "v23b-18": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"ls -la && find . -name \\\"app.log*\\\" -not -path \\\"./.git/*\\\" && cat pyproject. | Bash {\"command\": \"wc -l logs/app.log && head -15 logs/app.log\", \"description\": \"Count log lines",
+   "C3": [],
+   "C6": "18 linhas com texto, teto 35",
+   "C7": "'Analisar dados'",
+   "tipo": "'Analisar dados', esperado ['Analisar dados']"
+  },
+  "linhas": 18,
+  "custo": 0.0596
+ },
+ "v23b-19": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "3 leituras: Bash {\"command\": \"git ls-files && grep -rnE \\\"@(OneToMany|ManyToOne|ManyToMany|OneToOne|EntityG | Bash {\"command\": \"grep -nE \\\"<(artifactId|version|java.version)>\\\" pom.xml | head -30\", \"descri | Read {\"file_path\": \"spring/src/main/java/com/exemplo/loja/service/PedidoService.java\"}",
+   "C3": [],
+   "C6": "14 linhas com texto, teto 25",
+   "C7": "'Explicar ou ensinar'",
+   "tipo": "'Explicar ou ensinar', esperado ['Explicar ou ensinar']"
+  },
+  "linhas": 14,
+  "custo": 0.0689
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "v23b-12": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true,
+   "esforco": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "3 leituras: Bash {\"command\": \"git ls-files\", \"description\": \"List tracked project files\"} | Read {\"file_path\": \"spring/pom.xml\"} | Bash {\"command\": \"grep -rnE \\\"import (org\\\\.junit|static org\\\\.junit)|@RunWith|@Rule|@Test\\\\(\\\"",
+   "C3": [],
+   "C6": "33 linhas com texto, teto 80",
+   "C7": "'Agêntica longa'",
+   "tipo": "'Agêntica longa', esperado ['Agêntica longa']",
+   "esforco": "1ª linha='ultrathink', '/effort xhigh' na entrega=True"
+  },
+  "linhas": 33,
+  "custo": 0.0824
+ }
+}

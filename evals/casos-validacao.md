@@ -66,3 +66,31 @@ São os mesmos de `casos.md`: C1–C7, com C5 e C6 na redação da rodada 3. A e
 3. não fica pior que a v2.0 em nenhum caso, ou seja, em nenhum caso a v2.0 passa e a v2.2 falha.
 
 Observação: a saída da v2.0 no #12 é da rodada 3. Ela é anterior à edição dos tetos no título dos tipos (D20); o resto do arquivo é igual.
+
+## Validação da v2.3 (regras definidas antes de rodar, em 13/11/2026)
+
+**Ponto de partida:** a v2.2 (`versoes/v2.2-reprovada/`) com `effort: medium` no cabeçalho (M6, conferida à mão: com `--effort high`, a transcrição registra só `medium`). Linha de base: `runs-base/` (v2.2, Opus, effort medium, Claude Code 2.1.323, 3 repetições). Toda execução roda na 2.1.323; o `rodar.py` para com erro se o esforço ou a versão da transcrição forem outros.
+
+**Correção:** cega e mista. A candidata e a base dela entram na mesma passada do corretor (`comparar_versoes.py cegar-reps`), com a régua da v2.2 (enchimento e inventado de `casos.md`).
+
+**Regressão:** nenhum critério que passou em pelo menos 1 repetição da base pode falhar nas 3 repetições da candidata.
+
+**Rodada A (M1 + M2, base `runs-base/`):**
+- M1 (inventado) é aceita se o "inventado" do #17 sumir em pelo menos 2 de 3 repetições.
+- M2 (Agêntica longa pelo escopo do pedido) é aceita se o tipo do #12 sair certo nas 3 repetições e nenhum outro caso mudar de tipo.
+- Atribuição de uma regressão: falha nova no #17 ou em critério de conteúdo (inventado, enchimento, c e d dos casos de texto) conta para a M1. Mudança de tipo ou falha em critério que depende do tipo (esforço, #12d) conta para a M2. Se não der para atribuir, M1 e M2 são testadas separadas.
+- Se só uma for aceita, a outra é desfeita e a versão que fica roda de novo, para servir de base à rodada B.
+
+**Rodada B (M3 + M4, base: as execuções da versão final da rodada A):** aceita se a mediana dos tokens de saída cair em pelo menos 3 dos 5 casos, com queda de 5% ou mais na soma das medianas; o enchimento ficar menor ou igual ao da base; e nenhum critério regredir (C4 e #6e incluídos).
+
+**A v2.3 é aprovada se, e só se:**
+1. na validação (os 5 casos acima × 3 repetições): passa em pelo menos 4 de 5 em pelo menos 2 das 3 repetições; nenhum caso tem "inventado" em 2 ou mais repetições; e nenhum caso em que a v2.0 passa (`runs-v22/resumo.md`) falha em 2 ou mais repetições;
+2. nos 15 casos de `casos.md` (1 execução cada): passa em pelo menos 13 de 15. Em cada caso em que falhar, a saída salva da v2.0 (`runs-3/`) entra na mesma correção cega; se a v2.0 passar nesse caso, conta como regressão e reprova.
+
+**Rodada A2 (M1b, acrescentada em 13/11/2026 depois da rodada A e antes de rodar a A2).** Motivo: na rodada A, os "inventado" da candidata foram motivos inventados para restrições (`runs-a/decisao.md`). A M1b troca a regra "dê o motivo de cada restrição" por "dê o motivo quando ele vier do pedido, das leituras ou da tarefa; sem motivo conhecido, a restrição fica sem motivo". Base: `runs-a/` (versão da rodada A), na mesma correção cega. A M1b é aceita se:
+- o total de repetições com "inventado" (somando os 5 casos) for menor que o da base;
+- o enchimento do #19 falhar em menos repetições que na base;
+- nenhum critério regredir, pela regra da rodada A.
+Se não for aceita, a M1b é desfeita e a rodada B parte da versão da rodada A.
+
+**Exceção na rodada A2 e confirmação na rodada B (decisão do usuário em 13/11/2026, D21 no SPEC.md).** O 2º critério da M1b era impossível nessa correção (a base teve 0 de 3), e os outros dois cumpriram, então a M1b foi mantida. Como confirmação, gravada antes de rodar a rodada B: **na rodada B, o "inventado" fica em no máximo 1 repetição, somando os 5 casos.** Se não ficar, a M1b é desfeita e a rodada B é refeita sobre `versoes/v2.3-rodada-a/`.

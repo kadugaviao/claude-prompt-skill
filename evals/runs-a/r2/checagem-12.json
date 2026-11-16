@@ -1,0 +1,25 @@
+{
+ "v23a-12": {
+  "resultado": {
+   "C1": true,
+   "C2": false,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true,
+   "esforco": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "4 leituras: Bash {\"command\": \"find . -path ./.git -prune -o -type f -print | head -100\", \"description\": \"Li | Read {\"file_path\": \"spring/pom.xml\"} | Bash {\"command\": \"grep -rlE \\\"org\\\\.junit\\\\.(Test|Before|After|Rule|runner|Assert|Ignore|Before | Bash {\"command\": \"grep -rnE \\\"import|@RunWith|@Test|@Before|@After|@Rule|@Ignore|expected\\\" src",
+   "C3": [],
+   "C6": "30 linhas com texto, teto 80",
+   "C7": "'Agêntica longa'",
+   "tipo": "'Agêntica longa', esperado ['Agêntica longa']",
+   "esforco": "1ª linha='ultrathink', '/effort xhigh' na entrega=True"
+  },
+  "linhas": 30,
+  "custo": 0.0952
+ }
+}

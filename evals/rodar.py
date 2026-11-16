@@ -15,6 +15,9 @@ COM_VALOR = ('--casos', '--paralelo', '--tsv')
 # effortLevel no settings não vale para o Opus 5.5 (docs model-config); --effort vale para a sessão.
 # Um `effort` no frontmatter da skill passa por cima, e a checagem pós-execução acusa.
 ESFORCO = 'medium'
+# Versão da linha de base: outra versão muda o prompt de sistema e o custo. O binário é compartilhado
+# com as sessões do usuário, então DISABLE_AUTOUPDATER só protege estas execuções; a checagem é a trava.
+VERSAO = '2.1.323'
 opts = {a: args[i + 1] for i, a in enumerate(args) if a in COM_VALOR}
 pos = [a for i, a in enumerate(args) if not a.startswith('--') and (i == 0 or args[i - 1] not in COM_VALOR)]
 saida = os.path.join(E, pos[0])
@@ -49,7 +52,7 @@ def rel(s):
 def roda(job):
     v, (nid, fx, ped) = job
     env = {k: val for k, val in os.environ.items() if k not in LIMPAR}
-    env.update(HOME=os.path.join(E, 'tmp-home', v), CLAUDE_CODE_OAUTH_TOKEN=token())
+    env.update(HOME=os.path.join(E, 'tmp-home', v), CLAUDE_CODE_OAUTH_TOKEN=token(), DISABLE_AUTOUPDATER='1')
     raw = os.path.join(saida, 'raw', f'{v}-{nid}.jsonl')
     with open(raw, 'w') as out, open(raw + '.err', 'w') as err:
         skill_dir = os.path.join(E, 'tmp-home', v, '.claude', 'skills', 'prompt')
@@ -86,14 +89,14 @@ def skill_carregada(v, sid):
     return 'transcrição não encontrada'
 
 
-def esforcos(v, sid):
-    """Valores de \"effort\" gravados nas mensagens do assistente na transcrição da sessão."""
+def campo(v, sid, chave):
+    """Valores de <chave> (\"effort\", \"version\") gravados nas mensagens do assistente na transcrição."""
     vals = set()
     for proj in glob.glob(os.path.join(E, 'tmp-home', v, '.claude', 'projects', '*', f'{sid}.jsonl')) if sid else []:
         for l in open(proj, encoding='utf-8'):
             d = json.loads(l)
             if d.get('type') == 'assistant':
-                vals.add(d.get('effort'))
+                vals.add(d.get(chave))
     return vals
 
 
@@ -113,18 +116,19 @@ def gera_md(v, nid, fx, ped, raw, code):
         if d.get('type') == 'result':
             res, cost, dur = d.get('result') or '', d.get('total_cost_usd') or 0.0, d.get('duration_ms') or 0
             model = list((d.get('modelUsage') or {}).keys())
-    ef = esforcos(v, sid)
-    ok = ef == {ESFORCO}
+    ef, ver = campo(v, sid, 'effort'), campo(v, sid, 'version')
+    ok = ef == {ESFORCO} and ver == {VERSAO}
     md = [f'# {v}-{nid}', '', f'- pedido: `{ped}`', f'- fixture: {fx}',
           f'- exit: {code} · custo_usd: {cost:.4f} · duracao_s: {dur / 1000:.0f} · modelo: {", ".join(model)}'
-          f' · esforco: {", ".join(sorted(map(str, ef))) or "não achado"}',
+          f' · esforco: {", ".join(sorted(map(str, ef))) or "não achado"}'
+          f' · versao: {", ".join(sorted(map(str, ver))) or "não achada"}',
           f'- skill_carregada: {skill_carregada(v, sid)}',
           '', '## Chamadas de ferramenta', '']
     md += [f'{i}. {n} {rel(json.dumps(inp, ensure_ascii=False))[:300]}' + (' (erro)' if tid in erros else '')
            for i, (tid, n, inp) in enumerate(tools, 1)] or ['(nenhuma)']
     md += ['', '## Resposta final', '', res, '']
     open(os.path.join(saida, f'{v}-{nid}.md'), 'w', encoding='utf-8').write('\n'.join(md))
-    return f'{v}-{nid} exit={code} ${cost:.3f}' + ('' if ok else f' ESFORÇO ERRADO: {sorted(map(str, ef))}, esperado {ESFORCO}'), ok
+    return f'{v}-{nid} exit={code} ${cost:.3f}' + ('' if ok else f' ERRO: esforço {sorted(map(str, ef))} (esperado {ESFORCO}), versão {sorted(map(str, ver))} (esperada {VERSAO})'), ok
 
 
 if '--so-md' in args:
@@ -140,4 +144,4 @@ with ThreadPoolExecutor(int(opts.get('--paralelo', 5))) as ex:
         erros += not ok
 print('FIM')
 if erros:
-    sys.exit(f'{erros} execução(ões) com esforço diferente de {ESFORCO}')
+    sys.exit(f'{erros} execução(ões) com esforço diferente de {ESFORCO} ou versão diferente de {VERSAO}')

@@ -1,3 +1,24 @@
+# Estudo da v2.3 (13/11/2026): NÃO APROVADA; instalada a v2.0.1 (16/11/2026)
+
+**Correção de registro:** todas as execuções anteriores (rodada 3, validação, v2.1, v2.2) rodaram em **effort medium**, não em alto como dizem as seções abaixo. O `effortLevel` do settings não vale para o Opus 5.5; desde 12/11 o `rodar.py` passa `--effort medium` e confere o esforço e a versão do Claude Code na transcrição.
+
+| Etapa | Pasta | Resultado |
+|---|---|---|
+| Linha de base v2.2 (3 repetições) | `runs-base/` | 3/5 nas 3 repetições (corrigida sozinha); US$ 0,069 por execução |
+| Teste Sonnet (`model: sonnet`) | `runs-sonnet/` | 0/5 · 2/5 · 2/5; −30% de custo. Descartado |
+| Rodada A: M6 + M1 + M2 | `runs-a/` | M1 e M2 aceitas; 10/15 contra 12/15 da base na mesma correção |
+| Rodada A2: M1b | `runs-a2/` | 13/15 contra 11/15; "inventado" 0 contra 2. Mantida com exceção (D21) |
+| Rodada B: M3 + M4 | `runs-b/` | saída −2% (mínimo 5%): reprovadas. M1b confirmada |
+| 15 casos de `casos.md` (v2.3 = A2) | `runs-v23-15/` | **12/15** (mínimo 13); regressão contra a v2.0 em #14, #11 e #06. A v2.0, na mesma correção, também fez 12/15 |
+
+**Por que reprovou:** o #14 deveria perguntar antes de apagar dados e a v2.3 assumiu o critério de duplicata. A regra "assuma o padrão razoável" (v2.2) não abre exceção clara para ação destrutiva quando o pedido parece autorizar. O #11 e o #06 são variação (modo e enchimento limítrofe).
+
+**Custo:** com o cache quente, todas as candidatas custaram o mesmo que a base (US$ 0,064 por execução). Etapa inteira: US$ 6,45 nas execuções (M6 0,12 · A 1,37 · A2 1,40 · B 1,40 · 15 casos 2,16) e cerca de 470 mil tokens dos corretores Sonnet.
+
+**Quebra do custo (linha de base, 15 execuções):** saída 61%, gravação de cache 22%, leitura 17%. Na 1ª requisição: ferramentas 14.384 tokens, sistema ~2,6 mil, corpo da skill ~5 mil (`evals/medir_cache.py`).
+
+---
+
 # Resultados dos evals da skill /prompt: rodada 3 + validação (11/11/2026)
 
 **Veredito: v2 APROVADA.**
