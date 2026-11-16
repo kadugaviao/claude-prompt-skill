@@ -1,0 +1,182 @@
+{
+ "v25-16": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files && cat pyproject.toml requirements.txt 2>/dev/null; grep -rn \\\"c | Bash {\"command\": \"cat src/fretes/frete.py; echo ----; grep -rn \\\"calcula_frete\\\" src tests\", \"d",
+   "C3": [],
+   "C6": "25 linhas com texto, teto 45",
+   "C7": "'Implementar código'",
+   "tipo": "'Implementar código', esperado ['Implementar código']"
+  },
+  "linhas": 25,
+  "custo": 0.0629
+ },
+ "v25-17": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "0 leituras: ",
+   "C3": [],
+   "C6": "11 linhas com texto, teto 25",
+   "C7": "'Escrever texto'",
+   "tipo": "'Escrever texto', esperado ['Escrever texto']"
+  },
+  "linhas": 11,
+  "custo": 0.1306
+ },
+ "v25-18": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files | head -50; find . -name \\\"app.log*\\\" -not -path \\\"./.git/*\\\"\",  | Bash {\"command\": \"wc -l logs/app.log; head -15 logs/app.log; echo ---; tail -3 logs/app.log\", \"",
+   "C3": [],
+   "C6": "23 linhas com texto, teto 35",
+   "C7": "'Analisar dados'",
+   "tipo": "'Analisar dados', esperado ['Analisar dados']"
+  },
+  "linhas": 23,
+  "custo": 0.068
+ },
+ "v25-19": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "3 leituras: Bash {\"command\": \"git ls-files && grep -nE \\\"<(artifactId|version|java.version)>\\\" pom.xml | he | Bash {\"command\": \"cd spring/src/main && grep -nE \\\"@(OneToMany|ManyToOne|OneToOne|ManyToMany|Qu | Bash {\"command\": \"cd spring && cat src/main/java/com/exemplo/loja/service/PedidoService.java sr",
+   "C3": [],
+   "C6": "13 linhas com texto, teto 25",
+   "C7": "'Explicar ou ensinar'",
+   "tipo": "'Explicar ou ensinar', esperado ['Explicar ou ensinar']"
+  },
+  "linhas": 13,
+  "custo": 0.0772
+ },
+ "v25-20": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": null,
+   "C6": null,
+   "C7": null,
+   "tipo": null,
+   "pergunta": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files | head -50 && echo --- && find . -path ./target -prune -o -name  | Bash {\"command\": \"cat src/main/java/com/exemplo/loja/model/Pedido.java src/main/java/com/exempl",
+   "C3": "sem prompt",
+   "C6": "sem prompt",
+   "C7": "sem prompt",
+   "tipo": "sem prompt",
+   "pergunta": "perguntou"
+  },
+  "linhas": 0,
+  "custo": 0.0708
+ },
+ "v25-22": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true,
+   "plan": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files | head -100 && ls -a\", \"description\": \"List tracked files and ro | Read {\"file_path\": \"python/pyproject.toml\"}",
+   "C3": [],
+   "C6": "24 linhas com texto, teto 35",
+   "C7": "'Planejar ou decidir'",
+   "tipo": "'Planejar ou decidir', esperado ['Planejar ou decidir']",
+   "plan": "Modo:** plan mode "
+  },
+  "linhas": 24,
+  "custo": 0.0538
+ },
+ "v25-23": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true,
+   "mecanica": true,
+   "gera_prompt": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "1 leituras: Bash {\"command\": \"git ls-files | head -50; echo ---; cat pyproject.toml requirements.txt 2>/dev",
+   "C3": [],
+   "C6": "23 linhas com texto, teto 45",
+   "C7": "'Implementar código'",
+   "tipo": "'Implementar código', esperado ['Implementar código']",
+   "mecanica": "Modo:** normal ",
+   "gera_prompt": "gerou prompt"
+  },
+  "linhas": 23,
+  "custo": 0.0456
+ },
+ "v25-24": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true,
+   "mecanica": true,
+   "gera_prompt": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "1 leituras: Bash {\"command\": \"git ls-files && echo --- && grep -rn \\\"PedidoService\\\" --exclude-dir=target -",
+   "C3": [],
+   "C6": "24 linhas com texto, teto 45",
+   "C7": "'Implementar código'",
+   "tipo": "'Implementar código', esperado ['Implementar código']",
+   "mecanica": "Modo:** normal ",
+   "gera_prompt": "gerou prompt"
+  },
+  "linhas": 24,
+  "custo": 0.0534
+ }
+}

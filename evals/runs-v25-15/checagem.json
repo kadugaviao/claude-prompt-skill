@@ -1,0 +1,328 @@
+{
+ "v25-01": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "3 leituras: Bash {\"command\": \"git ls-files\", \"description\": \"List tracked project files\"} | Read {\"file_path\": \"spring/pom.xml\"} | Bash {\"command\": \"cd spring/src/main/java/com/exemplo/loja && cat controller/PedidoController.j",
+   "C3": [],
+   "C6": "30 linhas com texto, teto 45",
+   "C7": "'Implementar código'",
+   "tipo": "'Implementar código', esperado ['Implementar código']"
+  },
+  "linhas": 30,
+  "custo": 0.1923
+ },
+ "v25-02": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": null,
+   "C6": null,
+   "C7": null,
+   "tipo": null
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "1 leituras: Bash {\"command\": \"git ls-files | head -50 && git log --oneline -3\", \"description\": \"List tracke",
+   "C3": "sem prompt",
+   "C6": "sem prompt",
+   "C7": "sem prompt",
+   "tipo": "sem prompt",
+   "pergunta": "não gerou prompt (perguntou)"
+  },
+  "linhas": 0,
+  "custo": 0.1145
+ },
+ "v25-03": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "3 leituras: Bash {\"command\": \"git ls-files && grep -rn \\\"pedidos\\\" src --include=*.java | head\", \"descripti | Read {\"file_path\": \"spring/pom.xml\"} | Read {\"file_path\": \"spring/src/main/java/com/exemplo/loja/controller/PedidoController.java\"}",
+   "C3": [],
+   "C6": "20 linhas com texto, teto 35",
+   "C7": "'Corrigir bug'",
+   "tipo": "'Corrigir bug', esperado ['Corrigir bug']"
+  },
+  "linhas": 20,
+  "custo": 0.1482
+ },
+ "v25-04": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": null,
+   "C6": null,
+   "C7": null,
+   "tipo": null
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files | head -50 && echo --- && grep -rni \\\"ponytail\\\" . --exclude-dir | Read {\"file_path\": \"skillproj/README.md\"}",
+   "C3": "sem prompt",
+   "C6": "sem prompt",
+   "C7": "sem prompt",
+   "tipo": "sem prompt",
+   "pergunta": "não gerou prompt (perguntou)"
+  },
+  "linhas": 0,
+  "custo": 0.1368
+ },
+ "v25-05": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true,
+   "esforco": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "3 leituras: Bash {\"command\": \"git ls-files | head -100 && echo --- && ls -a\", \"description\": \"List tracked  | Read {\"file_path\": \"python/pyproject.toml\"} | Bash {\"command\": \"wc -l src/fretes/*.py tests/*.py logs/app.log\", \"description\": \"Count lines i",
+   "C3": [],
+   "C6": "23 linhas com texto, teto 45",
+   "C7": "'Revisar ou auditar'",
+   "tipo": "'Revisar ou auditar', esperado ['Revisar ou auditar']",
+   "esforco": "1ª linha='ultrathink', '/effort xhigh' na entrega=True"
+  },
+  "linhas": 23,
+  "custo": 0.1376
+ },
+ "v25-06": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "3 leituras: Bash {\"command\": \"git ls-files && find . -name 'AuthController*' -not -path './target/*'\", \"des | Read {\"file_path\": \"spring/pom.xml\"} | Read {\"file_path\": \"spring/src/main/java/com/exemplo/loja/controller/AuthController.java\"}",
+   "C3": [],
+   "C6": "23 linhas com texto, teto 45",
+   "C7": "'Revisar ou auditar'",
+   "tipo": "'Revisar ou auditar', esperado ['Revisar ou auditar']"
+  },
+  "linhas": 23,
+  "custo": 0.1404
+ },
+ "v25-07": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "3 leituras: Bash {\"command\": \"git ls-files | head -50 && ls -la\", \"description\": \"List project files\"} | Read {\"file_path\": \"skillproj/README.md\"} | Bash {\"command\": \"head -20 prompt/SKILL.md; wc -l prompt/*; git remote -v\", \"description\": \"Pee",
+   "C3": [],
+   "C6": "21 linhas com texto, teto 35",
+   "C7": "'Pesquisar ou comparar'",
+   "tipo": "'Pesquisar ou comparar', esperado ['Pesquisar ou comparar', 'Planejar ou decidir']"
+  },
+  "linhas": 21,
+  "custo": 0.1581
+ },
+ "v25-08": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files | head -50 && echo --- && grep -rn \\\"Transactional\\\" src | head  | Bash {\"command\": \"grep -nE \\\"<(java.version|version|artifactId)>\\\" pom.xml | head -20\", \"descri",
+   "C3": [],
+   "C6": "16 linhas com texto, teto 25",
+   "C7": "'Explicar ou ensinar'",
+   "tipo": "'Explicar ou ensinar', esperado ['Explicar ou ensinar']"
+  },
+  "linhas": 16,
+  "custo": 0.1274
+ },
+ "v25-09": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "0 leituras: ",
+   "C3": [],
+   "C6": "15 linhas com texto, teto 25",
+   "C7": "'Escrever texto'",
+   "tipo": "'Escrever texto', esperado ['Escrever texto']"
+  },
+  "linhas": 15,
+  "custo": 0.1061
+ },
+ "v25-10": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"git ls-files | head -50; echo ---; ls logs 2>&1; wc -l logs/app.log 2>&1; hea | Bash {\"command\": \"cat pyproject.toml requirements.txt 2>/dev/null | head -40\", \"description\": \"",
+   "C3": [],
+   "C6": "19 linhas com texto, teto 35",
+   "C7": "'Analisar dados'",
+   "tipo": "'Analisar dados', esperado ['Analisar dados']"
+  },
+  "linhas": 19,
+  "custo": 0.1286
+ },
+ "v25-11": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": false,
+   "plan": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "3 leituras: Bash {\"command\": \"git ls-files | head -100\", \"description\": \"List tracked project files\"} | Read {\"file_path\": \"spring/pom.xml\"} | Bash {\"command\": \"grep -rn \\\"^import\\\" src/test src/main/java/com/exemplo/loja/controller/AuthC",
+   "C3": [],
+   "C6": "35 linhas com texto, teto 35",
+   "C7": "'Agêntica longa'",
+   "tipo": "'Agêntica longa', esperado ['Planejar ou decidir']",
+   "plan": "Modo:** plan mode "
+  },
+  "linhas": 35,
+  "custo": 0.1849
+ },
+ "v25-12": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true,
+   "esforco": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "3 leituras: Bash {\"command\": \"git ls-files\", \"description\": \"List tracked project files\"} | Read {\"file_path\": \"spring/pom.xml\"} | Bash {\"command\": \"grep -rnE \\\"org\\\\.junit|RunWith|@Rule|@Before|@After|ExpectedException|Assert",
+   "C3": [],
+   "C6": "32 linhas com texto, teto 80",
+   "C7": "'Agêntica longa'",
+   "tipo": "'Agêntica longa', esperado ['Agêntica longa']",
+   "esforco": "1ª linha='ultrathink', '/effort xhigh' na entrega=True"
+  },
+  "linhas": 32,
+  "custo": 0.0782
+ },
+ "v25-13": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": null,
+   "C6": null,
+   "C7": null,
+   "tipo": null,
+   "vazio": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "0 leituras: ",
+   "C3": "sem prompt",
+   "C6": "sem prompt",
+   "C7": "sem prompt",
+   "tipo": "sem prompt",
+   "vazio": "O que você quer pedir ao Claude Code? Escreva o pedido e eu transformo em prompt."
+  },
+  "linhas": 0,
+  "custo": 0.0861
+ },
+ "v25-14": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": null,
+   "C6": null,
+   "C7": null,
+   "tipo": null
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "3 leituras: Bash {\"command\": \"git ls-files\", \"description\": \"List tracked project files\"} | Read {\"file_path\": \"spring/src/main/java/com/exemplo/loja/model/Cliente.java\"} | Read {\"file_path\": \"spring/src/main/resources/application.properties\"}",
+   "C3": "sem prompt",
+   "C6": "sem prompt",
+   "C7": "sem prompt",
+   "tipo": "sem prompt",
+   "pergunta": "não gerou prompt (perguntou)"
+  },
+  "linhas": 0,
+  "custo": 0.1322
+ },
+ "v25-15": {
+  "resultado": {
+   "C1": true,
+   "C2": true,
+   "C3": true,
+   "C6": true,
+   "C7": true,
+   "tipo": true
+  },
+  "nota": {
+   "C1": [],
+   "tipos_md": "NÃO leu",
+   "C2": "2 leituras: Bash {\"command\": \"ls -la && git status --short && git diff --stat HEAD && git log --oneline -3\" | Bash {\"command\": \"ls -la prompt && cat README.md\", \"description\": \"List skill folder and read R",
+   "C3": [],
+   "C6": "22 linhas com texto, teto 45",
+   "C7": "'Revisar ou auditar'",
+   "tipo": "'Revisar ou auditar', esperado ['Revisar ou auditar']"
+  },
+  "linhas": 22,
+  "custo": 0.1477
+ }
+}

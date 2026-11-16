@@ -11,3 +11,34 @@ v25-22 exit=1 $0.000 ERRO: esforço ['None'] (esperado medium), versão ['2.1.32
 v25-23 exit=1 $0.000 ERRO: esforço ['None'] (esperado medium), versão ['2.1.323'] (esperada 2.1.323)
 FIM
 6 execução(ões) com esforço diferente de medium ou versão diferente de 2.1.323
+(r1 16,18,19,20,22,23: limite de uso; refeitos)
+v25-16 exit=0 $0.071
+FIM
+v25-18 exit=0 $0.064
+v25-19 exit=0 $0.062
+v25-20 exit=0 $0.051
+v25-22 exit=0 $0.132
+v25-23 exit=0 $0.127
+FIM
+v25-12 exit=0 $0.087
+FIM
+v25-16 exit=0 $0.065
+v25-17 exit=0 $0.107
+v25-18 exit=0 $0.055
+v25-19 exit=0 $0.070
+v25-20 exit=0 $0.056
+v25-22 exit=0 $0.057
+v25-23 exit=0 $0.045
+v25-24 exit=0 $0.064
+FIM
+v25-12 exit=0 $0.076
+FIM
+v25-16 exit=0 $0.063
+v25-17 exit=0 $0.131
+v25-18 exit=0 $0.068
+v25-19 exit=0 $0.077
+v25-20 exit=0 $0.071
+v25-22 exit=0 $0.054
+v25-23 exit=0 $0.046
+v25-24 exit=0 $0.053
+FIM

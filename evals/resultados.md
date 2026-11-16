@@ -1,3 +1,11 @@
+# v2.5 (16/11/2026): NÃO APROVADA; a v2.4 continua instalada
+
+Medição de uso real da v2.4 (`runs-sessao/`): 2 tarefas por sessão (prompt + execução), US$ 0,50–0,53 por sessão, tarefas feitas e `pytest` verde; o renome mecânico saía como Agêntica longa com `ultrathink` e deixava `progress.md` no projeto.
+
+A v2.5 corrigiu isso (#23/#24: Implementar código, normal, sem `ultrathink`, 3/3), mas criou uma regressão no #11 (Agêntica longa em vez de Planejar) e teve "inventado" no #23 em 2 de 3 (um "para quê" inventado). Detalhes em `runs-v25/decisao.md`. Custo: US$ 4,67 e ~226 mil tokens de corretor.
+
+---
+
 # v2.4 (16/11/2026): APROVADA e instalada
 
 **Versão:** `versoes/v2.4/` = candidata da v2.3 (M6 `effort: medium`, M1, M2, M1b) + pergunta obrigatória antes de apagar ou sobrescrever dados ou migrar banco + plan mode para planejar migração. Claude Code 2.1.323 (binário fixo), effort medium, correção cega dupla.

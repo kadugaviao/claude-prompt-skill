@@ -20,7 +20,7 @@ Escolha o tipo principal entre os 9 da seção "Tipos de tarefa", no fim deste a
 - **Pesquisar ou comparar:** comparar opções conhecidas (bibliotecas, licenças, nomes).
 - **Planejar ou decidir:** "como faço X" sem pedido de execução; etapas, arquitetura, migração.
 - **Revisar ou auditar:** julgar algo que já existe ("tá bom?", "posso instalar?").
-- **Agêntica longa:** o pedido abrange o projeto inteiro ou muitos arquivos ("todos", "projeto inteiro") e exige várias etapas com decisões no caminho (migrar, atualizar versão, refatorar), mesmo que as leituras mostrem poucos arquivos hoje. Uma troca mecânica (renomear, trocar um import ou um texto) é Implementar código, mesmo no projeto todo.
+- **Agêntica longa:** o pedido abrange o projeto inteiro ou muitos arquivos ("todos", "projeto inteiro"), mesmo que as leituras mostrem poucos arquivos hoje.
 - **Empate:** se dois tipos servem, escolha o que tem o formato de saída mais útil e cite o outro em Suposições. Acrescente os itens dele que se aplicarem.
 
 ## 2. Colete contexto (no máximo 3 leituras)
@@ -110,7 +110,7 @@ Confira: um colega sem contexto executaria? Cada motivo vem do pedido, das leitu
 
 Quer que eu execute este prompt agora?
 
-- **Modo:** plan mode se a tarefa altera arquivos em 3 ou mais passos, decide arquitetura ou planeja uma migração (de versão, framework ou banco), mesmo que o prompt só peça o plano; normal nos outros casos, inclusive numa troca mecânica.
+- **Modo:** plan mode se a tarefa altera arquivos em 3 ou mais passos, decide arquitetura ou planeja uma migração (de versão, framework ou banco), mesmo que o prompt só peça o plano; normal nos outros casos.
 - **Esforço alto:** depuração difícil, arquitetura, auditoria profunda ou tarefa agêntica longa. Nesse caso, a primeira linha do prompt é `ultrathink` (vale quando o usuário cola o prompt, porque só funciona digitado), e depois de "alto" escreva: "para executar aqui, rode `/effort xhigh` antes de responder sim".
 
 ## 6. Aprovação
@@ -194,9 +194,9 @@ Deve conter: objetivo, horizonte e prazo; restrições e recursos; alternativas 
 ```
 
 ### 9. Agêntica longa (30–80 linhas)
-Deve conter: o objetivo e um critério de pronto verificável de ponta a ponta; o registro de progresso em `progress.md`, atualizado a cada etapa concluída para a tarefa poder ser retomada se for interrompida (criar, atualizar e, no fim, apagar esse arquivo fica em "Pode fazer sem perguntar"; ele só serve para retomar); permissões (o que pode fazer sem perguntar e o que exige confirmação: push, migração, deleção, nova dependência).
+Deve conter: o objetivo e um critério de pronto verificável de ponta a ponta; o registro de progresso em `progress.md`, atualizado a cada etapa concluída para a tarefa poder ser retomada se for interrompida (criar e atualizar esse arquivo fica em "Pode fazer sem perguntar"); permissões (o que pode fazer sem perguntar e o que exige confirmação: push, migração, deleção, nova dependência).
 ```
-Durante o trabalho: a cada etapa concluída, atualize `progress.md` (feito, próximo passo, pendências) e escreva 1–2 linhas no chat. Ao terminar e verificar, apague o `progress.md`.
+Durante o trabalho: a cada etapa concluída, atualize `progress.md` (feito, próximo passo, pendências) e escreva 1–2 linhas no chat.
 No final (autocontido, para quem não acompanhou):
 1. Resultado em 1 frase.
 2. O que foi feito, por etapa.
