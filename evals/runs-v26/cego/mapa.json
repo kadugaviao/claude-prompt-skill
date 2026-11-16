@@ -1,0 +1,164 @@
+{
+ "12-A": {
+  "fonte": "v26",
+  "rep": "r2",
+  "pasta": "runs-v26/r2",
+  "versao": "v26"
+ },
+ "12-B": {
+  "fonte": "v26",
+  "rep": "r3",
+  "pasta": "runs-v26/r3",
+  "versao": "v26"
+ },
+ "12-C": {
+  "fonte": "v26",
+  "rep": "r1",
+  "pasta": "runs-v26/r1",
+  "versao": "v26"
+ },
+ "16-A": {
+  "fonte": "v26",
+  "rep": "r1",
+  "pasta": "runs-v26/r1",
+  "versao": "v26"
+ },
+ "16-B": {
+  "fonte": "v26",
+  "rep": "r3",
+  "pasta": "runs-v26/r3",
+  "versao": "v26"
+ },
+ "16-C": {
+  "fonte": "v26",
+  "rep": "r2",
+  "pasta": "runs-v26/r2",
+  "versao": "v26"
+ },
+ "17-A": {
+  "fonte": "v26",
+  "rep": "r2",
+  "pasta": "runs-v26/r2",
+  "versao": "v26"
+ },
+ "17-B": {
+  "fonte": "v26",
+  "rep": "r3",
+  "pasta": "runs-v26/r3",
+  "versao": "v26"
+ },
+ "17-C": {
+  "fonte": "v26",
+  "rep": "r1",
+  "pasta": "runs-v26/r1",
+  "versao": "v26"
+ },
+ "18-A": {
+  "fonte": "v26",
+  "rep": "r1",
+  "pasta": "runs-v26/r1",
+  "versao": "v26"
+ },
+ "18-B": {
+  "fonte": "v26",
+  "rep": "r3",
+  "pasta": "runs-v26/r3",
+  "versao": "v26"
+ },
+ "18-C": {
+  "fonte": "v26",
+  "rep": "r2",
+  "pasta": "runs-v26/r2",
+  "versao": "v26"
+ },
+ "19-A": {
+  "fonte": "v26",
+  "rep": "r2",
+  "pasta": "runs-v26/r2",
+  "versao": "v26"
+ },
+ "19-B": {
+  "fonte": "v26",
+  "rep": "r1",
+  "pasta": "runs-v26/r1",
+  "versao": "v26"
+ },
+ "19-C": {
+  "fonte": "v26",
+  "rep": "r3",
+  "pasta": "runs-v26/r3",
+  "versao": "v26"
+ },
+ "20-A": {
+  "fonte": "v26",
+  "rep": "r3",
+  "pasta": "runs-v26/r3",
+  "versao": "v26"
+ },
+ "20-B": {
+  "fonte": "v26",
+  "rep": "r1",
+  "pasta": "runs-v26/r1",
+  "versao": "v26"
+ },
+ "20-C": {
+  "fonte": "v26",
+  "rep": "r2",
+  "pasta": "runs-v26/r2",
+  "versao": "v26"
+ },
+ "22-A": {
+  "fonte": "v26",
+  "rep": "r3",
+  "pasta": "runs-v26/r3",
+  "versao": "v26"
+ },
+ "22-B": {
+  "fonte": "v26",
+  "rep": "r2",
+  "pasta": "runs-v26/r2",
+  "versao": "v26"
+ },
+ "22-C": {
+  "fonte": "v26",
+  "rep": "r1",
+  "pasta": "runs-v26/r1",
+  "versao": "v26"
+ },
+ "23-A": {
+  "fonte": "v26",
+  "rep": "r1",
+  "pasta": "runs-v26/r1",
+  "versao": "v26"
+ },
+ "23-B": {
+  "fonte": "v26",
+  "rep": "r2",
+  "pasta": "runs-v26/r2",
+  "versao": "v26"
+ },
+ "23-C": {
+  "fonte": "v26",
+  "rep": "r3",
+  "pasta": "runs-v26/r3",
+  "versao": "v26"
+ },
+ "24-A": {
+  "fonte": "v26",
+  "rep": "r1",
+  "pasta": "runs-v26/r1",
+  "versao": "v26"
+ },
+ "24-B": {
+  "fonte": "v26",
+  "rep": "r2",
+  "pasta": "runs-v26/r2",
+  "versao": "v26"
+ },
+ "24-C": {
+  "fonte": "v26",
+  "rep": "r3",
+  "pasta": "runs-v26/r3",
+  "versao": "v26"
+ }
+}

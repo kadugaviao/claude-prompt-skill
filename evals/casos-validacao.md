@@ -163,3 +163,9 @@ Se não for aceita, a M1b é desfeita e a rodada B parte da versão da rodada A.
    - nenhum caso com "inventado" em 2 ou mais repetições.
 2. Os 15 casos de `casos.md` (1 execução cada), com a v2.0 (`runs-3/`) na mesma correção dupla: placar maior ou igual ao da v2.0, sem regressão no #14 nem em critério mecânico.
 3. Sessão longa (`sessao.py`, 1 sessão): as duas tarefas feitas, `pytest` verde, o `/prompt` do renome sem Agêntica longa, plan mode nem `ultrathink`, e nenhum `progress.md` no fim.
+
+## Validação da v2.6 (regras definidas antes de rodar, em 16/11/2026)
+
+**Versão:** `v2/prompt/` = v2.5 (`versoes/v2.5-reprovada/`) com duas correções: (1) a Agêntica longa vale quando o pedido manda **executar** a mudança, e "se o pedido só pergunta como fazer, é Planejar ou decidir" (regressão do #11 na v2.5); (2) o objetivo leva o "para quê" só se ele vier do pedido ou das leituras ("inventado" do #23 na v2.5).
+
+**Régua e regra de aprovação:** as mesmas da v2.5 (seção "Validação da v2.5"): validação com os 9 casos × 3 repetições, os 15 casos de `casos.md` com a v2.0 na mesma correção dupla e 1 sessão longa, todos os itens obrigatórios.

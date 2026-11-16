@@ -1,3 +1,9 @@
+# v2.6 (16/11/2026): NÃO APROVADA; a v2.4 continua instalada
+
+Itens 2 e 3 cumpridos (15 casos 15/15 contra 12/15 da v2.0; sessão longa sem exagero, US$ 0,45). Item 1 falhou: "inventado" em 2 de 3 no #12 (JUnit 5/Mockito atribuído ao CLAUDE.md; vem do modelo do tipo Implementar) e no #17 (escolhas de redação como requisito). Detalhes em `runs-v26/decisao.md`. Custo: US$ 4,75 e ~430 mil tokens de corretor.
+
+---
+
 # v2.5 (16/11/2026): NÃO APROVADA; a v2.4 continua instalada
 
 Medição de uso real da v2.4 (`runs-sessao/`): 2 tarefas por sessão (prompt + execução), US$ 0,50–0,53 por sessão, tarefas feitas e `pytest` verde; o renome mecânico saía como Agêntica longa com `ultrathink` e deixava `progress.md` no projeto.

@@ -1,0 +1,836 @@
+{
+ "12-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Migre todos os testes do projeto de JUnit 4 para JUnit 5 (Jupiter) e remova do build as dependências do JUnit 4."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Antes de assumir algo fora desta lista, investigue no código. (única frase removível)"
+  },
+  "inventado": {
+   "marca": "falha",
+   "trecho": "Siga a convenção do projeto para testes: JUnit 5 + Mockito. (o CLAUDE.md da fixture não traz convenção de testes; os testes atuais são JUnit 4)"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "`./mvnw test` termina com BUILD SUCCESS e o número de testes executados é igual ao do ponto de partida. / grep -rnE \"import (static )?org\\.junit\\.(Test|Before|After|BeforeClass|AfterClass|Assert|Assume|Ignore|Rule|ClassRule|runner)\" src/test não retorna nada."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Pergunte antes de: adicionar qualquer dependência ou plugin novo ao `pom.xml`, alterar arquivos em `src/main/`, desativar ou apagar um teste, fazer commit ou push."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "criar e atualizar o `progress.md` e apagá-lo no fim."
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "4. Pendências e decisões que precisam do usuário."
+  }
+ },
+ "12-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Migre todos os testes do projeto de JUnit 4 para JUnit 5 (Jupiter), deixando a suíte inteira rodando só na plataforma JUnit 5."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Nenhuma seção protocolar; no máximo uma frase removível"
+  },
+  "inventado": {
+   "marca": "falha",
+   "trecho": "O CLAUDE.md do projeto indica JUnit 5/Mockito como convenção de testes. (falso: o CLAUDE.md da fixture só traz build, camadas e banco)"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "`./mvnw test` passa, com o mesmo número de testes executados do baseline e nenhum teste novo ignorado. / `grep -rnE \"import (static )?org\\.junit\\.[^j]\" src/test` não retorna nada."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Pergunte antes de: adicionar dependência nova, alterar qualquer arquivo em `src/main/`, apagar ou desativar teste, mudar o comando de build (...), fazer commit ou push."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "criar, atualizar e no fim apagar `progress.md`."
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "4. Pendências e decisões que precisam do usuário."
+  }
+ },
+ "12-C": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Migre todos os testes do projeto de JUnit 4 para JUnit 5 (Jupiter) e remova o JUnit 4 do build."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "sem frases removíveis em número suficiente para reprovar"
+  },
+  "inventado": {
+   "marca": "falha",
+   "trecho": "Siga as convenções do projeto descritas no CLAUDE.md (JUnit 5 + Mockito nos testes de service). (o CLAUDE.md da fixture não descreve isso)"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "`./mvnw test` termina com BUILD SUCCESS e executa pelo menos os mesmos 2 testes de antes, sem nenhum skipped."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Pergunte antes de: adicionar qualquer dependência ou plugin; alterar arquivos em `src/main/`; apagar ou desativar um teste; fazer commit ou push."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "criar, atualizar e, no fim, apagar `progress.md`."
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "4. Pendências e decisões que precisam do usuário."
+  }
+ },
+ "16-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Adicione um parâmetro de desconto percentual à função calcula_frete em src/fretes/frete.py, sem quebrar os testes existentes."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "sem frases removíveis em número suficiente para reprovar"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "tudo vem do pedido, das leituras ou está em Suposições"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Adicione um parâmetro de desconto percentual à função calcula_frete em src/fretes/frete.py"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "3. Rejeite valores fora de 0 a 100 com ValueError."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "`pytest` passa, incluindo o teste original e os novos."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Não adicione abstrações, opções ou configurabilidade não pedidas."
+  },
+  "f": {
+   "marca": "falha",
+   "trecho": "confirme: o percentual é aplicado depois do desconto fixo do cupom, ou seja, (base + peso*2 - cupom) * (1 - p/100). (fórmula final em código imposta no prompt)"
+  }
+ },
+ "16-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Adicione um parâmetro de desconto percentual à função `calcula_frete` em `src/fretes/frete.py`, sem quebrar os testes existentes."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "sem frases removíveis em número suficiente para reprovar"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "tudo vem do pedido, das leituras ou está em Suposições"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "à função `calcula_frete` em `src/fretes/frete.py`"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "3. Rejeite valores fora de 0 a 100 com `ValueError`."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "`pytest` passa, com o teste antigo e os novos"
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "não adicione abstrações, opções ou configurabilidade não pedidas."
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Aplique o percentual sobre o total já descontado do cupom, antes do `round(..., 2)`. (descreve em palavras; só o exemplo de teste `== 10.8`, sem implementação)"
+  }
+ },
+ "16-C": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Adicione um parâmetro de desconto percentual à função `calcula_frete` em `src/fretes/frete.py`, sem quebrar os testes existentes."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "sem frases removíveis em número suficiente para reprovar"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "tudo vem do pedido, das leituras ou está em Suposições"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "à função `calcula_frete` em `src/fretes/frete.py`"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "3. Rejeite valores fora de 0 a 100 com `ValueError`."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "`pytest` passa, com `test_sp` inalterado e os testes novos passando."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Não adicione abstrações, opções ou configurabilidade não pedidas."
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Aplique o percentual sobre o total e mantenha o arredondamento final com `round(..., 2)`. (sem código da solução)"
+  }
+ },
+ "17-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Escreva um email para o cliente informando que a entrega atrasou 3 dias e explicando o motivo sem que soe como desculpa esfarrapada."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "sem frases removíveis em número suficiente para reprovar"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "tudo vem do pedido, das leituras ou está em Suposições"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Escreva em português, com tom profissional e cordial. / explicando o motivo sem que soe como desculpa esfarrapada (falta 'direto' explícito; dúvida)"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "informando que a entrega atrasou 3 dias ... deixe um marcador entre colchetes, como [motivo do atraso]. Não invente esses fatos"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "O texto final, pronto para colar (assunto e corpo), com até 150 palavras, sem meta-comentário. Variantes só se pedidas."
+  }
+ },
+ "17-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Escreva um e-mail para o cliente informando que a entrega atrasou 3 dias, de um jeito que não pareça desculpa esfarrapada."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "sem frases removíveis em número suficiente para reprovar"
+  },
+  "inventado": {
+   "marca": "falha",
+   "trecho": "Peça desculpas uma vez só, numa frase curta, e passe logo para o que muda para o cliente. / Assuma a responsabilidade pelo atraso em vez de culpar terceiros (requisitos de conteúdo que não estão no pedido nem em Suposições)"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Use tom profissional e direto, com frases curtas. / informando que a entrega atrasou 3 dias"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "1. que a entrega atrasou 3 dias; ... Onde faltar informação, use marcadores entre colchetes: [nome do cliente], [projeto/entrega], [motivo do atraso], [nova data], [seu nome]."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "O e-mail final, pronto para colar (assunto + corpo), com até 150 palavras, sem meta-comentário. Variantes só se pedidas."
+  }
+ },
+ "17-C": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Escreva um e-mail para o cliente informando que a entrega atrasou 3 dias, de um jeito que soe honesto e responsável, sem parecer desculpa esfarrapada."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Use marcadores em vez de inventar fatos, porque o e-mail vai para um cliente real. (repete a Tarefa; 1 frase removível, dúvida)"
+  },
+  "inventado": {
+   "marca": "falha",
+   "trecho": "Assuma a responsabilidade de forma direta: peça desculpas uma vez e não culpe terceiros ... em 1 ou 2 frases (requisitos de conteúdo que não estão no pedido nem em Suposições)"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "confirme: tom profissional e cordial, em português, com até 180 palavras; / sem parecer desculpa esfarrapada"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Onde faltar informação concreta, como o nome do cliente, o projeto, o motivo do atraso ou a nova data, use marcadores entre colchetes (ex.: [motivo do atraso]). / informando que a entrega atrasou 3 dias"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "O e-mail final (assunto e corpo), pronto para colar, com até 180 palavras, sem meta-comentário. Variantes só se pedidas."
+  }
+ },
+ "18-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Calcule, para cada hora do `logs/app.log`, que porcentagem das requisições passa de 1 segundo."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "sem frases removíveis em número suficiente para reprovar"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "tudo vem do pedido, das leituras ou está em Suposições"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Arquivos a ler: `logs/app.log`."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "confirme: \"passa de 1 segundo\" quer dizer `dur_ms > 1000` (estritamente maior)"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "2. Tabela: hora | total | > 1 s | % > 1 s | descartadas."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Faça as contagens com código executado (script Python ou awk), não de cabeça, e mostre o comando."
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "4. Limitações dos dados (até 3)."
+  }
+ },
+ "18-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Calcule, para cada hora, o percentual de requisições em `logs/app.log` com duração acima de 1 segundo."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "sem frases removíveis em número suficiente para reprovar"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "tudo vem do pedido, das leituras ou está em Suposições"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Arquivos a ler: `logs/app.log`"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "confirme: \"passa de 1 segundo\" quer dizer `dur_ms > 1000` (estritamente maior); uma requisição com exatamente 1000 ms não conta."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "2. Tabela: hora | total | > 1 s | % > 1 s, com uma linha por hora e uma linha de total."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Faça os cálculos com código executado (script Python ou awk) e não de cabeça"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "4. Limitações dos dados (até 3), incluindo as linhas descartadas."
+  }
+ },
+ "18-C": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Calcule, para cada hora do `logs/app.log`, qual porcentagem das requisições passa de 1 segundo."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "sem frases removíveis em número suficiente para reprovar"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "tudo vem do pedido, das leituras ou está em Suposições"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Arquivos a ler: `logs/app.log`"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "\"passa de 1 segundo\" quer dizer `dur_ms` > 1000 (estritamente maior)"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "2. Tabela por hora: hora | total | > 1 s | % > 1 s, com uma linha de total no fim."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Faça os cálculos com um script Python ou com comandos executados, não de cabeça."
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "4. Limitações dos dados (até 3), entre elas as linhas descartadas e o motivo."
+  }
+ },
+ "19-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Explique o que é o problema N+1 no JPA/Hibernate usando as entidades e o código deste projeto como exemplo."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "sem frases removíveis em número suficiente para reprovar"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "tudo vem do pedido, das leituras ou está em Suposições"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Suposições: confirme: quem lê já usa Spring e JPA no dia a dia, mas não entende o que o Hibernate faz por baixo"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "`Pedido` tem `@ManyToOne Cliente cliente` e `@OneToMany(mappedBy = \"pedido\") List<ItemPedido> itens`. / usando `Pedido`, `Cliente` e `ItemPedido`."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "4. Armadilhas comuns (3–5)."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Formato sem exercício: resumo, explicação, exemplo mínimo e armadilhas"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Não altere arquivos do projeto, porque a tarefa é só de explicação."
+  }
+ },
+ "19-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Explique o que é o problema N+1 no JPA/Hibernate usando as entidades e repositórios deste projeto como exemplo, para eu finalmente entender quando ele acontece e como evitar."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "sem frases removíveis em número suficiente para reprovar"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "tudo vem do pedido, das leituras ou está em Suposições"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "confirme: quem lê já usa JPA no dia a dia (entidades, repositórios) mas não domina lazy/eager nem o SQL gerado"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "PedidoRepository tem `findByClienteId(Long clienteId)` ... aplicadas ao PedidoRepository"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "4. Armadilhas comuns (3–5)."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Formato sem exercício: resumo, explicação, exemplo mínimo e armadilhas"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Fora do escopo: alterar arquivos, porque o pedido é só de explicação"
+  }
+ },
+ "19-C": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Explique o que é o problema N+1 no JPA/Hibernate usando as entidades e repositórios reais deste projeto como exemplo."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "sem frases removíveis em número suficiente para reprovar"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "tudo vem do pedido, das leituras ou está em Suposições"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "o leitor conhece o básico de JPA (entidades, @ManyToOne, repositórios Spring Data), mas nunca entendeu o N+1 (confirme: nível do leitor)"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "usando Pedido, ItemPedido e Cliente."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "4. Armadilhas comuns (3–5), incluindo as que valem para este projeto."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Formato sem exercício: resumo, explicação, exemplo mínimo e armadilhas"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Fora do escopo: alterar arquivos, porque o pedido é só entender o conceito."
+  }
+ },
+ "20-A": {
+  "C4": {
+   "marca": "n/a",
+   "trecho": "nenhum prompt gerado: Ainda não escrevi o prompt."
+  },
+  "C5": {
+   "marca": "n/a",
+   "trecho": "nenhum prompt gerado: Ainda não escrevi o prompt."
+  },
+  "enchimento": {
+   "marca": "n/a",
+   "trecho": "nenhum prompt gerado: Ainda não escrevi o prompt."
+  },
+  "inventado": {
+   "marca": "n/a",
+   "trecho": "nenhum prompt gerado: Ainda não escrevi o prompt."
+  }
+ },
+ "20-B": {
+  "C4": {
+   "marca": "n/a",
+   "trecho": "nenhum prompt gerado: Antes de escrever o prompt preciso de três respostas"
+  },
+  "C5": {
+   "marca": "n/a",
+   "trecho": "nenhum prompt gerado: Antes de escrever o prompt preciso de três respostas"
+  },
+  "enchimento": {
+   "marca": "n/a",
+   "trecho": "nenhum prompt gerado: Antes de escrever o prompt preciso de três respostas"
+  },
+  "inventado": {
+   "marca": "n/a",
+   "trecho": "nenhum prompt gerado: Antes de escrever o prompt preciso de três respostas"
+  }
+ },
+ "20-C": {
+  "C4": {
+   "marca": "n/a",
+   "trecho": "nenhum prompt gerado: Por isso preciso de três respostas antes de escrever o prompt."
+  },
+  "C5": {
+   "marca": "n/a",
+   "trecho": "nenhum prompt gerado: Por isso preciso de três respostas antes de escrever o prompt."
+  },
+  "enchimento": {
+   "marca": "n/a",
+   "trecho": "nenhum prompt gerado: Por isso preciso de três respostas antes de escrever o prompt."
+  },
+  "inventado": {
+   "marca": "n/a",
+   "trecho": "nenhum prompt gerado: Por isso preciso de três respostas antes de escrever o prompt."
+  }
+ },
+ "22-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Monte um plano para adotar o uv como gerenciador de dependências e ambiente do projeto `fretes`, sem quebrar os testes."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "sem frases removíveis em número suficiente para reprovar"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "tudo vem do pedido, das leituras ou está em Suposições"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Arquivos a ler: `pyproject.toml`, `tests/test_frete.py`, `src/fretes/`. / a etapa final é `uv run pytest`"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "Cada etapa do plano tem um comando de verificação, e a etapa final é `uv run pytest`, com o mesmo número de testes passando que antes da migração."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Não altere arquivos, não crie `.venv` e não rode `uv sync`/`uv lock`, porque esta tarefa entrega só o plano."
+  }
+ },
+ "22-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Monte um plano para migrar o projeto `fretes` para o uv como gerenciador de ambiente e dependências, sem quebrar os testes atuais."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "sem frases removíveis em número suficiente para reprovar"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "tudo vem do pedido, das leituras ou está em Suposições"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Arquivos a ler: `pyproject.toml`, `src/fretes/`, `tests/test_frete.py`. / `uv run pytest`"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "O plano termina com um passo de verificação: `uv run pytest` passando com a mesma quantidade de testes que passava antes da migração."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Só leitura: não edite arquivos nem rode comandos que criem `.venv` ou `uv.lock`, porque a tarefa é só de planejamento."
+  }
+ },
+ "22-C": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Monte um plano para passar a gerenciar o projeto `fretes` com uv sem quebrar os testes. Não aplique o plano agora."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "sem frases removíveis em número suficiente para reprovar"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "tudo vem do pedido, das leituras ou está em Suposições"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "O `pyproject.toml` tem só `[project]` ... `dev = [\"pytest>=8\"]` e `[tool.pytest.ini_options]`"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "O plano diz qual comando roda os testes hoje e qual vai rodar depois (ex.: `uv run pytest`) e define como verificar que `tests/test_frete.py` continua passando."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Não altere arquivos nem rode comandos que mudam o ambiente ou o repositório, porque a tarefa agora é só planejar."
+  }
+ },
+ "23-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Renomeie a função `calcula_frete` para `calcular_frete` no projeto todo, atualizando a definição e todas as referências."
+  },
+  "enchimento": {
+   "marca": "falha",
+   "trecho": "confirme: a versão `0.3.0` não muda. / Pergunte antes de: criar commit, mexer em `pyproject.toml` ou alterar a versão do pacote. / Também ficam de fora outras mudanças de nome ou refatorações. (frases sobre problema que ninguém levantou; dúvida)"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "tudo vem do pedido, das leituras ou está em Suposições"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "`src/fretes/frete.py:5`, a definição ... `tests/test_frete.py:1`, no import, e `tests/test_frete.py:4`, numa chamada"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "- `pytest` passa."
+  }
+ },
+ "23-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Renomeie a função `calcula_frete` para `calcular_frete` em todo o projeto, atualizando a definição e todas as referências."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Rode `grep -rn \"calcula_frete\" . --exclude-dir=.git` para confirmar a lista acima (repete Contexto e Pronto; 1 a 2 frases removíveis, dúvida)"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "tudo vem do pedido, das leituras ou está em Suposições"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "`src/fretes/frete.py:5`: definição `def calcula_frete(...)` / `tests/test_frete.py:1`: import / `tests/test_frete.py:4`: chamada no assert"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "- `pytest` passa."
+  }
+ },
+ "23-C": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Renomeie a função `calcula_frete` para `calcular_frete` no projeto todo, atualizando a definição e todas as referências."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "sem frases removíveis em número suficiente para reprovar"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "tudo vem do pedido, das leituras ou está em Suposições"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "`src/fretes/frete.py:5`: definição ... `tests/test_frete.py:1`: `from fretes.frete import calcula_frete` / `tests/test_frete.py:4`"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "- `pytest` passa."
+  }
+ },
+ "24-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Renomeie a classe PedidoService para ServicoDePedido em todo o projeto."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "sem frases removíveis em número suficiente para reprovar"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "tudo vem do pedido, das leituras ou está em Suposições"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "src/main/java/com/exemplo/loja/controller/PedidoController.java (import, campo e parâmetro do construtor) / src/test/java/com/exemplo/loja/service/PedidoServiceTest.java"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "- `./mvnw test` passa."
+  }
+ },
+ "24-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Renomeie a classe `PedidoService` para `ServicoDePedido` no projeto todo e atualize todas as referências a ela."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "sem frases removíveis em número suficiente para reprovar"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "tudo vem do pedido, das leituras ou está em Suposições"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "2. Atualize o import, o tipo do campo e o parâmetro em `PedidoController.java`. / 3. Renomeie o teste para `ServicoDePedidoTest.java`"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "- `./mvnw test` passa, com o mesmo número de testes de antes da mudança."
+  }
+ },
+ "24-C": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Renomeie a classe PedidoService para ServicoDePedido no projeto todo."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "sem frases removíveis em número suficiente para reprovar"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "tudo vem do pedido, das leituras ou está em Suposições"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "`PedidoController.java` (import, campo, construtor) / `PedidoServiceTest.java` (nome da classe de teste, campo, `new PedidoService(repo)`)"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "- `./mvnw test` passa."
+  }
+ }
+}
