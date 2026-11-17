@@ -198,7 +198,9 @@ ai_agent_prompt_maker/
 ├── v2/prompt/         ← pasta instalada em ~/.claude/skills/prompt/
 │   └── SKILL.md       ← arquivo único: frontmatter, fluxo (seção 7), regra de escolha do tipo, esqueleto (seção 8),
 │                        checklist, formato de entrega e, no fim, "Tipos de tarefa" (seção 9)
-└── evals/             ← casos.md, resultados.md e os scripts (criar_fixtures.sh, rodar.py, checar.py, consolidar.py)
+├── versoes/           ← v2.0 (base dos 15 casos), v2.4 (aprovada anterior, para voltar) e v2.7 (instalada)
+└── evals/             ← casos.md, casos-validacao.md, resultados.md e os scripts (criar_fixtures.sh, rodar.py, checar.py,
+                         comparar_versoes.py, sessao.py, medir_cache.py); roteiro em evals/README.md
 ```
 
 | Arquivo | Responsabilidade | Carregado em runtime? |
@@ -460,6 +462,7 @@ Nenhuma decisão exigiu pergunta: a pesquisa e a v1 resolveram tudo, ou a escolh
 28. **D26: v2.5 não aprovada** (16/11/2026). Resolveu o exagero na troca mecânica (#23 e #24: Implementar código, modo normal, sem `ultrathink`, 3 de 3; `progress.md` apagado no fim do #12), mas reprovou: (1) regressão mecânica no #11, que virou Agêntica longa porque a regra nova cita "migrar, atualizar versão" como exemplos e puxou um "como faço" para execução; (2) "inventado" no #23 em 2 de 3, um "para quê" que o pedido não dá, provavelmente pedido pelo modelo do prompt ("Objetivo… com o 'para quê'"). A v2.4 continua instalada e volta para `v2/prompt/`; a candidata fica em `versoes/v2.5-reprovada/` (`evals/runs-v25/decisao.md`).
 29. **D27: v2.6 não aprovada** (16/11/2026). Corrigiu a regressão do #11 e manteve a troca mecânica certa (itens 2 e 3 da regra cumpridos: 15/15 contra 12/15 da v2.0, sessão longa sem exagero e US$ 0,45). Reprovou no item 1 por "inventado" em 2 de 3 no #12 (atribui ao CLAUDE.md a convenção JUnit 5/Mockito, que vem do modelo do tipo Implementar na skill) e no #17 (escolhas de redação como requisito firme). A v2.4 continua instalada; candidata em `versoes/v2.6-reprovada/` (`evals/runs-v26/decisao.md`).
 30. **D28: v2.7 aprovada e instalada** (17/11/2026; regra gravada antes de rodar em `evals/casos-validacao.md`, "Validação da v2.7"). Partiu da v2.6 e tirou a fonte do "inventado": o modelo do tipo Implementar não lista mais stacks de exemplo (JUnit 5/Mockito, tipagem/pytest), só "as convenções que o CLAUDE.md ou as leituras mostram no projeto"; em Escrever texto, a estratégia de redação que o pedido não traz vai em Suposições com "confirme:". Os 3 itens cumpridos: validação sem nenhum "inventado" (r1 9/9 · r2 8/9 · r3 8/9), 15 casos 15/15 contra 10/15 da v2.0, sessão longa sem exagero e US$ 0,43. Instalada em `~/.claude/skills/prompt/`, `versoes/v2.7/` e `prompt-skill.zip` (`evals/runs-v27/decisao.md`).
+31. **D29: limpeza** (17/11/2026). Removidos do repositório as cópias de versões intermediárias e reprovadas (`versoes/v2.0.1`, `v2.1`, `v2.2*`, `v2.3-rodada-a*`, `v2.5-reprovada`, `v2.6-reprovada`), os scripts da comparação v1×v2 e da v2.2 (`cegar.py`, `consolidar.py`, os subcomandos `cegar` e `consolidar` do `comparar_versoes.py`), o `linha_base.py` (pedia um formato de julgamento que o fluxo atual não gera) e as rodadas de rascunho `runs-3-teste` e `runs-m6`. Ficam as rodadas citadas nas decisões, porque são a evidência delas. As referências antigas a esses caminhos nas decisões continuam valendo como registro: o conteúdo está no git (`git show 121e8be:<caminho>`). Também apagados os HOMEs temporários (`evals/tmp-home/`, com cópias das versões antigas da skill) e as cópias de trabalho das sessões longas. Conferido antes: `criar_fixtures.sh` recria as fixtures idênticas às usadas, e nenhuma execução as alterou.
 
 ## 13. Riscos e pontos "a verificar"
 
@@ -474,7 +477,7 @@ Nenhuma decisão exigiu pergunta: a pesquisa e a v1 resolveram tudo, ou a escolh
 | As regras específicas de modelo são perecíveis | A skill envelhece a cada modelo novo | Rodar os evals a cada troca de modelo (P-Caveats) |
 | A skill pergunta demais ou de menos | Fricção ou erro de rumo | Casos 2, 5 e 9 (não perguntar) contra o caso 14 (perguntar) |
 
-**Pontos "a verificar": estado em 10/11/2026**
+**Pontos "a verificar": estado em 17/11/2026**
 
 Resolvidos pelo usuário:
 1. **Esforço:** com Esforço alto, a entrega orienta `/effort xhigh` para executar na sessão e põe `ultrathink` na 1ª linha para quando o prompt for colado. `ultrathink` só funciona digitado no terminal (RF-21).
@@ -488,8 +491,8 @@ Abertos (não bloqueiam):
 7. O comportamento do GPT-6 Astra (P-B9, P-E10): é só evidência de apoio, e nenhum requisito depende dele.
 
 **Pendente da v2.3 (13/11/2026)**
-10. **M5, juntar numa só chamada as leituras independentes:** não testada. O ganho estimado (1 requisição a menos, 7–10% do custo) só aparece nos casos com leitura, e o risco aos critérios b e c do #16 e do #19 é maior que ele.
+10. **M5, juntar numa só chamada as leituras independentes: descartada** (17/11/2026). Nas 42 execuções da v2.7, o modelo já junta leituras sem a regra: 93 leituras em 68 requisições, 21 delas com mais de uma leitura, e vários `cat` encadeados num só Bash. No máximo seriam 31 requisições a menos em 110 (cerca de US$ 0,01 por `/prompt`), e parte das leituras depende da anterior (a estrutura indica o arquivo a ler). Uma versão nova custa cerca de US$ 5 e ~430 mil tokens de corretor só para validar, com risco de regressão (v2.5 e v2.6 reprovaram por efeitos colaterais). Também não mudaria o C2, que conta leituras, não requisições.
 
 **Defeito de harness achado na rodada 2 (11/11/2026)**
-8. No `claude -p`, a ferramenta Read nega a leitura fora do diretório do projeto. Por isso, em 21 das 28 execuções que tentaram, a skill não conseguiu ler o próprio `tipos.md`, que fica no HOME temporário. Ela seguiu sem os templates e as faixas. A correção é o `--add-dir <pasta da skill>` no `rodar.py`, que já está aplicado e ainda não foi testado. Isso também afeta a rodada 1.
+8. ~~Pendente~~ resolvido pela D17 (arquivo único, sem `tipos.md` para ler) e pelo `--add-dir` do `rodar.py`, usado em todas as rodadas desde então. No `claude -p`, a ferramenta Read negava a leitura fora do diretório do projeto. Por isso, em 21 das 28 execuções que tentaram, a skill não conseguiu ler o próprio `tipos.md`, que fica no HOME temporário. Ela seguiu sem os templates e as faixas. A correção é o `--add-dir <pasta da skill>` no `rodar.py`, que já está aplicado e ainda não foi testado. Isso também afeta a rodada 1.
 9. ~~Pendente~~ resolvido pela D17 (arquivo único): verificar se, no uso interativo, ler o `tipos.md` também pede permissão a cada `/prompt`. Se pedir, avaliar a alternativa de juntar `tipos.md` ao `SKILL.md`, que exigiria rever o RNF-01.
