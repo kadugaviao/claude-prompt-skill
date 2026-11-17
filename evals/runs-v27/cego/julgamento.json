@@ -1,0 +1,848 @@
+{
+ "12-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Migre todos os testes do projeto `loja` de JUnit 4 para JUnit 5 (Jupiter)"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "nenhuma seção protocolar; no máximo uma frase repetida"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "conteúdo vem do pedido, das leituras ou está em Suposições com \"confirme:\""
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "`./mvnw test` termina com BUILD SUCCESS e roda o mesmo número de testes do baseline"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Pergunte antes de: adicionar qualquer dependência nova, alterar arquivos em `src/main`, alterar plugins do Maven, fazer commit ou push."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "criar, atualizar e, no fim, apagar `progress.md`"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Pendências e decisões que precisam do usuário."
+  }
+ },
+ "12-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Migre todos os testes do projeto `loja` de JUnit 4 para JUnit 5 (Jupiter)."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "nenhuma seção protocolar; no máximo uma frase repetida"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "conteúdo vem do pedido, das leituras ou está em Suposições com \"confirme:\""
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "`./mvnw test` termina com BUILD SUCCESS e o número de testes executados é igual ao do passo 1."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Pergunte antes de: adicionar uma nova dependência ao `pom.xml`, alterar arquivos em `src/main/`, fazer commit ou push."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "criar, atualizar e, no fim, apagar `progress.md`"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Pendências e decisões que precisam do usuário."
+  }
+ },
+ "12-C": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Migre todos os testes do projeto de JUnit 4 para JUnit 5 (Jupiter)"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "nenhuma seção protocolar; no máximo uma frase repetida"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "conteúdo vem do pedido, das leituras ou está em Suposições com \"confirme:\""
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "`./mvnw test` termina com o mesmo número de testes executados e os mesmos resultados da referência do passo 1."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Pergunte antes de: adicionar qualquer dependência nova ao `pom.xml`; alterar arquivos em `src/main/`; apagar arquivos de teste; fazer commit ou push."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "criar, atualizar e, no fim, apagar `progress.md`"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Pendências e decisões que precisam do usuário."
+  }
+ },
+ "16-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Adicione um parâmetro de desconto percentual à função `calcula_frete`"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "nenhuma seção protocolar; no máximo uma frase repetida"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "conteúdo vem do pedido, das leituras ou está em Suposições com \"confirme:\""
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Adicione um parâmetro de desconto percentual à função `calcula_frete` em `src/fretes/frete.py`"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "valor fora de 0–100 levanta `ValueError`"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "`pytest` passa, com `test_sp` sem alteração e com os testes novos."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Não adicione abstrações, opções ou configurabilidade que o pedido não traz."
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Aplique o percentual sobre o total e mantenha o arredondamento final em 2 casas."
+  }
+ },
+ "16-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Adicione um parâmetro de desconto percentual à função `calcula_frete`"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "nenhuma seção protocolar; no máximo uma frase repetida"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "conteúdo vem do pedido, das leituras ou está em Suposições com \"confirme:\""
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Adicione um parâmetro de desconto percentual à função `calcula_frete` em `src/fretes/frete.py`"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "faixa válida de 0 a 100; fora dela, levanta `ValueError`"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "`pytest` passa, com o teste antigo sem mudanças e os novos testes incluídos."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Não adicione abstrações, opções ou configurabilidade não pedidas."
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Adicione à função um parâmetro opcional de desconto percentual, com valor padrão que não muda o resultado"
+  }
+ },
+ "16-C": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Adicione um parâmetro de desconto percentual à função `calcula_frete`"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "nenhuma seção protocolar; no máximo uma frase repetida"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "conteúdo vem do pedido, das leituras ou está em Suposições com \"confirme:\""
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Adicione um parâmetro de desconto percentual à função `calcula_frete` em `src/fretes/frete.py`"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "valores fora de 0–100 geram `ValueError`"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "`pytest` passa, com o teste antigo sem alteração e os testes novos incluídos."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Não adicione abstrações, opções ou configurabilidade não pedidas."
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Aplique o percentual sobre o total e mantenha o arredondamento final com `round(..., 2)`."
+  }
+ },
+ "17-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Escreva um email para o cliente informando que a entrega atrasou 3 dias"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "nenhuma seção protocolar; no máximo uma frase repetida"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "conteúdo vem do pedido, das leituras ou está em Suposições com \"confirme:\""
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "confirme: tom profissional e direto, com cerca de 150 palavras."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "informando que a entrega atrasou 3 dias"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "prontos para colar, com até 180 palavras, sem meta-comentário. Variantes só se pedidas."
+  }
+ },
+ "17-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Escreva um e-mail para um cliente informando que a entrega atrasou 3 dias"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "nenhuma seção protocolar; no máximo uma frase repetida"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "conteúdo vem do pedido, das leituras ou está em Suposições com \"confirme:\""
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "confirme: o cliente é externo e o tom é profissional, direto e cordial"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Informe o atraso de 3 dias logo no início"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "pronto para colar (assunto e corpo), com até 180 palavras, sem meta-comentário. Variantes só se pedidas."
+  }
+ },
+ "17-C": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Escreva um e-mail para um cliente informando que a entrega atrasou 3 dias."
+  },
+  "enchimento": {
+   "marca": "falha",
+   "trecho": "\"Fora do escopo: inventar o motivo do atraso, porque o pedido não diz qual é.\" e \"Deixe os fatos que não estão no pedido como marcadores, para quem envia preencher.\" repetem a frase anterior \"Onde faltar informação, use marcadores entre colchetes\"; \"Mantenha o número literal: o atraso é de 3 dias.\" repete a 1ª linha"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "conteúdo vem do pedido, das leituras ou está em Suposições com \"confirme:\""
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "confirme: tom profissional e cordial, para um cliente com quem já há relação"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Mantenha o número literal: o atraso é de 3 dias."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "pronto para colar, com até 180 palavras, sem meta-comentário. Variantes só se pedidas."
+  }
+ },
+ "18-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Calcule, para cada hora, a porcentagem das requisições em logs/app.log"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "nenhuma seção protocolar; no máximo uma frase repetida"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "conteúdo vem do pedido, das leituras ou está em Suposições com \"confirme:\""
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Calcule, para cada hora, a porcentagem das requisições em logs/app.log"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "quer dizer `dur_ms > 1000` (estritamente maior)"
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Faça os cálculos com código executado (Python ou awk)"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Conte as linhas sem `dur_ms` ou fora do formato e informe-as à parte"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "Tabela por hora: hora | total | > 1 s | % > 1 s"
+  }
+ },
+ "18-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Calcule, para cada hora, o percentual de requisições em logs/app.log"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "nenhuma seção protocolar; no máximo uma frase repetida"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "conteúdo vem do pedido, das leituras ou está em Suposições com \"confirme:\""
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Arquivos a ler: logs/app.log"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "quer dizer `dur_ms > 1000` (estritamente maior)"
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Faça as contas com código executado (script Python ou awk)"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Linhas sem `dur_ms` ficam fora do denominador. Informe quantas foram"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "Tabela: hora | total | > 1 s | % > 1 s."
+  }
+ },
+ "18-C": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Calcule, para cada hora, a porcentagem das requisições registradas em `logs/app.log`"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "nenhuma seção protocolar; no máximo uma frase repetida"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "conteúdo vem do pedido, das leituras ou está em Suposições com \"confirme:\""
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Arquivos a ler: `logs/app.log`"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "significa `dur_ms > 1000` (exatamente 1000 não conta)"
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Faça os cálculos com código executado (Python da stdlib ou awk)"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Conte e informe as linhas descartadas"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "Tabela: hora | total | > 1 s | % (uma casa decimal)"
+  }
+ },
+ "19-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Explique o que é o problema N+1 no JPA usando como exemplo as entidades e o código deste projeto"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "nenhuma seção protocolar; no máximo uma frase repetida"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "conteúdo vem do pedido, das leituras ou está em Suposições com \"confirme:\""
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Quem vai ler já usa JPA no dia a dia, mas nunca entendeu direito o N+1."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "usando os mapeamentos reais de `Pedido` e `ItemPedido`"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "Armadilhas comuns (3–5)."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Formato da resposta"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Fora do escopo: alterar arquivos do projeto, porque a tarefa é só de explicação."
+  }
+ },
+ "19-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Explique o que é o problema N+1 no JPA usando como exemplo o código do meu projeto `loja`"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "nenhuma seção protocolar; no máximo uma frase repetida"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "conteúdo vem do pedido, das leituras ou está em Suposições com \"confirme:\""
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "confirme: você conhece o básico de JPA (entidades, repositórios, anotações de relacionamento), mas não como o Hibernate decide"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "aplicadas a `Pedido`/`ItemPedido`"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "Armadilhas comuns (3–5)."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Formato da resposta"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Mostre os exemplos como trecho na resposta, sem editar o código, porque a tarefa é só de leitura."
+  }
+ },
+ "19-C": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Explique o que é o problema N+1 no JPA/Hibernate usando as entidades e o código do meu projeto"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "nenhuma seção protocolar; no máximo uma frase repetida"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "conteúdo vem do pedido, das leituras ou está em Suposições com \"confirme:\""
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Quem lê já usa JPA no dia a dia, mas nunca entendeu direito o N+1."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "com um trecho para cada usando `Pedido`"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "Armadilhas comuns (3–5)."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Formato da resposta"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Não altere nem crie arquivos, porque a tarefa é só de leitura"
+  }
+ },
+ "22-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Monte um plano para passar o gerenciamento de dependências e ambiente do projeto `fretes` para o uv"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "nenhuma seção protocolar; no máximo uma frase repetida"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "conteúdo vem do pedido, das leituras ou está em Suposições com \"confirme:\""
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "`pyproject.toml` no padrão PEP 621"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "O plano mostra o resultado atual de `pytest` e diz qual comando vai provar, depois da migração, que os mesmos testes passam."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Fora do escopo: aplicar a migração"
+  }
+ },
+ "22-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Monte um plano para passar o projeto `fretes` a usar uv"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "nenhuma seção protocolar; no máximo uma frase repetida"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "conteúdo vem do pedido, das leituras ou está em Suposições com \"confirme:\""
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "`pyproject.toml` hoje: `name = \"fretes\"`"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "como conferir que o resultado é igual ao de antes da migração"
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Não altere arquivos nem crie ambientes, porque a tarefa é só planejar."
+  }
+ },
+ "22-C": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Monte um plano para passar a gerenciar o projeto `fretes` com uv"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "nenhuma seção protocolar; no máximo uma frase repetida"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "conteúdo vem do pedido, das leituras ou está em Suposições com \"confirme:\""
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "`pyproject.toml` no padrão PEP 621"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "o comando com que eles vão rodar depois da migração (ex.: `uv run pytest`)"
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Não altere arquivos, porque a tarefa é só produzir o plano."
+  }
+ },
+ "23-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Renomeie a função `calcula_frete` para `calcular_frete` em todo o projeto"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "nenhuma seção protocolar; no máximo uma frase repetida"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "conteúdo vem do pedido, das leituras ou está em Suposições com \"confirme:\""
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "`tests/test_frete.py:1`: o import, e `tests/test_frete.py:4`: a chamada no teste"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "`pytest` passa."
+  }
+ },
+ "23-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Renomeie a função `calcula_frete` para `calcular_frete` no projeto todo"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "nenhuma seção protocolar; no máximo uma frase repetida"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "conteúdo vem do pedido, das leituras ou está em Suposições com \"confirme:\""
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "`tests/test_frete.py:1`: `from fretes.frete import calcula_frete`"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "`pytest` passa."
+  }
+ },
+ "23-C": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Renomeie a função `calcula_frete` para `calcular_frete` no projeto todo"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "nenhuma seção protocolar; no máximo uma frase repetida"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "conteúdo vem do pedido, das leituras ou está em Suposições com \"confirme:\""
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "`tests/test_frete.py:1`: `from fretes.frete import calcula_frete`"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "`pytest` passa."
+  }
+ },
+ "24-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Renomeie a classe `PedidoService` para `ServicoDePedido` em todo o projeto."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "nenhuma seção protocolar; no máximo uma frase repetida"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "conteúdo vem do pedido, das leituras ou está em Suposições com \"confirme:\""
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "`src/main/java/com/exemplo/loja/controller/PedidoController.java` (import, campo e parâmetro do construtor)"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "`./mvnw test` passa"
+  }
+ },
+ "24-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Renomeie a classe PedidoService para ServicoDePedido em todo o projeto"
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "nenhuma seção protocolar; no máximo uma frase repetida"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "conteúdo vem do pedido, das leituras ou está em Suposições com \"confirme:\""
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "src/main/java/com/exemplo/loja/controller/PedidoController.java (import, campo e construtor)"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "`./mvnw test` passa"
+  }
+ },
+ "24-C": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Renomeie a classe PedidoService para ServicoDePedido em todo o projeto."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "nenhuma seção protocolar; no máximo uma frase repetida"
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "conteúdo vem do pedido, das leituras ou está em Suposições com \"confirme:\""
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "src/main/java/com/exemplo/loja/controller/PedidoController.java (import, campo, parâmetro do construtor)"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "`./mvnw test` passa"
+  }
+ },
+ "20-A": {
+  "C4": {
+   "marca": "n/a",
+   "trecho": "nenhum prompt gerado; a resposta só traz perguntas"
+  },
+  "C5": {
+   "marca": "n/a",
+   "trecho": "nenhum prompt gerado; a resposta só traz perguntas"
+  },
+  "enchimento": {
+   "marca": "n/a",
+   "trecho": "nenhum prompt gerado; a resposta só traz perguntas"
+  },
+  "inventado": {
+   "marca": "n/a",
+   "trecho": "nenhum prompt gerado; a resposta só traz perguntas"
+  },
+  "a": {
+   "marca": "passa",
+   "trecho": "**1. Como identificar um pedido de teste?**"
+  }
+ },
+ "20-B": {
+  "C4": {
+   "marca": "n/a",
+   "trecho": "nenhum prompt gerado; a resposta só traz perguntas"
+  },
+  "C5": {
+   "marca": "n/a",
+   "trecho": "nenhum prompt gerado; a resposta só traz perguntas"
+  },
+  "enchimento": {
+   "marca": "n/a",
+   "trecho": "nenhum prompt gerado; a resposta só traz perguntas"
+  },
+  "inventado": {
+   "marca": "n/a",
+   "trecho": "nenhum prompt gerado; a resposta só traz perguntas"
+  },
+  "a": {
+   "marca": "passa",
+   "trecho": "**1. Como identificar um \"pedido de teste\"?**"
+  }
+ },
+ "20-C": {
+  "C4": {
+   "marca": "n/a",
+   "trecho": "nenhum prompt gerado; a resposta só traz perguntas"
+  },
+  "C5": {
+   "marca": "n/a",
+   "trecho": "nenhum prompt gerado; a resposta só traz perguntas"
+  },
+  "enchimento": {
+   "marca": "n/a",
+   "trecho": "nenhum prompt gerado; a resposta só traz perguntas"
+  },
+  "inventado": {
+   "marca": "n/a",
+   "trecho": "nenhum prompt gerado; a resposta só traz perguntas"
+  },
+  "a": {
+   "marca": "passa",
+   "trecho": "**1. Como identificar um pedido de teste?**"
+  }
+ }
+}

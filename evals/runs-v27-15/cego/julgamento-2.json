@@ -1,0 +1,958 @@
+{
+ "01-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Implemente um endpoint REST que lista os pedidos de um cliente com paginação, para que o front consiga mostrar o histórico de pedidos de um cliente sem carregar tudo de uma vez."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem frases removíveis em número suficiente para reprovar."
+  },
+  "inventado": {
+   "marca": "falha",
+   "trecho": "'para que o front consiga mostrar o histórico de pedidos de um cliente sem carregar tudo de uma vez' é objetivo inventado (o pedido não menciona front nem motivo). Também 'Escreva os testes novos em JUnit 5 + Mockito': requisito que não vem do projeto, cujos testes são JUnit 4 (PedidoServiceTest usa org.junit.Test)."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Spring Boot 3.3.5, Java 21"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "`page`, `size` e `sort` do Spring Data (`Pageable`)"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "`./mvnw test` passa."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Não adicione abstrações, opções ou configurabilidade que não foram pedidas."
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Pergunte antes de: mudar a configuração de segurança, adicionar dependências ao `pom.xml` ou alterar entidades."
+  }
+ },
+ "01-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Crie um endpoint REST que lista os pedidos de um cliente com paginação."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem frases removíveis em número suficiente para reprovar."
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Tudo vem do pedido, das leituras ou está em Suposições."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Spring Boot 3.3.5, Java 21, Spring Data JPA"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Exponha `GET /clientes/{clienteId}/pedidos?page=&size=&sort=`, que recebe um `Pageable`."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "`./mvnw test` passa, com os novos testes incluídos."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Não adicione abstrações, opções ou configurabilidade não pedidas."
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Pergunte antes de: adicionar dependência no `pom.xml` ou alterar a configuração de segurança."
+  }
+ },
+ "02-A": {
+  "C4": {
+   "marca": "n/a",
+   "trecho": "Nenhum prompt gerado."
+  },
+  "C5": {
+   "marca": "n/a",
+   "trecho": "Nenhum prompt gerado."
+  },
+  "enchimento": {
+   "marca": "n/a",
+   "trecho": "Nenhum prompt gerado."
+  },
+  "inventado": {
+   "marca": "n/a",
+   "trecho": "Nenhum prompt gerado."
+  },
+  "a": {
+   "marca": "passa",
+   "trecho": "1. **Quais são os problemas?**"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Esta conversa começou agora, então não tenho nenhuma lista ou revisão anterior."
+  }
+ },
+ "02-B": {
+  "C4": {
+   "marca": "n/a",
+   "trecho": "Nenhum prompt gerado."
+  },
+  "C5": {
+   "marca": "n/a",
+   "trecho": "Nenhum prompt gerado."
+  },
+  "enchimento": {
+   "marca": "n/a",
+   "trecho": "Nenhum prompt gerado."
+  },
+  "inventado": {
+   "marca": "n/a",
+   "trecho": "Nenhum prompt gerado."
+  },
+  "a": {
+   "marca": "passa",
+   "trecho": "1. **Quais são os problemas?**"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Não encontrei a que \"esses problemas\" se refere"
+  }
+ },
+ "03-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Corrija a LazyInitializationException que acontece ao chamar GET /pedidos/{id}."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem frases removíveis em número suficiente para reprovar."
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Tudo vem do pedido, das leituras ou está em Suposições."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Corrija a LazyInitializationException que acontece ao chamar GET /pedidos/{id}."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Reproduza a exceção e encontre a causa raiz, com evidência, antes de mudar qualquer coisa."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "O teste novo falha antes da correção e passa depois."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Não altere o teste nem fixe valores só para ele passar."
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Pergunte antes de: adicionar dependência no pom.xml (por exemplo, H2 ou Testcontainers para o teste) ou mudar o mapeamento das entidades de LAZY para EAGER."
+  }
+ },
+ "03-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Corrija a LazyInitializationException que ocorre ao chamar GET /pedidos/{id}, para que o endpoint devolva o pedido com seus itens sem erro."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem frases removíveis em número suficiente para reprovar."
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Tudo vem do pedido, das leituras ou está em Suposições."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Corrija a LazyInitializationException que ocorre ao chamar GET /pedidos/{id}"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Reproduza o erro com um teste e identifique a causa raiz, com evidência, antes de mexer no código."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "O teste novo falha antes da correção e passa depois."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Não altere testes existentes nem fixe valores para o teste passar"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "Pergunte antes de: mudar campos ou formato do JSON devolvido, alterar configurações globais de JPA/Hibernate em application.properties, adicionar dependência no pom.xml."
+  }
+ },
+ "04-A": {
+  "C4": {
+   "marca": "n/a",
+   "trecho": "Nenhum prompt gerado."
+  },
+  "C5": {
+   "marca": "n/a",
+   "trecho": "Nenhum prompt gerado."
+  },
+  "enchimento": {
+   "marca": "n/a",
+   "trecho": "Nenhum prompt gerado."
+  },
+  "inventado": {
+   "marca": "n/a",
+   "trecho": "Nenhum prompt gerado."
+  },
+  "a": {
+   "marca": "passa",
+   "trecho": "1. **Quem é \"ele\"?**"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "O pedido não diz quem é \"ele\" nem qual é o problema"
+  }
+ },
+ "04-B": {
+  "C4": {
+   "marca": "n/a",
+   "trecho": "Nenhum prompt gerado."
+  },
+  "C5": {
+   "marca": "n/a",
+   "trecho": "Nenhum prompt gerado."
+  },
+  "enchimento": {
+   "marca": "n/a",
+   "trecho": "Nenhum prompt gerado."
+  },
+  "inventado": {
+   "marca": "n/a",
+   "trecho": "Nenhum prompt gerado."
+  },
+  "a": {
+   "marca": "passa",
+   "trecho": "1. **Quem é \"ele\"?**"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "\"ponytail\" não aparece em nenhum arquivo"
+  }
+ },
+ "05-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Audite a fundo o projeto `fretes` e me diga se ele tem erros que precisam de correção ou se posso deixá-lo como está."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem frases removíveis em número suficiente para reprovar."
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Tudo vem do pedido, das leituras ou está em Suposições."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Veredito: APROVAR | APROVAR COM RESSALVAS | PEDIR MUDANÇAS, com o motivo em 1 frase (em termos de \"posso deixar assim?\")."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "Reporte todos os achados com severidade."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Não altere código, testes nem arquivos de configuração"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "O código está em `src/fretes/` e os testes em `tests/`"
+  }
+ },
+ "05-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Faça uma auditoria profunda do projeto `fretes` em busca de erros e diga se ele pode ficar como está ou se precisa de mudanças."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem frases removíveis em número suficiente para reprovar."
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Tudo vem do pedido, das leituras ou está em Suposições."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "APROVAR = \"pode deixar assim\""
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "Reporte todos os achados com severidade"
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Não altere código, testes nem configuração, porque a tarefa é só de análise."
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "`src/fretes/frete.py` (12 linhas)"
+  }
+ },
+ "06-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Revise a segurança do `AuthController` e reporte os bugs graves do fluxo de login."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem frases removíveis em número suficiente para reprovar."
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Tudo vem do pedido, das leituras ou está em Suposições."
+  },
+  "a": {
+   "marca": "passa",
+   "trecho": "Revise a segurança do `AuthController`"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Prompt sem \"URGENTE\" nem \"passo a passo\" (só aparecem na nota 'O que mudou', fora do prompt)."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Outros achados (médio e baixo): uma linha cada, sem omitir nenhum."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "Não altere código, porque a tarefa é só de revisão."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Troquei \"pensa passo a passo\" por esforço alto (`ultrathink`). Tirei o \"URGENTE\""
+  }
+ },
+ "06-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Revise a segurança do login em `AuthController` e aponte os bugs graves, para decidir o que corrigir primeiro."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem frases removíveis em número suficiente para reprovar."
+  },
+  "inventado": {
+   "marca": "falha",
+   "trecho": "'para decidir o que corrigir primeiro' é finalidade inventada: o pedido não diz para quê é a revisão. Também o motivo 'porque um falso positivo atrasa a correção do que é real'."
+  },
+  "a": {
+   "marca": "passa",
+   "trecho": "Revise a segurança do login em `AuthController`"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Prompt sem \"URGENTE\" nem \"passo a passo\" (só na nota 'O que mudou')."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Outros achados (médio e baixo): uma linha para cada, nenhum omitido."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "Não altere código nem rode comandos que modifiquem o projeto"
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Troquei \"pensa passo a passo\" por Esforço alto (`ultrathink`) e tirei o \"URGENTE\""
+  }
+ },
+ "07-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Sugira um nome para o repositório deste projeto no GitHub e recomende uma licença."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem frases removíveis em número suficiente para reprovar."
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Tudo vem do pedido, das leituras ou está em Suposições."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "compare MIT, Apache-2.0 e CC-BY-4.0 (e outras, se fizerem sentido)"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Use fontes primárias para as licenças (choosealicense.com, opensource.org, creativecommons.org), com a data de acesso."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "Recomendação com confiança (alta, média ou baixa) e o porquê"
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "O projeto é uma skill do Claude Code chamada `/prompt`."
+  }
+ },
+ "07-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Sugira um nome para publicar este projeto no GitHub e recomende uma licença, para que eu crie o repositório público já com nome e LICENSE definidos."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem frases removíveis em número suficiente para reprovar."
+  },
+  "inventado": {
+   "marca": "falha",
+   "trecho": "'para que eu crie o repositório público já com nome e LICENSE definidos': o pedido não diz que o repositório será público nem a finalidade; é objetivo/requisito inventado, fora de Suposições."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Os critérios são: permissividade, exigência de atribuição"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Use fontes primárias para as licenças (choosealicense.com, opensource.org, creativecommons.org), com data"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "Recomendação com confiança (alta, média ou baixa) e o porquê."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "O projeto é uma skill do Claude Code chamada `/prompt`."
+  }
+ },
+ "08-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Explique como funciona a propagação do @Transactional no Spring (o atributo `propagation`) para quem diz que \"não entende nada\" do assunto."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem frases removíveis em número suficiente para reprovar."
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Tudo vem do pedido, das leituras ou está em Suposições."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "para quem diz que \"não entende nada\" do assunto"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Monte os exemplos com as classes do projeto (Pedido, ItemPedido, PedidoService)."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "Armadilhas comuns (3–5), por exemplo uma chamada interna na mesma classe (self-invocation)."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Fora do escopo: isolation, readOnly e timeout"
+  }
+ },
+ "08-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Explique como funciona a propagação de transações no `@Transactional` do Spring, para que eu entenda o que acontece quando um método transacional chama outro e saiba qual opção escolher no meu projeto."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem frases removíveis em número suficiente para reprovar."
+  },
+  "inventado": {
+   "marca": "falha",
+   "trecho": "'e saiba qual opção escolher no meu projeto' é objetivo inventado: o pedido só quer entender (a própria Suposições diz que não é para resolver algo específico)."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Sou iniciante no assunto"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Monte o exemplo em cima de `PedidoService`/`Pedido`"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "Armadilhas comuns (3–5)."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Fora do escopo: alterar arquivos do projeto"
+  }
+ },
+ "09-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Escreva uma mensagem curta para o canal do time no Slack avisando que o deploy de sexta foi adiado, para que ninguém se prepare para ele nem conte com as entregas nessa data."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem frases removíveis em número suficiente para reprovar."
+  },
+  "inventado": {
+   "marca": "falha",
+   "trecho": "'para que ninguém se prepare... nem conte com as entregas nessa data' (finalidade inventada) e 'quem tinha tarefa ligada ao deploy pode replanejar, e dúvidas vão para a thread' (conteúdo exigido que não vem do pedido e não está em Suposições)."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Tom direto e cordial, típico de Slack."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Motivo, em uma frase: use o placeholder [motivo]."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "O texto final, pronto para colar, com até 60 palavras, sem meta-comentário."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "(nenhuma)"
+  }
+ },
+ "09-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Escreva uma mensagem para o time no Slack avisando que o deploy de sexta foi adiado."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem frases removíveis em número suficiente para reprovar."
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Tudo vem do pedido, das leituras ou está em Suposições."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Audiência: o time. Canal: Slack. Tom informal e direto, em português."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "deixe um marcador entre colchetes, como `[motivo]` ou `[nova data]`"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "O texto final, pronto para colar no Slack, com até 60 palavras, sem meta-comentário."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "(nenhuma)"
+  }
+ },
+ "10-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Analise o logs/app.log e descubra por que a aplicação fica lenta à tarde, para eu saber o que atacar primeiro."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem frases removíveis em número suficiente para reprovar."
+  },
+  "inventado": {
+   "marca": "falha",
+   "trecho": "'para eu saber o que atacar primeiro' é finalidade inventada: o pedido só quer saber por que está lento de tarde."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "- logs/app.log"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Faça todos os números com código executado (Python ou shell)"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "Compare a manhã com a tarde: volume de requisições, dur_ms (mediana, p95, máximo)"
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "5. Limitações dos dados (até 3)."
+  }
+ },
+ "10-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Analise o logs/app.log e descubra por que a aplicação fica lenta à tarde: quando a lentidão começa, quanto piora e o que no log (e, se preciso, no código) explica isso."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem frases removíveis em número suficiente para reprovar."
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Tudo vem do pedido, das leituras ou está em Suposições."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Arquivos a ler: logs/app.log"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Calcule com código executado, sem fazer contas de cabeça"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "mostre quantidade de requisições, média, p50, p95 e máximo de `dur_ms`"
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "4. Limitações dos dados (até 3)."
+  }
+ },
+ "11-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Monte um plano para migrar este projeto do Spring Boot 3.3.5 para o Spring Boot 4 sem quebrar o que funciona hoje. Recomende um caminho, não só uma lista de opções."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem frases removíveis em número suficiente para reprovar."
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Tudo vem do pedido, das leituras ou está em Suposições."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "parent `spring-boot-starter-parent` 3.3.5, Java 21"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "5. Premissas e o que mudaria a decisão."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "3. Plano em etapas: o que muda, arquivos afetados, comando de verificação e esforço estimado."
+  }
+ },
+ "11-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Monte um plano para migrar o projeto `loja` do Spring Boot 3.3.5 para o Spring Boot 4, em etapas pequenas, cada uma verificável com `./mvnw test`. Assim a migração não deixa o build quebrado no meio do caminho."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem frases removíveis em número suficiente para reprovar."
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Tudo vem do pedido, das leituras ou está em Suposições."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Hoje o projeto usa `spring-boot-starter-parent` 3.3.5 e Java 21."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "5. Premissas e o que mudaria a decisão."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "3. Plano em etapas: mudança, arquivos afetados, verificação e esforço estimado."
+  }
+ },
+ "12-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Migre todos os testes do projeto `loja` de JUnit 4 para JUnit 5 (Jupiter) e remova o JUnit 4 do build."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem frases removíveis em número suficiente para reprovar."
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Tudo vem do pedido, das leituras ou está em Suposições."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "`./mvnw test` passa e roda o mesmo número de testes do baseline."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Pergunte antes de: adicionar dependência ou plugin, alterar algo em `src/main`, fazer commit ou push."
+  },
+  "d": {
+   "marca": "falha",
+   "trecho": "Durante o trabalho: 1–2 linhas a cada etapa concluída. (só aviso no chat; sem progress.md, git ou lista de testes registrados)"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "4. Pendências e decisões que precisam do usuário."
+  }
+ },
+ "12-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Migre todos os testes do projeto de JUnit 4 para JUnit 5 (Jupiter), de modo que nenhum teste dependa mais da API do JUnit 4."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem frases removíveis em número suficiente para reprovar."
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Tudo vem do pedido, das leituras ou está em Suposições."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "`./mvnw test` termina com BUILD SUCCESS e a mesma contagem de testes executados do baseline"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "Pergunte antes de: adicionar uma dependência nova, alterar qualquer arquivo em `src/main/`, fazer commit ou push."
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "atualize o `progress.md` (feito, próximo passo, pendências)"
+  },
+  "f": {
+   "marca": "passa",
+   "trecho": "4. Pendências e decisões que precisam de você."
+  }
+ },
+ "13-A": {
+  "C4": {
+   "marca": "n/a",
+   "trecho": "Sem prompt."
+  },
+  "C5": {
+   "marca": "n/a",
+   "trecho": "Sem prompt."
+  },
+  "enchimento": {
+   "marca": "n/a",
+   "trecho": "Sem prompt."
+  },
+  "inventado": {
+   "marca": "n/a",
+   "trecho": "Sem prompt."
+  }
+ },
+ "13-B": {
+  "C4": {
+   "marca": "n/a",
+   "trecho": "Sem prompt."
+  },
+  "C5": {
+   "marca": "n/a",
+   "trecho": "Sem prompt."
+  },
+  "enchimento": {
+   "marca": "n/a",
+   "trecho": "Sem prompt."
+  },
+  "inventado": {
+   "marca": "n/a",
+   "trecho": "Sem prompt."
+  }
+ },
+ "14-A": {
+  "C4": {
+   "marca": "n/a",
+   "trecho": "Nenhum prompt gerado."
+  },
+  "C5": {
+   "marca": "n/a",
+   "trecho": "Nenhum prompt gerado."
+  },
+  "enchimento": {
+   "marca": "n/a",
+   "trecho": "Nenhum prompt gerado."
+  },
+  "inventado": {
+   "marca": "n/a",
+   "trecho": "Nenhum prompt gerado."
+  },
+  "a": {
+   "marca": "passa",
+   "trecho": "**1. Quando dois clientes contam como duplicados?**"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Antes de escrever o prompt, preciso de três respostas."
+  }
+ },
+ "14-B": {
+  "C4": {
+   "marca": "n/a",
+   "trecho": "Nenhum prompt gerado."
+  },
+  "C5": {
+   "marca": "n/a",
+   "trecho": "Nenhum prompt gerado."
+  },
+  "enchimento": {
+   "marca": "n/a",
+   "trecho": "Nenhum prompt gerado."
+  },
+  "inventado": {
+   "marca": "n/a",
+   "trecho": "Nenhum prompt gerado."
+  },
+  "a": {
+   "marca": "passa",
+   "trecho": "**1. O que conta como cliente duplicado?**"
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Antes de escrever o prompt, preciso de três respostas."
+  }
+ },
+ "15-A": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Revise a skill `/prompt` deste repositório e diga se ela está pronta para ser instalada ou se ainda há algo a resolver antes."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem frases removíveis em número suficiente para reprovar."
+  },
+  "inventado": {
+   "marca": "passa",
+   "trecho": "Tudo vem do pedido, das leituras ou está em Suposições."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "Arquivos a ler, inteiros: `prompt/SKILL.md`, `prompt/tipos.md`, `README.md`."
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "o frontmatter é válido para uma skill do Claude Code"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "O veredito responde diretamente \"pode instalar?\"."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Não altere nenhum arquivo e não rode o comando de instalação"
+  }
+ },
+ "15-B": {
+  "C4": {
+   "marca": "passa",
+   "trecho": "Quer que eu execute este prompt agora?"
+  },
+  "C5": {
+   "marca": "passa",
+   "trecho": "Revise a skill `/prompt` deste repositório e diga se ela está pronta para instalar ou se ainda há algo a corrigir antes, para eu decidir se rodo a instalação agora."
+  },
+  "enchimento": {
+   "marca": "passa",
+   "trecho": "Sem frases removíveis em número suficiente para reprovar."
+  },
+  "inventado": {
+   "marca": "falha",
+   "trecho": "Trecho: diferenças em relação à versão instalada que mudam o comportamento; o que acontece com a versão já instalada. Isso exige comparar com 'versão instalada' em tmp-home/X/.claude/skills/prompt/ e avaliar 'o que acontece com a versão já instalada': não está no pedido nem nos arquivos do projeto (vem do ambiente de teste; a chamada que listaria ~/.claude/skills deu erro). Marca duvidosa."
+  },
+  "b": {
+   "marca": "passa",
+   "trecho": "- `prompt/SKILL.md`\n- `prompt/tipos.md`\n- `README.md`"
+  },
+  "c": {
+   "marca": "passa",
+   "trecho": "frontmatter válido (`name`, `description`)"
+  },
+  "d": {
+   "marca": "passa",
+   "trecho": "O veredito responde diretamente se dá para instalar agora."
+  },
+  "e": {
+   "marca": "passa",
+   "trecho": "Não altere nenhum arquivo e não rode a instalação"
+  }
+ }
+}

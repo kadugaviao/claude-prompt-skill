@@ -1,3 +1,9 @@
+# v2.7 (17/11/2026): APROVADA E INSTALADA
+
+Os 3 itens cumpridos: validação sem "inventado" em nenhuma das 27 saídas (r1 9/9 · r2 8/9 · r3 8/9; falhas isoladas: #12 C2 no r3, #17 enchimento no r2); 15 casos 15/15 contra 10/15 da v2.0; sessão longa sem exagero, US$ 0,43. Detalhes em `runs-v27/decisao.md`. Custo: US$ 4,79 e ~427 mil tokens de corretor.
+
+---
+
 # v2.6 (16/11/2026): NÃO APROVADA; a v2.4 continua instalada
 
 Itens 2 e 3 cumpridos (15 casos 15/15 contra 12/15 da v2.0; sessão longa sem exagero, US$ 0,45). Item 1 falhou: "inventado" em 2 de 3 no #12 (JUnit 5/Mockito atribuído ao CLAUDE.md; vem do modelo do tipo Implementar) e no #17 (escolhas de redação como requisito). Detalhes em `runs-v26/decisao.md`. Custo: US$ 4,75 e ~430 mil tokens de corretor.

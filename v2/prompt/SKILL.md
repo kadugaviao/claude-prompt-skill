@@ -20,7 +20,7 @@ Escolha o tipo principal entre os 9 da seção "Tipos de tarefa", no fim deste a
 - **Pesquisar ou comparar:** comparar opções conhecidas (bibliotecas, licenças, nomes).
 - **Planejar ou decidir:** "como faço X" sem pedido de execução; etapas, arquitetura, migração.
 - **Revisar ou auditar:** julgar algo que já existe ("tá bom?", "posso instalar?").
-- **Agêntica longa:** o pedido abrange o projeto inteiro ou muitos arquivos ("todos", "projeto inteiro"), mesmo que as leituras mostrem poucos arquivos hoje.
+- **Agêntica longa:** o pedido manda executar uma mudança no projeto inteiro ou em muitos arquivos ("todos", "projeto inteiro") que exige várias etapas com decisões no caminho, como migrar de framework ou de versão, mesmo que as leituras mostrem poucos arquivos hoje. Uma troca mecânica (renomear, trocar um import ou um texto) é Implementar código, mesmo no projeto todo. Se o pedido só pergunta como fazer, é Planejar ou decidir.
 - **Empate:** se dois tipos servem, escolha o que tem o formato de saída mais útil e cite o outro em Suposições. Acrescente os itens dele que se aplicarem.
 
 ## 2. Colete contexto (no máximo 3 leituras)
@@ -40,7 +40,7 @@ Para perguntar: de 1 a 3 perguntas, de uma vez, cada uma com 2 a 4 opções. Use
 Use as seções nesta ordem e omita as vazias (nunca escreva "N/A"):
 
 ```text
-<Objetivo no imperativo, 1–2 frases, com o "para quê">
+<Objetivo no imperativo, 1–2 frases; o "para quê" só se vier do pedido ou das leituras>
 
 ## Contexto
 Só fatos que o pedido não diz (projeto, versões, o que existe hoje). Não repita o pedido nem invente objetivo.
@@ -110,7 +110,7 @@ Confira: um colega sem contexto executaria? Cada motivo vem do pedido, das leitu
 
 Quer que eu execute este prompt agora?
 
-- **Modo:** plan mode se a tarefa altera arquivos em 3 ou mais passos, decide arquitetura ou planeja uma migração (de versão, framework ou banco), mesmo que o prompt só peça o plano; normal nos outros casos.
+- **Modo:** plan mode se a tarefa altera arquivos em 3 ou mais passos, decide arquitetura ou planeja uma migração (de versão, framework ou banco), mesmo que o prompt só peça o plano; normal nos outros casos, inclusive numa troca mecânica.
 - **Esforço alto:** depuração difícil, arquitetura, auditoria profunda ou tarefa agêntica longa. Nesse caso, a primeira linha do prompt é `ultrathink` (vale quando o usuário cola o prompt, porque só funciona digitado), e depois de "alto" escreva: "para executar aqui, rode `/effort xhigh` antes de responder sim".
 
 ## 6. Aprovação
@@ -122,7 +122,7 @@ Se o usuário disser sim, execute o prompt como se ele tivesse acabado de enviá
 Cada tipo traz: o que o prompt deve conter, a faixa de tamanho do prompt (linhas com texto; cabeçalhos e linhas em branco não contam) e o template de "Formato da resposta". Adapte ao pedido e não copie itens vazios.
 
 ### 1. Implementar código (15–45 linhas)
-Deve conter: comportamento esperado e critérios de aceite; onde o código entra (caminhos); convenções que mudam o resultado (Spring: camadas, DTOs, JUnit 5/Mockito; Python: tipagem, pytest); "não adicione abstrações, opções ou configurabilidade não pedidas"; comando de teste e build.
+Deve conter: comportamento esperado e critérios de aceite; onde o código entra (caminhos); convenções que mudam o resultado, só as que o CLAUDE.md ou as leituras mostram no projeto; "não adicione abstrações, opções ou configurabilidade não pedidas"; comando de teste e build.
 ```
 1. Resumo em até 3 frases.
 2. Arquivos criados ou alterados: um por linha, com o porquê.
@@ -169,7 +169,7 @@ Deve conter: o nível de quem lê e o que já sabe (descreva a audiência, não 
 Exercício só se o pedido falar em estudo, prova ou entrevista.
 
 ### 6. Escrever texto (6–25 linhas)
-Deve conter: audiência; tom e canal; comprimento-alvo; os pontos e a ação do leitor que o pedido traz; exemplo de estilo, se o usuário der; palavras a evitar, se o usuário citar.
+Deve conter: audiência; tom e canal; comprimento-alvo; os pontos e a ação do leitor que o pedido traz; exemplo de estilo, se o usuário der; palavras a evitar, se o usuário citar. A estratégia de redação que você escolher e o pedido não traz (pedir desculpas, assumir a responsabilidade, oferecer compensação, propor o próximo passo) vai em Suposições com "confirme:", não como requisito.
 ```
 O texto final, pronto para colar, com até <N> palavras, sem meta-comentário. Variantes só se pedidas.
 ```
@@ -194,9 +194,9 @@ Deve conter: objetivo, horizonte e prazo; restrições e recursos; alternativas 
 ```
 
 ### 9. Agêntica longa (30–80 linhas)
-Deve conter: o objetivo e um critério de pronto verificável de ponta a ponta; o registro de progresso em `progress.md`, atualizado a cada etapa concluída para a tarefa poder ser retomada se for interrompida (criar e atualizar esse arquivo fica em "Pode fazer sem perguntar"); permissões (o que pode fazer sem perguntar e o que exige confirmação: push, migração, deleção, nova dependência).
+Deve conter: o objetivo e um critério de pronto verificável de ponta a ponta; o registro de progresso em `progress.md`, atualizado a cada etapa concluída para a tarefa poder ser retomada se for interrompida (criar, atualizar e, no fim, apagar esse arquivo fica em "Pode fazer sem perguntar"; ele só serve para retomar); permissões (o que pode fazer sem perguntar e o que exige confirmação: push, migração, deleção, nova dependência).
 ```
-Durante o trabalho: a cada etapa concluída, atualize `progress.md` (feito, próximo passo, pendências) e escreva 1–2 linhas no chat.
+Durante o trabalho: a cada etapa concluída, atualize `progress.md` (feito, próximo passo, pendências) e escreva 1–2 linhas no chat. Ao terminar e verificar, apague o `progress.md`.
 No final (autocontido, para quem não acompanhou):
 1. Resultado em 1 frase.
 2. O que foi feito, por etapa.
