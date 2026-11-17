@@ -1,0 +1,182 @@
+{
+ "01-A": {
+  "fonte": "v23",
+  "rep": "r1",
+  "pasta": "runs/v2.3-regression",
+  "versao": "v23"
+ },
+ "01-B": {
+  "fonte": "v20",
+  "rep": "r1",
+  "pasta": "runs/v1-vs-v2.0-round3",
+  "versao": "v2"
+ },
+ "02-A": {
+  "fonte": "v20",
+  "rep": "r1",
+  "pasta": "runs/v1-vs-v2.0-round3",
+  "versao": "v2"
+ },
+ "02-B": {
+  "fonte": "v23",
+  "rep": "r1",
+  "pasta": "runs/v2.3-regression",
+  "versao": "v23"
+ },
+ "03-A": {
+  "fonte": "v23",
+  "rep": "r1",
+  "pasta": "runs/v2.3-regression",
+  "versao": "v23"
+ },
+ "03-B": {
+  "fonte": "v20",
+  "rep": "r1",
+  "pasta": "runs/v1-vs-v2.0-round3",
+  "versao": "v2"
+ },
+ "04-A": {
+  "fonte": "v20",
+  "rep": "r1",
+  "pasta": "runs/v1-vs-v2.0-round3",
+  "versao": "v2"
+ },
+ "04-B": {
+  "fonte": "v23",
+  "rep": "r1",
+  "pasta": "runs/v2.3-regression",
+  "versao": "v23"
+ },
+ "05-A": {
+  "fonte": "v23",
+  "rep": "r1",
+  "pasta": "runs/v2.3-regression",
+  "versao": "v23"
+ },
+ "05-B": {
+  "fonte": "v20",
+  "rep": "r1",
+  "pasta": "runs/v1-vs-v2.0-round3",
+  "versao": "v2"
+ },
+ "06-A": {
+  "fonte": "v20",
+  "rep": "r1",
+  "pasta": "runs/v1-vs-v2.0-round3",
+  "versao": "v2"
+ },
+ "06-B": {
+  "fonte": "v23",
+  "rep": "r1",
+  "pasta": "runs/v2.3-regression",
+  "versao": "v23"
+ },
+ "07-A": {
+  "fonte": "v23",
+  "rep": "r1",
+  "pasta": "runs/v2.3-regression",
+  "versao": "v23"
+ },
+ "07-B": {
+  "fonte": "v20",
+  "rep": "r1",
+  "pasta": "runs/v1-vs-v2.0-round3",
+  "versao": "v2"
+ },
+ "08-A": {
+  "fonte": "v20",
+  "rep": "r1",
+  "pasta": "runs/v1-vs-v2.0-round3",
+  "versao": "v2"
+ },
+ "08-B": {
+  "fonte": "v23",
+  "rep": "r1",
+  "pasta": "runs/v2.3-regression",
+  "versao": "v23"
+ },
+ "09-A": {
+  "fonte": "v23",
+  "rep": "r1",
+  "pasta": "runs/v2.3-regression",
+  "versao": "v23"
+ },
+ "09-B": {
+  "fonte": "v20",
+  "rep": "r1",
+  "pasta": "runs/v1-vs-v2.0-round3",
+  "versao": "v2"
+ },
+ "10-A": {
+  "fonte": "v20",
+  "rep": "r1",
+  "pasta": "runs/v1-vs-v2.0-round3",
+  "versao": "v2"
+ },
+ "10-B": {
+  "fonte": "v23",
+  "rep": "r1",
+  "pasta": "runs/v2.3-regression",
+  "versao": "v23"
+ },
+ "11-A": {
+  "fonte": "v20",
+  "rep": "r1",
+  "pasta": "runs/v1-vs-v2.0-round3",
+  "versao": "v2"
+ },
+ "11-B": {
+  "fonte": "v23",
+  "rep": "r1",
+  "pasta": "runs/v2.3-regression",
+  "versao": "v23"
+ },
+ "12-A": {
+  "fonte": "v23",
+  "rep": "r1",
+  "pasta": "runs/v2.3-regression",
+  "versao": "v23"
+ },
+ "12-B": {
+  "fonte": "v20",
+  "rep": "r1",
+  "pasta": "runs/v1-vs-v2.0-round3",
+  "versao": "v2"
+ },
+ "13-A": {
+  "fonte": "v20",
+  "rep": "r1",
+  "pasta": "runs/v1-vs-v2.0-round3",
+  "versao": "v2"
+ },
+ "13-B": {
+  "fonte": "v23",
+  "rep": "r1",
+  "pasta": "runs/v2.3-regression",
+  "versao": "v23"
+ },
+ "14-A": {
+  "fonte": "v20",
+  "rep": "r1",
+  "pasta": "runs/v1-vs-v2.0-round3",
+  "versao": "v2"
+ },
+ "14-B": {
+  "fonte": "v23",
+  "rep": "r1",
+  "pasta": "runs/v2.3-regression",
+  "versao": "v23"
+ },
+ "15-A": {
+  "fonte": "v20",
+  "rep": "r1",
+  "pasta": "runs/v1-vs-v2.0-round3",
+  "versao": "v2"
+ },
+ "15-B": {
+  "fonte": "v23",
+  "rep": "r1",
+  "pasta": "runs/v2.3-regression",
+  "versao": "v23"
+ }
+}

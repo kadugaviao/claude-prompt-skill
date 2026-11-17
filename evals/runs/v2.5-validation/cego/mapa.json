@@ -1,0 +1,164 @@
+{
+ "12-A": {
+  "fonte": "v25",
+  "rep": "r2",
+  "pasta": "runs/v2.5-validation/r2",
+  "versao": "v25"
+ },
+ "12-B": {
+  "fonte": "v25",
+  "rep": "r3",
+  "pasta": "runs/v2.5-validation/r3",
+  "versao": "v25"
+ },
+ "12-C": {
+  "fonte": "v25",
+  "rep": "r1",
+  "pasta": "runs/v2.5-validation/r1",
+  "versao": "v25"
+ },
+ "16-A": {
+  "fonte": "v25",
+  "rep": "r1",
+  "pasta": "runs/v2.5-validation/r1",
+  "versao": "v25"
+ },
+ "16-B": {
+  "fonte": "v25",
+  "rep": "r3",
+  "pasta": "runs/v2.5-validation/r3",
+  "versao": "v25"
+ },
+ "16-C": {
+  "fonte": "v25",
+  "rep": "r2",
+  "pasta": "runs/v2.5-validation/r2",
+  "versao": "v25"
+ },
+ "17-A": {
+  "fonte": "v25",
+  "rep": "r2",
+  "pasta": "runs/v2.5-validation/r2",
+  "versao": "v25"
+ },
+ "17-B": {
+  "fonte": "v25",
+  "rep": "r3",
+  "pasta": "runs/v2.5-validation/r3",
+  "versao": "v25"
+ },
+ "17-C": {
+  "fonte": "v25",
+  "rep": "r1",
+  "pasta": "runs/v2.5-validation/r1",
+  "versao": "v25"
+ },
+ "18-A": {
+  "fonte": "v25",
+  "rep": "r3",
+  "pasta": "runs/v2.5-validation/r3",
+  "versao": "v25"
+ },
+ "18-B": {
+  "fonte": "v25",
+  "rep": "r1",
+  "pasta": "runs/v2.5-validation/r1",
+  "versao": "v25"
+ },
+ "18-C": {
+  "fonte": "v25",
+  "rep": "r2",
+  "pasta": "runs/v2.5-validation/r2",
+  "versao": "v25"
+ },
+ "19-A": {
+  "fonte": "v25",
+  "rep": "r2",
+  "pasta": "runs/v2.5-validation/r2",
+  "versao": "v25"
+ },
+ "19-B": {
+  "fonte": "v25",
+  "rep": "r3",
+  "pasta": "runs/v2.5-validation/r3",
+  "versao": "v25"
+ },
+ "19-C": {
+  "fonte": "v25",
+  "rep": "r1",
+  "pasta": "runs/v2.5-validation/r1",
+  "versao": "v25"
+ },
+ "20-A": {
+  "fonte": "v25",
+  "rep": "r2",
+  "pasta": "runs/v2.5-validation/r2",
+  "versao": "v25"
+ },
+ "20-B": {
+  "fonte": "v25",
+  "rep": "r3",
+  "pasta": "runs/v2.5-validation/r3",
+  "versao": "v25"
+ },
+ "20-C": {
+  "fonte": "v25",
+  "rep": "r1",
+  "pasta": "runs/v2.5-validation/r1",
+  "versao": "v25"
+ },
+ "22-A": {
+  "fonte": "v25",
+  "rep": "r1",
+  "pasta": "runs/v2.5-validation/r1",
+  "versao": "v25"
+ },
+ "22-B": {
+  "fonte": "v25",
+  "rep": "r3",
+  "pasta": "runs/v2.5-validation/r3",
+  "versao": "v25"
+ },
+ "22-C": {
+  "fonte": "v25",
+  "rep": "r2",
+  "pasta": "runs/v2.5-validation/r2",
+  "versao": "v25"
+ },
+ "23-A": {
+  "fonte": "v25",
+  "rep": "r2",
+  "pasta": "runs/v2.5-validation/r2",
+  "versao": "v25"
+ },
+ "23-B": {
+  "fonte": "v25",
+  "rep": "r3",
+  "pasta": "runs/v2.5-validation/r3",
+  "versao": "v25"
+ },
+ "23-C": {
+  "fonte": "v25",
+  "rep": "r1",
+  "pasta": "runs/v2.5-validation/r1",
+  "versao": "v25"
+ },
+ "24-A": {
+  "fonte": "v25",
+  "rep": "r2",
+  "pasta": "runs/v2.5-validation/r2",
+  "versao": "v25"
+ },
+ "24-B": {
+  "fonte": "v25",
+  "rep": "r1",
+  "pasta": "runs/v2.5-validation/r1",
+  "versao": "v25"
+ },
+ "24-C": {
+  "fonte": "v25",
+  "rep": "r3",
+  "pasta": "runs/v2.5-validation/r3",
+  "versao": "v25"
+ }
+}
