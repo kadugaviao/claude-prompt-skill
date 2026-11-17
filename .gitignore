@@ -1,4 +1,12 @@
-evals/tmp-home/
+# Gerados pelos evals (recriáveis): projetos de teste, HOMEs temporários e cópias da sessão longa
 evals/fixtures/
-evals/tmp-sessao/
+evals/tmp/
+
+# Pacote de instalação: é anexado à Release do GitHub, não versionado
+*.zip
+dist/
+
+# Python
 __pycache__/
+*.pyc
+.venv/
