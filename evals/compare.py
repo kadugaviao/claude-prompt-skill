@@ -81,7 +81,7 @@ def juntar(j1, j2):
     out, discord = {}, []
     for letra in j1:
         out[letra] = {}
-        for k in j1[letra].keys() | j2[letra].keys():
+        for k in dict.fromkeys([*j1[letra], *j2[letra]]):  # ordem estável (um set mudaria a cada execução)
             m1, m2 = j1[letra].get(k, {}).get('marca'), j2[letra].get(k, {}).get('marca')
             if (m1 == 'falha') != (m2 == 'falha'):
                 discord.append(f'{letra}/{k}')
